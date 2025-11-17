@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Install Python dependencies",
+    "status": "in_progress",
+    "activeForm": "Installing Python dependencies"
+  },
+  {
+    "content": "Check for .env file with API key",
+    "status": "pending",
+    "activeForm": "Checking for .env file with API key"
+  },
+  {
+    "content": "Run the chat program",
+    "status": "pending",
+    "activeForm": "Running the chat program"
+  }
+]

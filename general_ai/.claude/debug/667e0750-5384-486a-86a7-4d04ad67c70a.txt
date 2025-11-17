@@ -1,0 +1,570 @@
+[DEBUG] Watching for changes in setting files /Users/levi/.claude/settings.json, /Users/levi/data/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["WebSearch"]
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/levi/.zshrc
+[DEBUG] Snapshots directory: /Users/levi/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1760362818541-ozx35p.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/667e0750-5384-486a-86a7-4d04ad67c70a-agent-667e0750-5384-486a-86a7-4d04ad67c70a.json.tmp.98406.1760362818541
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/levi/.claude/todos/667e0750-5384-486a-86a7-4d04ad67c70a-agent-667e0750-5384-486a-86a7-4d04ad67c70a.json.tmp.98406.1760362818541 to /Users/levi/.claude/todos/667e0750-5384-486a-86a7-4d04ad67c70a-agent-667e0750-5384-486a-86a7-4d04ad67c70a.json
+[DEBUG] File /Users/levi/.claude/todos/667e0750-5384-486a-86a7-4d04ad67c70a-agent-667e0750-5384-486a-86a7-4d04ad67c70a.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760362818549
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38241 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760362818549 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg)
+[DEBUG] Summarizing last 7 of 43 messages (~142667 tokens)
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/levi/.claude/skills, project=/Users/levi/data/.claude/skills
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760362818641
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38241 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760362818641 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760362818647
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38241 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760362818647 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Shell snapshot created successfully (51724 bytes)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760362819425
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38241 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760362819425 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Executing hooks for SessionStart:startup
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760362819465
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38136 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760362819465 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760362819472
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38136 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760362819472 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760362819479
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38136 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760362819479 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=true
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760362819492
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38241 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760362819492 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Added snapshot for ee086af7-3724-47bf-bad6-6d094f527015, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "git config:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/levi/data/.claude/settings.local.json.tmp.98406.1760362910362
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 125 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/data/.claude/settings.local.json.tmp.98406.1760362910362 to /Users/levi/data/.claude/settings.local.json
+[DEBUG] File /Users/levi/data/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Bash(git config:*)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Bash tool invoked with command: git config --global user.name "maynard242"
+[DEBUG] Bash tool description: Set git username to maynard242
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: git config --global user.email "lteo@ischool.berkeley.edu"
+[DEBUG] Bash tool description: Set git email address
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: git config --global --list | grep -E "user\.(name|email)"
+[DEBUG] Bash tool description: Verify git configuration settings
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760362921470
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38264 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760362921470 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760362921484
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38291 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760362921484 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760362921492
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38464 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760362921492 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 0a2f2cb1-b9d2-4dc3-b778-89860471ad39
+[DEBUG] FileHistory: Added snapshot for 0a2f2cb1-b9d2-4dc3-b778-89860471ad39, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: git config --global --list
+[DEBUG] Bash tool description: Check current global git configuration
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760362979185
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38464 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760362979185 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760362979197
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38464 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760362979197 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760362979204
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38580 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760362979204 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 26386672-1446-4782-ac4d-36555be0aa05
+[DEBUG] FileHistory: Added snapshot for 26386672-1446-4782-ac4d-36555be0aa05, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: git config --global init.defaultBranch main
+[DEBUG] Bash tool description: Set default branch to main
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: git config --global color.ui auto
+[DEBUG] Bash tool description: Enable color output
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: git config --global credential.helper osxkeychain
+[DEBUG] Bash tool description: Set credential helper for macOS
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: git config --global pull.rebase false
+[DEBUG] Bash tool description: Set default pull behavior
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: git config --global core.editor nano
+[DEBUG] Bash tool description: Set default editor to nano
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: git config --global fetch.prune true
+[DEBUG] Bash tool description: Auto-prune deleted remote branches
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: git config --global push.default simple
+[DEBUG] Bash tool description: Push only current branch by default
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: git config --global --list
+[DEBUG] Bash tool description: Verify all git configuration settings
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760363040709
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38580 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760363040709 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760363040721
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38580 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760363040721 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760363040727
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38660 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760363040727 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 6420a4e1-d563-4702-98e6-394cfdf164b1
+[DEBUG] FileHistory: Added snapshot for 6420a4e1-d563-4702-98e6-394cfdf164b1, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: which brew
+[DEBUG] Bash tool description: Check if Homebrew is installed
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "brew install:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/levi/data/.claude/settings.local.json.tmp.98406.1760363072690
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 155 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/data/.claude/settings.local.json.tmp.98406.1760363072690 to /Users/levi/data/.claude/settings.local.json
+[DEBUG] File /Users/levi/data/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Bash(brew install:*)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Bash tool invoked with command: brew install gh
+[DEBUG] Bash tool description: Install GitHub CLI using Homebrew
+[DEBUG] Bash tool timeout: 300000ms
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "gh:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/levi/data/.claude/settings.local.json.tmp.98406.1760363089977
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 175 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/data/.claude/settings.local.json.tmp.98406.1760363089977 to /Users/levi/data/.claude/settings.local.json
+[DEBUG] File /Users/levi/data/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Bash(gh:*)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Bash tool invoked with command: gh --version
+[DEBUG] Bash tool description: Verify GitHub CLI installation
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760363097759
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38660 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760363097759 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760363097785
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38660 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760363097785 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760363097793
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38756 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760363097793 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1760362818541-ozx35p.sh
+[DEBUG] FileHistory: Making snapshot for message 251530eb-ca1b-4ce5-af6c-d88cf66744ed
+[DEBUG] FileHistory: Added snapshot for 251530eb-ca1b-4ce5-af6c-d88cf66744ed, tracking 0 files
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760363108109
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38756 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760363108109 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760363108117
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38839 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760363108117 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.98406.1760363108124
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39262 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.98406.1760363108124 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically

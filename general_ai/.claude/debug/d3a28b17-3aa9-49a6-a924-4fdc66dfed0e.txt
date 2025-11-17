@@ -1,0 +1,622 @@
+[DEBUG] Watching for changes in setting files /Users/levi/.claude/settings.json, /Users/levi/.claude/settings.json...
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/levi/.zshrc
+[DEBUG] Snapshots directory: /Users/levi/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1759901042323-5f8o0w.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/d3a28b17-3aa9-49a6-a924-4fdc66dfed0e-agent-d3a28b17-3aa9-49a6-a924-4fdc66dfed0e.json.tmp.87534.1759901042324
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/levi/.claude/todos/d3a28b17-3aa9-49a6-a924-4fdc66dfed0e-agent-d3a28b17-3aa9-49a6-a924-4fdc66dfed0e.json.tmp.87534.1759901042324 to /Users/levi/.claude/todos/d3a28b17-3aa9-49a6-a924-4fdc66dfed0e-agent-d3a28b17-3aa9-49a6-a924-4fdc66dfed0e.json
+[DEBUG] File /Users/levi/.claude/todos/d3a28b17-3aa9-49a6-a924-4fdc66dfed0e-agent-d3a28b17-3aa9-49a6-a924-4fdc66dfed0e.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901042333
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 29938 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901042333 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/levi/.claude/skills, project=/Users/levi/.claude/skills
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Summarizing all 8 messages (~75060 tokens)
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg)
+[DEBUG] Shell snapshot created successfully (51367 bytes)
+[DEBUG] rg error (signal=undefined, code=ERR_CHILD_PROCESS_STDIO_MAXBUFFER, stderr: rg: /Users/levi/Library/Caches/com.apple.ap.adprivacyd: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Caches/com.apple.homed: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Autosave Information: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Caches/FamilyCircle: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Daemon Containers: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Assistant/SiriVocabulary: Operation not permitted (os error 1)
+rg: /Users/levi/Library/com.apple.aiml.instrumentation: Operation not permitted (os error 1)
+rg: /Users/levi/Library/IdentityServices: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/CallHistoryDB: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/com.apple.avfoundation/Frecents: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Sharing: Operation not permitted (os error 1)
+rg: /Users/levi/Library/HomeKit: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/CallHistoryTransactions: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Messages: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/DifferentialPrivacy: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/FaceTime: Operation not permitted (os error 1)
+rg: /Users/levi/Library/IntelligencePlatform: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Biome: Operation not permitted (os error 1)
+rg: /Users/levi/Library/DoNotDisturb: Operation not permitted (os error 1)
+rg: /Users/levi/Library/StatusKit: Operation not permitted (os error 1)
+rg: /Users/levi/Library/CoreFollowUp: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Safari: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Accounts: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Caches/com.apple.containermanagerd: Operation not permitted (os error 1)
+rg: /Users/levi/Library/com.apple.bluetooth.services.cloud/CachedRecords/SoundProfileAsset: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Cookies: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Metadata/CoreSpotlight: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/AddressBook: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/FileProvider: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/com.apple.TCC: Operation not permitted (os error 1)
+rg: /Users/levi/Library/DuetExpertCenter: Operation not permitted (os error 1)
+rg: /Users/levi/Library/AppleMediaServices: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/Knowledge: Operation not permitted (os error 1)
+rg: /Users/levi/Library/PersonalizationPortrait: Operation not permitted (os error 1)
+rg: /Users/levi/Library/ContainerManager: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Trial: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Mail: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/com.apple.MailPersonaStorage: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.chronod: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.secure-control-center-preferences: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.shortcuts: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.contacts: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.VoiceMemos.shared: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.usernoted: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.stocks: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.siri.referenceResolution: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.icloud.searchpartyuseragent: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.accessibility.voicebanking: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.ArchiveUtility.PKSignedContainer: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.PegasusConfiguration: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.coreservices.useractivityd: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.swtransparency: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.telephonyutilities.callservicesd: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.feedback: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.photolibraryd.private: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.Maps: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.FamilyControls: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.mlhost: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.stocks-news: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Weather: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.AppleSpell: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Suggestions: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.Photos.PhotosFileProvider: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.replicatord: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/com.apple.PreviewLegacySignaturesConversion: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.energykit: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.FaceTime: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.iCloudDrive: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/com.apple.Home.group: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.Journal: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Containers/com.apple.archiveutility: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.replayd: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.DeviceActivity: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/com.apple.bird: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.mail: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.findmy.findmylocateagent: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.reminders: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.transparency: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.Safari.SandboxBroker: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.moments: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/com.apple.messages: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.tipsnext: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.UserNotifications: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/com.apple.stickersd.group: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.notes: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.siri.remembers: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.controlcenter: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Caches/com.apple.Safari: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Caches/CloudKit: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Caches/com.apple.HomeKit: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Containers/com.apple.VoiceMemos: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.feedbacklogger: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/com.apple.systempreferences.cache: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.weather: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.scopedbookmarkagent: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.news: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.corerepair: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.printtool: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.sharingd: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.ManagedSettings: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.studentd: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.spotlight: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.loginwindow.persistent-apps: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.tv.sharedcontainer: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.tips: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.gamecenter: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.siri.userfeedbacklearning: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/com.apple.sharedfilelist: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/CloudDocs: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.newsd: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.calendar: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.notes.import: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.SiriTTS: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.amsondevicestoraged: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.liveactivitiesd: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.portrait.BackgroundReplacement: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.appstoreagent: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Group Containers/group.com.apple.private.translation: Operation not permitted (os error 1)
+), 151782 results
+[ERROR] RangeError: RangeError [ERR_CHILD_PROCESS_STDIO_MAXBUFFER]: stdout maxBuffer length exceeded
+    at Socket.onChildStdout (node:child_process:484:14)
+    at Socket.emit (node:events:519:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901043037
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 29938 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901043037 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901043216
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 30114 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901043216 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901046300
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 30114 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901046300 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Executing hooks for SessionStart:startup
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901046309
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 30152 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901046309 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901046346
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 30047 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901046346 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901046352
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 30047 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901046352 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901046357
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 30047 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901046357 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=undefined
+[DEBUG] Skipping plugin installations - ENABLE_PLUGINS not set
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901046368
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 30152 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901046368 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Added snapshot for d6b9a5bd-ec5f-4c6c-bee4-075e716bb0cc, tracking 0 files
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901067808
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 30253 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901067808 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Write: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] FileHistory: Tracked file modification for /Users/levi/CLAUDE.md
+[DEBUG] rg error (signal=undefined, code=ABORT_ERR, stderr: rg: /Users/levi/Library/Suggestions: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Caches/com.apple.ap.adprivacyd: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Metadata/CoreSpotlight: Operation not permitted (os error 1)
+rg: /Users/levi/Library/DoNotDisturb: Operation not permitted (os error 1)
+rg: /Users/levi/Library/StatusKit: Operation not permitted (os error 1)
+rg: /Users/levi/Library/CoreFollowUp: Operation not permitted (os error 1)
+rg: /Users/levi/Library/com.apple.bluetooth.services.cloud/CachedRecords/SoundProfileAsset: Operation not permitted (os error 1)
+rg: /Users/levi/Library/HomeKit: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Cookies: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Autosave Information: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Messages: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Trial: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Mail: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Preferences/com.apple.messages.pinning.plist: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Daemon Containers: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Shortcuts: Operation not permitted (os error 1)
+rg: /Users/levi/Library/IntelligencePlatform: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Biome: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Safari: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Accounts: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Assistant/SiriVocabulary: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Preferences/com.apple.homed.plist: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Preferences/com.apple.MobileSMS.plist: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/CallHistoryDB: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/com.apple.avfoundation/Frecents: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Preferences/com.apple.homed.notbackedup.plist: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Caches/com.apple.homed: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Caches/FamilyCircle: Operation not permitted (os error 1)
+rg: /Users/levi/Library/PersonalizationPortrait: Operation not permitted (os error 1)
+rg: /Users/levi/Library/ContainerManager: Operation not permitted (os error 1)
+rg: /Users/levi/Library/DuetExpertCenter: Operation not permitted (os error 1)
+rg: /Users/levi/Library/AppleMediaServices: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Preferences/com.apple.AddressBook.plist: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/DifferentialPrivacy: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Preferences/com.apple.MobileSMS.CKDNDList.plist: Operation not permitted (os error 1)
+rg: /Users/levi/Library/IdentityServices: Operation not permitted (os error 1)
+rg: /Users/levi/Library/com.apple.aiml.instrumentation: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Sharing: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Containers/com.apple.Safari.WebApp: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Caches/com.apple.Safari: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Caches/CloudKit: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Caches/com.apple.HomeKit: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Containers/com.apple.stocks: Operation not permitted (os error 1)
+), 3145 results
+[ERROR] AbortError: AbortError: The operation was aborted
+    at abortChildProcess (node:child_process:750:27)
+    at AbortSignal.onAbortListener (node:child_process:820:7)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:486:10)
+    at abortSignal (node:internal/abort_controller:457:3)
+    at AbortController.abort (node:internal/abort_controller:505:5)
+    at Timeout._onTimeout (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3435:75)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+[DEBUG] Writing to temp file: /Users/levi/CLAUDE.md.tmp.87534.1759901107566
+[DEBUG] Temp file written successfully, size: 2311 bytes
+[DEBUG] Renaming /Users/levi/CLAUDE.md.tmp.87534.1759901107566 to /Users/levi/CLAUDE.md
+[DEBUG] File /Users/levi/CLAUDE.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901112844
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 30278 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901112844 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901112857
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 30302 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901112857 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message de648301-af18-4e12-bf64-904bf3bbf62e
+[DEBUG] FileHistory: Added snapshot for de648301-af18-4e12-bf64-904bf3bbf62e, tracking 1 files
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901128349
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 30385 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901128349 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Bash tool invoked with command: find /Users/levi -maxdepth 3 -type f \( -name "*.md" -o -name "*.json" -o -name "*.yaml" -o -name "*.yml" -o -name ".*" \) -not -path "*/node_modules/*" -not -path "*/.git/*" 2>/dev/null | head -50
+[DEBUG] Bash tool description: Find configuration and documentation files
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Executing hooks for PreToolUse:Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Executing hooks for PreToolUse:Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Executing hooks for PreToolUse:Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Executing hooks for PreToolUse:Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Executing hooks for PreToolUse:Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901350180
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 30385 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901350180 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Applying permission update: Setting mode to 'plan'
+[DEBUG] Applying permission update: Setting mode to 'default'
+[DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901354089
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 30385 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901354089 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Applying permission update: Setting mode to 'plan'
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901365663
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 30385 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901365663 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude/settings.json.tmp.87534.1759901370974
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 36 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/settings.json.tmp.87534.1759901370974 to /Users/levi/.claude/settings.json
+[DEBUG] File /Users/levi/.claude/settings.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude/settings.json.tmp.87534.1759901372556
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 37 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/settings.json.tmp.87534.1759901372556 to /Users/levi/.claude/settings.json
+[DEBUG] File /Users/levi/.claude/settings.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude/settings.json.tmp.87534.1759901373463
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 36 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/settings.json.tmp.87534.1759901373463 to /Users/levi/.claude/settings.json
+[DEBUG] File /Users/levi/.claude/settings.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude/settings.json.tmp.87534.1759901373673
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 37 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/settings.json.tmp.87534.1759901373673 to /Users/levi/.claude/settings.json
+[DEBUG] File /Users/levi/.claude/settings.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude/settings.json.tmp.87534.1759901373862
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 36 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/settings.json.tmp.87534.1759901373862 to /Users/levi/.claude/settings.json
+[DEBUG] File /Users/levi/.claude/settings.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude/settings.json.tmp.87534.1759901374072
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 37 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/settings.json.tmp.87534.1759901374072 to /Users/levi/.claude/settings.json
+[DEBUG] File /Users/levi/.claude/settings.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude/settings.json.tmp.87534.1759901379584
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 36 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/settings.json.tmp.87534.1759901379584 to /Users/levi/.claude/settings.json
+[DEBUG] File /Users/levi/.claude/settings.json written atomically
+[DEBUG] Applying permission update: Setting mode to 'default'
+[DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901384748
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 30385 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901384748 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Applying permission update: Setting mode to 'plan'
+[DEBUG] Detected change to /Users/levi/.claude/settings.json
+[DEBUG] Executing hooks for PostToolUse:Glob
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Glob
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Glob
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Glob
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Glob
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Slash commands included in SlashCommand tool:
+[ERROR] Error streaming, falling back to non-streaming mode: Connection error.
+[ERROR] Error: Error: Connection error.
+    at bP.makeRequest (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:1026:4452)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async vZ1 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:1034:9556)
+    at async YF1 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3198:143)
+    at async Rc1 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3198:342)
+    at async VfB (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3208:485)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901815053
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 30385 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901815053 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: pwd
+[DEBUG] Bash tool description: Show current directory
+[DEBUG] Bash tool invoked with command: ls -la
+[DEBUG] Bash tool description: List files in current directory
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: ls -d /Users/levi/data/* /Users/levi/Documents/* /Users/levi/Desktop/* 2>/dev/null | head -20
+[DEBUG] Bash tool description: Check for project directories
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901848903
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 30407 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901848903 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901848993
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 30444 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901848993 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Cleaned up session snapshot: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1759901042323-5f8o0w.sh
+[DEBUG] FileHistory: Making snapshot for message 6d5899b2-335f-404e-8620-004df620c200
+[DEBUG] FileHistory: Added snapshot for 6d5899b2-335f-404e-8620-004df620c200, tracking 1 files
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901871368
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 30527 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901871368 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87534.1759901871376
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 30954 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87534.1759901871376 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically

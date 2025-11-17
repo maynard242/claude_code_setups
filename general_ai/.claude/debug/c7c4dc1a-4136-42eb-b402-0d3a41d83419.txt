@@ -1,0 +1,7 @@
+[DEBUG] Watching for changes in setting files /Users/levi/.claude/settings.json, /Users/levi/data/.claude/settings.local.json...
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.28155.1760449251394
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41106 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.28155.1760449251394 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically

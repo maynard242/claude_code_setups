@@ -1,0 +1,63 @@
+# Process Credit Card Statement to CSV
+
+You are processing a credit card statement PDF and converting it to CSV format.
+
+## Step 1: Read the PDF
+
+First, read the categories file to understand available categories:
+- Read `/Users/levi/data/finance/categories.txt`
+
+Then, use the PDF skill to read and extract all transaction data from the statement PDF file provided by the user.
+
+## Step 2: Process Transactions
+
+Create a CSV table with the following specifications:
+
+### Required Columns:
+1. **Date** - Convert to DD-MM-YYYY format
+2. **Transaction Details** - Simplify and standardize payee names, remove unique transaction codes/reference numbers
+3. **Amount** - Use positive values for debits/withdrawals, negative values for credits/deposits
+4. **Category** - Assign appropriate categories from the categories.txt file
+
+### Formatting Requirements:
+- Output as markdown code block with csv language identifier
+- One transaction per line
+- No header row
+- No skipped transactions - include every single transaction from the PDF
+- Use comma separation for CSV format
+
+### Processing Instructions:
+- Clean up merchant/payee names by removing transaction codes, reference numbers, and unnecessary details
+- Standardize similar payees (e.g., multiple "YOUTRIP SINGAPORE" entries should all use the same name)
+- Categorize each transaction using only the categories from categories.txt
+- If uncertain about a category, use "Expense: Misc" as default
+
+## Step 3: Validation Checks
+
+After processing, perform these validation checks:
+
+1. **Transaction Count**: Count total transactions in the PDF and verify your CSV has the exact same number
+2. **Amount Tally**: Sum all amounts in your CSV and verify it matches the statement total or closing balance
+3. **Date Range**: Verify all dates fall within the statement period
+4. **Missing Data**: Check that no transaction has empty fields
+
+Report validation results:
+- ✓ Transaction count: X transactions (matches PDF)
+- ✓ Amount tally: $X.XX (verified against statement)
+- ✓ Date range: DD-MM-YYYY to DD-MM-YYYY
+- ✓ All fields populated
+
+If any validation fails, review and correct before proceeding.
+
+## Step 4: Save Output
+
+Save the CSV content to `/Users/levi/data/finance/output/` with filename format:
+`statement-YYYY-MM-DD.csv` (using the statement's closing date)
+
+## Summary
+
+Provide a brief summary:
+- Statement period processed
+- Total transactions
+- File saved location
+- Any notable issues or manual review needed

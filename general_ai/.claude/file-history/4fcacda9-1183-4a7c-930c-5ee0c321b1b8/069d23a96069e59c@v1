@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(git config:*)",
+      "Bash(brew install:*)",
+      "Bash(gh:*)",
+      "mcp__plugin_exa-mcp-server_exa__web_search_exa",
+      "mcp__firecrawl__firecrawl_scrape",
+      "mcp__n8n__search_nodes",
+      "mcp__n8n__get_node_documentation",
+      "mcp__n8n__n8n_health_check",
+      "mcp__n8n__n8n_list_workflows"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

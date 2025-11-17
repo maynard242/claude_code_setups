@@ -1,0 +1,749 @@
+[DEBUG] Watching for changes in setting files /Users/levi/.claude/settings.json, /Users/levi/data/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 10 allow rule(s) to destination 'localSettings': ["WebSearch","Bash(git config:*)","Bash(brew install:*)","Bash(gh:*)","mcp__plugin_exa-mcp-server_exa__web_search_exa","mcp__firecrawl__firecrawl_scrape","mcp__n8n__search_nodes","mcp__n8n__get_node_documentation","mcp__n8n__n8n_health_check","mcp__n8n__n8n_list_workflows"]
+[DEBUG] Loading plugin exa-mcp-server from source: "./"
+[DEBUG] Plugin exa-mcp-server has no entry.skills defined
+[DEBUG] Loading plugin document-skills from source: "./"
+[DEBUG] Processing 4 skill paths for plugin document-skills
+[DEBUG] Checking skill path: ./document-skills/xlsx -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/xlsx (exists: true)
+[DEBUG] Checking skill path: ./document-skills/docx -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/docx (exists: true)
+[DEBUG] Checking skill path: ./document-skills/pptx -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pptx (exists: true)
+[DEBUG] Checking skill path: ./document-skills/pdf -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pdf (exists: true)
+[DEBUG] Found 4 valid skill paths for plugin document-skills, setting skillsPaths
+[DEBUG] Loading plugin example-skills from source: "./"
+[DEBUG] Processing 10 skill paths for plugin example-skills
+[DEBUG] Checking skill path: ./skill-creator -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/skill-creator (exists: true)
+[DEBUG] Checking skill path: ./mcp-builder -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/mcp-builder (exists: true)
+[DEBUG] Checking skill path: ./canvas-design -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/canvas-design (exists: true)
+[DEBUG] Checking skill path: ./algorithmic-art -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/algorithmic-art (exists: true)
+[DEBUG] Checking skill path: ./internal-comms -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/internal-comms (exists: true)
+[DEBUG] Checking skill path: ./webapp-testing -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/webapp-testing (exists: true)
+[DEBUG] Checking skill path: ./artifacts-builder -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/artifacts-builder (exists: true)
+[DEBUG] Checking skill path: ./slack-gif-creator -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/slack-gif-creator (exists: true)
+[DEBUG] Checking skill path: ./theme-factory -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/theme-factory (exists: true)
+[DEBUG] Checking skill path: ./brand-guidelines -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/brand-guidelines (exists: true)
+[DEBUG] Found 10 valid skill paths for plugin example-skills, setting skillsPaths
+[DEBUG] Found 3 plugins (3 enabled, 0 disabled)
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/levi/.claude/skills, project=/Users/levi/data/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/levi/.zshrc
+[DEBUG] Snapshots directory: /Users/levi/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1762178116371-7kilu8.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/38bf9c3d-0f73-44ab-aad1-505702a8f7a1-agent-38bf9c3d-0f73-44ab-aad1-505702a8f7a1.json.tmp.71097.1762178116372
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/levi/.claude/todos/38bf9c3d-0f73-44ab-aad1-505702a8f7a1-agent-38bf9c3d-0f73-44ab-aad1-505702a8f7a1.json.tmp.71097.1762178116372 to /Users/levi/.claude/todos/38bf9c3d-0f73-44ab-aad1-505702a8f7a1-agent-38bf9c3d-0f73-44ab-aad1-505702a8f7a1.json
+[DEBUG] File /Users/levi/.claude/todos/38bf9c3d-0f73-44ab-aad1-505702a8f7a1-agent-38bf9c3d-0f73-44ab-aad1-505702a8f7a1.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.71097.1762178116380
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41839 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.71097.1762178116380 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] getPluginSkills: Processing 3 enabled plugins
+[DEBUG] Checking plugin exa-mcp-server: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Checking plugin document-skills: skillsPath=none, skillsPaths=4 paths
+[DEBUG] Attempting to load skills from plugin document-skills skillsPaths: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/xlsx, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/docx, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pptx, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pdf
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/xlsx for plugin document-skills
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Registered 0 hooks from 3 plugins
+[DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+[DEBUG] Loaded 1 skills from plugin document-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/xlsx
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/docx for plugin document-skills
+[DEBUG] Loaded 1 skills from plugin document-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/docx
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pptx for plugin document-skills
+[DEBUG] Loaded 1 skills from plugin document-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pptx
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pdf for plugin document-skills
+[DEBUG] Loaded 1 skills from plugin document-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pdf
+[DEBUG] Checking plugin example-skills: skillsPath=none, skillsPaths=10 paths
+[DEBUG] Attempting to load skills from plugin example-skills skillsPaths: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/skill-creator, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/mcp-builder, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/canvas-design, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/algorithmic-art, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/internal-comms, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/webapp-testing, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/artifacts-builder, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/slack-gif-creator, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/theme-factory, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/brand-guidelines
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/skill-creator for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/skill-creator
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/mcp-builder for plugin example-skills
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/mcp-builder
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/canvas-design for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/canvas-design
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/algorithmic-art for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/algorithmic-art
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/internal-comms for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/internal-comms
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/webapp-testing for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/webapp-testing
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/artifacts-builder for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/artifacts-builder
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/slack-gif-creator for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/slack-gif-creator
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/theme-factory for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/theme-factory
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/brand-guidelines for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/brand-guidelines
+[DEBUG] Total plugin skills loaded: 14
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 14 plugin skills
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg)
+[DEBUG] Total LSP servers loaded: 0
+[DEBUG] LSP manager initialized with 0 servers
+[DEBUG] LSP server manager initialized successfully
+[DEBUG] Summarizing all 10 messages (~99821 tokens)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.71097.1762178116447
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41839 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.71097.1762178116447 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.71097.1762178116453
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41839 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.71097.1762178116453 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.71097.1762178116459
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41839 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.71097.1762178116459 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Shell snapshot created successfully (52403 bytes)
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Initializing HTTP transport to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Node version: v22.21.1, Platform: darwin
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+[DEBUG] MCP server "dayone": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "n8n": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.71097.1762178117639
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41839 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.71097.1762178117639 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": MTLS options: default
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport options: {"url":"https://mcp.exa.ai/mcp","headers":{"User-Agent":"claude-code/2.0.31"},"hasAuthProvider":true,"timeoutMs":60000}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport created successfully
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Client created, setting up request handler
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Testing basic HTTP connectivity to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Parsed URL: host=mcp.exa.ai, port=default, protocol=https:
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 792s
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.71097.1762178117695
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41734 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.71097.1762178117695 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.71097.1762178117701
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41734 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.71097.1762178117701 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.71097.1762178117713
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41734 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.71097.1762178117713 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.71097.1762178117720
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41839 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.71097.1762178117720 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Found 3 enabled plugins
+[DEBUG] Schema version mismatch (current: 0, expected: 1), syncing installed_plugins.json
+[DEBUG] Loaded 3 installed plugins from /Users/levi/.claude/plugins/installed_plugins.json (schema version 1)
+[DEBUG] Plugin exa-mcp-server@exa-mcp-server already in installed_plugins.json, skipping
+[DEBUG] Plugin document-skills@anthropic-agent-skills already in installed_plugins.json, skipping
+[DEBUG] Plugin example-skills@anthropic-agent-skills already in installed_plugins.json, skipping
+[DEBUG] Saved 3 installed plugins to /Users/levi/.claude/plugins/installed_plugins.json (schema version 1)
+[DEBUG] Updated installed_plugins.json to schema version 1 (0 plugins added, 3 skipped)
+[DEBUG] Found 3 installed plugins
+[DEBUG] Loaded plugins - Enabled: 3, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] Found 0 missing plugins (not installed):
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[ERROR] MCP server "dayone" Server stderr: warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+[ERROR] MCP server "dayone" Server stderr: ERROR:__main__:Failed to initialize Day One tools: Day One CLI 'dayone' not found or not working. Please install Day One CLI first. Error: Command '['dayone', '--version']' returned non-zero exit status 64.
+[DEBUG] MCP server "dayone": Connection failed after 373ms: MCP error -32000: Connection closed
+[ERROR] MCP server "dayone" Connection failed: MCP error -32000: Connection closed
+[DEBUG] MCP server "n8n": Successfully connected to undefined server in 411ms
+[DEBUG] MCP server "n8n": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"n8n-documentation-mcp","version":"2.22.8"}}
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 791s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 790s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Successfully connected to http server in 1975ms
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"exa-search-server","title":"Exa","version":"3.0.7"}}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 790s
+[DEBUG] MCP server "exa": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "firecrawl": Starting connection with timeout of 30000ms
+[ERROR] MCP server "exa" Server stderr: [71365] Using existing client port: 5153
+[ERROR] MCP server "exa" Server stderr: [71365] [71365] Connecting to remote server: https://mcp.exa.ai/mcp
+[ERROR] MCP server "exa" Server stderr: [71365] Using transport strategy: http-first
+[DEBUG] MCP server "firecrawl": Successfully connected to stdio server in 430ms
+[DEBUG] MCP server "firecrawl": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"firecrawl-fastmcp","version":"3.0.0"}}
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[ERROR] MCP server "exa" Server stderr: [71365] Connected to remote server using StreamableHTTPClientTransport
+[ERROR] MCP server "exa" Server stderr: [71365] Local STDIO server running
+[71365] Proxy established successfully between local STDIO and remote StreamableHTTPClientTransport
+[71365] Press Ctrl+C to exit
+[ERROR] MCP server "exa" Server stderr: [71365] [Local→Remote] initialize
+[ERROR] MCP server "exa" Server stderr: [71365] {
+  "jsonrpc": "2.0",
+  "id": 0,
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code (via mcp-remote 0.1.29)",
+      "version": "2.0.31"
+    }
+  }
+}
+[ERROR] MCP server "exa" Server stderr: [71365] [Remote→Local] 0
+[DEBUG] MCP server "exa": Successfully connected to undefined server in 1345ms
+[DEBUG] MCP server "exa": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"exa-search-server","title":"Exa","version":"3.0.7"}}
+[ERROR] MCP server "exa" Server stderr: [71365] [Local→Remote] notifications/initialized
+[71365] [Local→Remote] tools/list
+[ERROR] MCP server "exa" Server stderr: [71365] [Remote→Local] 1
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Added snapshot for 43cc34a7-d4a7-4364-966d-aee1d0db5cac, tracking 0 files
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: mcp__plugin_exa-mcp-server_exa__web_search_exa
+[DEBUG] Getting matching hook commands for PreToolUse with query: mcp__plugin_exa-mcp-server_exa__web_search_exa
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__plugin_exa-mcp-server_exa__web_search_exa" (0 before deduplication)
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Calling MCP tool: web_search_exa
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 776s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Tool 'web_search_exa' completed successfully in 6s
+[DEBUG] Getting matching hook commands for PostToolUse with query: mcp__plugin_exa-mcp-server_exa__web_search_exa
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__plugin_exa-mcp-server_exa__web_search_exa" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: mcp__exa__web_search_exa
+[DEBUG] Getting matching hook commands for PreToolUse with query: mcp__exa__web_search_exa
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__exa__web_search_exa" (0 before deduplication)
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "exa": Calling MCP tool: web_search_exa
+[ERROR] MCP server "exa" Server stderr: [71365] [Local→Remote] tools/call
+[ERROR] MCP server "exa" Server stderr: [71365] [Remote→Local] 2
+[DEBUG] MCP server "exa": Tool 'web_search_exa' completed successfully in 5s
+[DEBUG] Getting matching hook commands for PostToolUse with query: mcp__exa__web_search_exa
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__exa__web_search_exa" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.71097.1762178181686
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41839 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.71097.1762178181686 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.71097.1762178181701
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41839 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.71097.1762178181701 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 648s
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.71097.1762178262358
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41839 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.71097.1762178262358 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[ERROR] MCP server "exa" Server stderr: [71365] [Local→Remote] notifications/cancelled
+[DEBUG] [FileIndex] Using Fuse.js fallback for search
+[DEBUG] [FileIndex] Using Fuse.js fallback for search
+[DEBUG] [FileIndex] Using Fuse.js fallback for search
+[DEBUG] [FileIndex] Using Fuse.js fallback for search
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 9edbb285-d6b2-4649-909c-0f6ba6f1c748
+[DEBUG] FileHistory: Added snapshot for 9edbb285-d6b2-4649-909c-0f6ba6f1c748, tracking 0 files
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.71097.1762178285439
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41839 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.71097.1762178285439 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.71097.1762178285453
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41839 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.71097.1762178285453 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude/settings.json.tmp.71097.1762178626036
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1136 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/settings.json.tmp.71097.1762178626036 to /Users/levi/.claude/settings.json
+[DEBUG] File /Users/levi/.claude/settings.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude/settings.json.tmp.71097.1762178626798
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1137 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/settings.json.tmp.71097.1762178626798 to /Users/levi/.claude/settings.json
+[DEBUG] File /Users/levi/.claude/settings.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude/settings.json.tmp.71097.1762178627831
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1136 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/settings.json.tmp.71097.1762178627831 to /Users/levi/.claude/settings.json
+[DEBUG] File /Users/levi/.claude/settings.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 0e7fe88f-8248-4b8f-b734-b85458212bde
+[DEBUG] FileHistory: Added snapshot for 0e7fe88f-8248-4b8f-b734-b85458212bde, tracking 0 files
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Task
+[DEBUG] Getting matching hook commands for PreToolUse with query: Task
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Permission suggestions for Read: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//Users/levi/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "session"
+  }
+]
+[DEBUG] Permission suggestions for Read: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//Users/levi/.claude/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Permission suggestions for Read: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//Users/levi/.claude/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "session"
+  }
+]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Permission suggestions for Read: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//Users/levi/.oh-my-zsh/themes/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "session"
+  }
+]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Permission suggestions for Read: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//Users/levi/.claude/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[ERROR] Error: Error: EISDIR: illegal operation on a directory, read
+    at Module.readFileSync (node:fs:441:20)
+    at Object.readFileSync (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:9:299)
+    at Ac2 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3616:956)
+    at Object.call (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3441:1247)
+    at call.next (<anonymous>)
+    at Zb5 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2743:70234)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async AA1 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2743:67291)
+    at async file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2743:66460
+    at async _gA (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:727:1719)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/levi/.claude/settings.json.tmp.71097.1762178759006
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 308 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/settings.json.tmp.71097.1762178759006 to /Users/levi/.claude/settings.json
+[DEBUG] File /Users/levi/.claude/settings.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Detected change to /Users/levi/.claude/settings.json
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 10 rule(s): ["WebSearch","Bash(git config:*)","Bash(brew install:*)","Bash(gh:*)","mcp__plugin_exa-mcp-server_exa__web_search_exa","mcp__firecrawl__firecrawl_scrape","mcp__n8n__search_nodes","mcp__n8n__get_node_documentation","mcp__n8n__n8n_health_check","mcp__n8n__n8n_list_workflows"]
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Task
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.71097.1762178794003
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41839 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.71097.1762178794003 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.71097.1762178794018
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41839 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.71097.1762178794018 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1762178116371-7kilu8.sh
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport closed/disconnected, attempting automatic reconnection
+[DEBUG] MCP server "firecrawl": Sending SIGINT to MCP server process
+[DEBUG] LSP server manager shut down successfully
+[DEBUG] FileHistory: Making snapshot for message 52b6d2c5-5cef-404f-9fc2-01af41ace122
+[DEBUG] FileHistory: Added snapshot for 52b6d2c5-5cef-404f-9fc2-01af41ace122, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/exit</command-name>
+            <command-message>exit</command-message>
+            <...
+[DEBUG] UserCommandMessage rendering: "exit" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.71097.1762178812095
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41839 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.71097.1762178812095 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Initializing HTTP transport to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Node version: v22.21.1, Platform: darwin
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": MTLS options: default
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport options: {"url":"https://mcp.exa.ai/mcp","headers":{"User-Agent":"claude-code/2.0.31"},"hasAuthProvider":true,"timeoutMs":60000}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport created successfully
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Client created, setting up request handler
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Testing basic HTTP connectivity to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Parsed URL: host=mcp.exa.ai, port=default, protocol=https:
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token expires in 98s, attempting proactive refresh
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Starting token refresh
+[DEBUG] MCP server "exa": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "n8n": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.71097.1762178812177
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 42241 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.71097.1762178812177 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically

@@ -1,0 +1,105 @@
+[DEBUG] Watching for changes in setting files /Users/levi/.claude/settings.json, /Users/levi/.claude/settings.json...
+[DEBUG] Loading plugin exa-mcp-server from source: "./"
+[DEBUG] Plugin exa-mcp-server has no entry.skills defined
+[DEBUG] Loading plugin document-skills from source: "./"
+[DEBUG] Processing 4 skill paths for plugin document-skills
+[DEBUG] Checking skill path: ./document-skills/xlsx -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/xlsx (exists: true)
+[DEBUG] Checking skill path: ./document-skills/docx -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/docx (exists: true)
+[DEBUG] Checking skill path: ./document-skills/pptx -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pptx (exists: true)
+[DEBUG] Checking skill path: ./document-skills/pdf -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pdf (exists: true)
+[DEBUG] Found 4 valid skill paths for plugin document-skills, setting skillsPaths
+[DEBUG] Loading plugin example-skills from source: "./"
+[DEBUG] Processing 10 skill paths for plugin example-skills
+[DEBUG] Checking skill path: ./skill-creator -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/skill-creator (exists: true)
+[DEBUG] Checking skill path: ./mcp-builder -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/mcp-builder (exists: true)
+[DEBUG] Checking skill path: ./canvas-design -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/canvas-design (exists: true)
+[DEBUG] Checking skill path: ./algorithmic-art -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/algorithmic-art (exists: true)
+[DEBUG] Checking skill path: ./internal-comms -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/internal-comms (exists: true)
+[DEBUG] Checking skill path: ./webapp-testing -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/webapp-testing (exists: true)
+[DEBUG] Checking skill path: ./artifacts-builder -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/artifacts-builder (exists: true)
+[DEBUG] Checking skill path: ./slack-gif-creator -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/slack-gif-creator (exists: true)
+[DEBUG] Checking skill path: ./theme-factory -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/theme-factory (exists: true)
+[DEBUG] Checking skill path: ./brand-guidelines -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/brand-guidelines (exists: true)
+[DEBUG] Found 10 valid skill paths for plugin example-skills, setting skillsPaths
+[DEBUG] Found 3 plugins (3 enabled, 0 disabled)
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/levi/.claude/skills, project=/Users/levi/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/levi/.zshrc
+[DEBUG] Snapshots directory: /Users/levi/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1762178104023-nu68yj.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/b79ae590-1e49-4078-b45f-5f08964c9ff8-agent-b79ae590-1e49-4078-b45f-5f08964c9ff8.json.tmp.70840.1762178104024
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/levi/.claude/todos/b79ae590-1e49-4078-b45f-5f08964c9ff8-agent-b79ae590-1e49-4078-b45f-5f08964c9ff8.json.tmp.70840.1762178104024 to /Users/levi/.claude/todos/b79ae590-1e49-4078-b45f-5f08964c9ff8-agent-b79ae590-1e49-4078-b45f-5f08964c9ff8.json
+[DEBUG] File /Users/levi/.claude/todos/b79ae590-1e49-4078-b45f-5f08964c9ff8-agent-b79ae590-1e49-4078-b45f-5f08964c9ff8.json written atomically
+[DEBUG] getPluginSkills: Processing 3 enabled plugins
+[DEBUG] Checking plugin exa-mcp-server: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Checking plugin document-skills: skillsPath=none, skillsPaths=4 paths
+[DEBUG] Attempting to load skills from plugin document-skills skillsPaths: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/xlsx, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/docx, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pptx, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pdf
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/xlsx for plugin document-skills
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Registered 0 hooks from 3 plugins
+[DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+[DEBUG] Loaded 1 skills from plugin document-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/xlsx
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/docx for plugin document-skills
+[DEBUG] Loaded 1 skills from plugin document-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/docx
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pptx for plugin document-skills
+[DEBUG] Loaded 1 skills from plugin document-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pptx
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pdf for plugin document-skills
+[DEBUG] Loaded 1 skills from plugin document-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pdf
+[DEBUG] Checking plugin example-skills: skillsPath=none, skillsPaths=10 paths
+[DEBUG] Attempting to load skills from plugin example-skills skillsPaths: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/skill-creator, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/mcp-builder, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/canvas-design, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/algorithmic-art, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/internal-comms, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/webapp-testing, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/artifacts-builder, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/slack-gif-creator, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/theme-factory, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/brand-guidelines
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/skill-creator for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/skill-creator
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/mcp-builder for plugin example-skills
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/mcp-builder
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/canvas-design for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/canvas-design
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/algorithmic-art for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/algorithmic-art
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/internal-comms for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/internal-comms
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/webapp-testing for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/webapp-testing
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/artifacts-builder for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/artifacts-builder
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/slack-gif-creator for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/slack-gif-creator
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/theme-factory for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/theme-factory
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/brand-guidelines for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/brand-guidelines
+[DEBUG] Total plugin skills loaded: 14
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 14 plugin skills
+[DEBUG] Total LSP servers loaded: 0
+[DEBUG] LSP manager initialized with 0 servers
+[DEBUG] LSP server manager initialized successfully
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.70840.1762178104100
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 42237 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.70840.1762178104100 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.70840.1762178104106
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 42237 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.70840.1762178104106 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.70840.1762178104112
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 42237 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.70840.1762178104112 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Shell snapshot created successfully (52403 bytes)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Skipping SubagentStop hook execution - workspace trust not accepted
+[DEBUG] Skipping SubagentStop hook execution - workspace trust not accepted
+[DEBUG] Skipping SessionEnd:other hook execution - workspace trust not accepted
+[DEBUG] Cleaned up session snapshot: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1762178104023-nu68yj.sh
+[DEBUG] LSP server manager shut down successfully

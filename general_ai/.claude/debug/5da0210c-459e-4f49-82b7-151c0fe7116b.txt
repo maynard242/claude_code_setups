@@ -1,0 +1,511 @@
+[DEBUG] Watching for changes in setting files /Users/levi/.claude/settings.json, /Users/levi/data/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 10 allow rule(s) to destination 'localSettings': ["WebSearch","Bash(git config:*)","Bash(brew install:*)","Bash(gh:*)","mcp__plugin_exa-mcp-server_exa__web_search_exa","mcp__firecrawl__firecrawl_scrape","mcp__n8n__search_nodes","mcp__n8n__get_node_documentation","mcp__n8n__n8n_health_check","mcp__n8n__n8n_list_workflows"]
+[DEBUG] Loading plugin exa-mcp-server from source: "./"
+[DEBUG] Plugin exa-mcp-server has no entry.skills defined
+[DEBUG] Found 1 plugins (1 enabled, 0 disabled)
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: true, type: boolean
+[DEBUG] ENABLE_SKILLS check passed, loading skills...
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/levi/.claude/skills, project=/Users/levi/data/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/levi/.zshrc
+[DEBUG] Snapshots directory: /Users/levi/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1760950155091-xd1c0e.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/5da0210c-459e-4f49-82b7-151c0fe7116b-agent-5da0210c-459e-4f49-82b7-151c0fe7116b.json.tmp.87869.1760950155091
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/levi/.claude/todos/5da0210c-459e-4f49-82b7-151c0fe7116b-agent-5da0210c-459e-4f49-82b7-151c0fe7116b.json.tmp.87869.1760950155091 to /Users/levi/.claude/todos/5da0210c-459e-4f49-82b7-151c0fe7116b-agent-5da0210c-459e-4f49-82b7-151c0fe7116b.json
+[DEBUG] File /Users/levi/.claude/todos/5da0210c-459e-4f49-82b7-151c0fe7116b-agent-5da0210c-459e-4f49-82b7-151c0fe7116b.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950155119
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44964 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950155119 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] getPluginSkills: Processing 1 enabled plugins
+[DEBUG] Checking plugin exa-mcp-server: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Registered 0 hooks from 1 plugins
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 0 plugin skills
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg)
+[DEBUG] Summarizing all 2 messages (~2047 tokens)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950155248
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44964 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950155248 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950155255
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44964 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950155255 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Shell snapshot created successfully (52354 bytes)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950155477
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44964 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950155477 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[ERROR] AxiosError: AxiosError: Request failed with status code 401
+    at fO (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:24:1136)
+    at IncomingMessage.<anonymous> (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:29:9841)
+    at IncomingMessage.emit (node:events:531:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at q31.request (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async YXB (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:1498:25937)
+[DEBUG] Failed to fetch Grove notice config: AxiosError: Request failed with status code 401
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Initializing HTTP transport to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Node version: v22.20.0, Platform: darwin
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+[DEBUG] MCP server "dayone": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "n8n": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950155539
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44964 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950155539 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": MTLS options: default
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport options: {"url":"https://mcp.exa.ai/mcp","headers":{"User-Agent":"claude-code/2.0.22"},"hasAuthProvider":true,"timeoutMs":60000}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport created successfully
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Client created, setting up request handler
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Testing basic HTTP connectivity to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Parsed URL: host=mcp.exa.ai, port=default, protocol=https:
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token expires in -101754s, attempting proactive refresh
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Starting token refresh
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950155589
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44859 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950155589 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950155595
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44859 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950155595 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950155608
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44964 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950155608 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Found 1 enabled plugins
+[DEBUG] Loaded plugins - Enabled: 1, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] Found 0 missing plugins (not installed):
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[ERROR] MCP server "dayone" Server stderr: warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Found client info
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token refresh successful, saving new tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Saving tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token expires in: 3600
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token refreshed successfully
+[DEBUG] MCP server "n8n": Successfully connected to undefined server in 407ms
+[DEBUG] MCP server "n8n": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"n8n-documentation-mcp","version":"2.20.3"}}
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950155950
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44964 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950155950 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3599s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3599s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Successfully connected to http server in 912ms
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"exa-search-server","title":"Exa","version":"3.0.6"}}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3599s
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJANEuKDwjjSaeq9ek1V"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJANG7yxSomMTbr92Vax"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJANG7yxSomMTbr92Vax"}
+    at E4.generate (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Summarizing last 8 of 12 messages (~130148 tokens)
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJANJ643hiQ74N56ppWY"}
+[DEBUG] Stream started - received first chunk
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJANK9YvmxaWz7VsdnhN"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJANK9YvmxaWz7VsdnhN"}
+    at E4.generate (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Added snapshot for 51832e78-c971-4a7e-ae8a-bc42f3fdc096, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Skills and commands included in Skill tool:
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJAQJLFHHxVyiH31qYgv"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJAQKZQwUyq6HB8KqNXH"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJAQKZQwUyq6HB8KqNXH"}
+    at E4.generate (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[ERROR] SyntaxError: SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at zn2 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:1057:20629)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] MCP server "dayone": Connection timeout triggered after 30015ms (limit: 30000ms)
+[DEBUG] MCP server "dayone": Connection failed after 30015ms: Connection to MCP server "dayone" timed out after 30000ms
+[ERROR] MCP server "dayone" Connection failed: Connection to MCP server "dayone" timed out after 30000ms
+[DEBUG] MCP server "exa": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "firecrawl": Starting connection with timeout of 30000ms
+[ERROR] MCP server "exa" Server stderr: [88164] Using automatically selected callback port: 5153
+[ERROR] MCP server "exa" Server stderr: [88164] [88164] Connecting to remote server: https://mcp.exa.ai/mcp
+[ERROR] MCP server "exa" Server stderr: [88164] Using transport strategy: http-first
+[DEBUG] MCP server "firecrawl": Successfully connected to stdio server in 402ms
+[DEBUG] MCP server "firecrawl": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"firecrawl-fastmcp","version":"3.0.0"}}
+[ERROR] MCP server "exa" Server stderr: [88164] Connected to remote server using StreamableHTTPClientTransport
+[ERROR] MCP server "exa" Server stderr: [88164] Local STDIO server running
+[88164] Proxy established successfully between local STDIO and remote StreamableHTTPClientTransport
+[88164] Press Ctrl+C to exit
+[ERROR] MCP server "exa" Server stderr: [88164] [Local→Remote] initialize
+[ERROR] MCP server "exa" Server stderr: [88164] {
+  "jsonrpc": "2.0",
+  "id": 0,
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code (via mcp-remote 0.1.29)",
+      "version": "2.0.22"
+    }
+  }
+}
+[ERROR] MCP server "exa" Server stderr: [88164] [Remote→Local] 0
+[DEBUG] MCP server "exa": Successfully connected to undefined server in 1806ms
+[DEBUG] MCP server "exa": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"exa-search-server","title":"Exa","version":"3.0.6"}}
+[ERROR] MCP server "exa" Server stderr: [88164] [Local→Remote] notifications/initialized
+[ERROR] MCP server "exa" Server stderr: [88164] [Local→Remote] tools/list
+[DEBUG] Stream started - received first chunk
+[ERROR] MCP server "exa" Server stderr: [88164] [Remote→Local] 1
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] executePreToolHooks called for tool: WebFetch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJAR1cgmxScP6D2toREi"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJAR2rborpVDRHTZX3ox"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJAR2rborpVDRHTZX3ox"}
+    at E4.generate (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950209098
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44965 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950209098 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950209110
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44965 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950209110 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950209117
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45065 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950209117 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] FileHistory: Making snapshot for message 5224423a-2ac1-4e97-a9e2-baad6daa8758
+[DEBUG] FileHistory: Added snapshot for 5224423a-2ac1-4e97-a9e2-baad6daa8758, tracking 0 files
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950236129
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45065 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950236129 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950236137
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45149 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950236137 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJAU6VxUVRmm9G5XzCsS"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJAU7idbX1FD1XhPmDBr"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJAU7idbX1FD1XhPmDBr"}
+    at E4.generate (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[ERROR] SyntaxError: SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at zn2 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:1057:20629)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] FileHistory: Making snapshot for message 7a421905-f8c0-4166-98bf-6c46251a2f6a
+[DEBUG] FileHistory: Added snapshot for 7a421905-f8c0-4166-98bf-6c46251a2f6a, tracking 0 files
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950263155
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45149 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950263155 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950263163
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45245 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950263163 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJAW65xtq2MK86ok8qoW"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJAW7NbxVhZTcsBbdbmD"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJAW7NbxVhZTcsBbdbmD"}
+    at E4.generate (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[ERROR] SyntaxError: SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at zn2 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:1057:20629)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message a4c471d1-fa42-473a-8658-8ad801446a2a
+[DEBUG] FileHistory: Added snapshot for a4c471d1-fa42-473a-8658-8ad801446a2a, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool:
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJAWgzvfYer33bviSfij"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJAWiLYDs8x5k4A4odau"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUJAWiLYDs8x5k4A4odau"}
+    at E4.generate (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[ERROR] SyntaxError: SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at zn2 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:1057:20629)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: WebSearch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: mcp__firecrawl__firecrawl_scrape
+[DEBUG] Getting matching hook commands for PreToolUse with query: mcp__firecrawl__firecrawl_scrape
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__firecrawl__firecrawl_scrape" (0 before deduplication)
+[DEBUG] MCP server "firecrawl": Calling MCP tool: firecrawl_scrape
+[DEBUG] MCP server "firecrawl": Tool 'firecrawl_scrape' completed successfully in 3s
+[DEBUG] Getting matching hook commands for PostToolUse with query: mcp__firecrawl__firecrawl_scrape
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__firecrawl__firecrawl_scrape" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950326260
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45245 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950326260 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950326274
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45245 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950326274 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950326280
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45347 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950326280 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950382144
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45347 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950382144 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] UserCommandMessage rendering: "usage" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950382173
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45347 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950382173 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1760950155091-xd1c0e.sh
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport closed/disconnected, attempting automatic reconnection
+[DEBUG] MCP server "firecrawl": Sending SIGINT to MCP server process
+[DEBUG] FileHistory: Making snapshot for message 9412c0c7-3949-493f-a699-8ad1e285437a
+[DEBUG] FileHistory: Added snapshot for 9412c0c7-3949-493f-a699-8ad1e285437a, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/exit</command-name>
+            <command-message>exit</command-message>
+            <...
+[DEBUG] UserCommandMessage rendering: "exit" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950390412
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45347 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950390412 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950390419
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45430 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950390419 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Initializing HTTP transport to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Node version: v22.20.0, Platform: darwin
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": MTLS options: default
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport options: {"url":"https://mcp.exa.ai/mcp","headers":{"User-Agent":"claude-code/2.0.22"},"hasAuthProvider":true,"timeoutMs":60000}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport created successfully
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Client created, setting up request handler
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Testing basic HTTP connectivity to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Parsed URL: host=mcp.exa.ai, port=default, protocol=https:
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3365s
+[DEBUG] MCP server "exa": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "n8n": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87869.1760950390496
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45844 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87869.1760950390496 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically

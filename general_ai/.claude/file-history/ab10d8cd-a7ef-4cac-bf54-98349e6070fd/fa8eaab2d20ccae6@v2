@@ -1,0 +1,38 @@
+services:
+  sillytavern:
+    image: ghcr.io/sillytavern/sillytavern:latest
+    container_name: sillytavern
+    hostname: sillytavern
+    environment:
+      - NODE_ENV=production
+      - FORCE_COLOR=1
+    ports:
+      - "8000:8000"
+    volumes:
+      # Persist configuration files
+      - ./config:/home/node/app/config
+      # Persist user data (chats, characters, etc.)
+      - ./data:/home/node/app/data
+      # Persist installed plugins
+      - ./plugins:/home/node/app/plugins
+      # Persist third-party extensions
+      - ./extensions:/home/node/app/public/scripts/extensions/third-party
+    # Allow container to connect to Ollama on host machine (macOS)
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+    # Health check to ensure service is running properly
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+# Optional: Create named volumes if you prefer Docker-managed volumes
+# Uncomment the volumes section below and change the volume mounts above
+# volumes:
+#   sillytavern_config:
+#   sillytavern_data:
+#   sillytavern_plugins:
+#   sillytavern_extensions:

@@ -1,0 +1,62 @@
+{
+  "mcpServers": {
+    "exa": {
+      "command": "/opt/homebrew/opt/node@22/bin/npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.exa.ai/mcp"
+      ],
+      "env": {
+        "EXA_API_KEY": "a664bcfc-96d0-44c1-b765-3916401b7c97",
+        "PATH": "/opt/homebrew/opt/node@22/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin"
+      }
+    },
+    "firecrawl": {
+      "command": "/opt/homebrew/opt/node@22/bin/npx",
+      "args": [
+        "-y",
+        "firecrawl-mcp"
+      ],
+      "env": {
+        "FIRECRAWL_API_KEY": "fc-32b1eb79b4434f54a7e2c7a6cf53203a",
+        "PATH": "/opt/homebrew/opt/node@22/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin"
+      }
+    },
+    "dayone": {
+      "command": "/Users/levi/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/Users/levi/data/Projects/mcp-dayone",
+        "run",
+        "python",
+        "-m",
+        "mcp_dayone.server"
+      ],
+      "env": {
+        "PATH": "/Users/levi/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin"
+      }
+    },
+    "n8n": {
+      "command": "/opt/homebrew/opt/node@22/bin/npx",
+      "args": [
+        "-y",
+        "n8n-mcp"
+      ],
+      "env": {
+        "MCP_MODE": "stdio",
+        "LOG_LEVEL": "error",
+        "DISABLE_CONSOLE_OUTPUT": "true",
+        "N8N_MCP_TELEMETRY_DISABLED": "true",
+        "N8N_API_URL": "https://n8n.srv1056595.hstgr.cloud/",
+        "N8N_API_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ODU3YWYxNC1jZDgwLTQ5ZTctYWZhNi01ODhjY2ExZmE3YTIiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwiaWF0IjoxNzYwNTgxNDUwLCJleHAiOjE3NjgzNDUyMDB9.nIs6mKIPHwQjtKKl47Nyq18WcqANKevlBmzlUIDhw40",
+        "PATH": "/opt/homebrew/opt/node@22/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin"
+      }
+    }
+  },
+  "preferences": {
+    "menuBarEnabled": true,
+    "quickEntryDictationShortcut": "off",
+    "quickEntryShortcut": "off"
+  }
+}

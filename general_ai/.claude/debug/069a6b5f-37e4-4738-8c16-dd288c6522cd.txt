@@ -1,0 +1,25 @@
+[DEBUG] Watching for changes in setting files /Users/levi/.claude/settings.json, /Users/levi/data/.claude/settings.local.json...
+[DEBUG] Loading plugin exa-mcp-server from source: "./"
+[DEBUG] Plugin exa-mcp-server has no entry.skills defined
+[DEBUG] Found 1 plugins (1 enabled, 0 disabled)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.64413.1760581088901
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 42203 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.64413.1760581088901 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.64413.1760581125513
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 42576 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.64413.1760581125513 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.64413.1760581125524
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 43097 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.64413.1760581125524 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)

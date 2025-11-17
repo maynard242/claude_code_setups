@@ -1,0 +1,576 @@
+[DEBUG] Watching for changes in setting files /Users/levi/.claude/settings.json...
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/levi/.zshrc
+[DEBUG] Snapshots directory: /Users/levi/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1760354936765-loni36.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json.tmp.93871.1760354936766
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json.tmp.93871.1760354936766 to /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json
+[DEBUG] File /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json written atomically
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/levi/.claude/skills, project=/Users/levi/data/docker_silly/.claude/skills
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.93871.1760354936884
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 36073 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.93871.1760354936884 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.93871.1760354936891
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 36073 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.93871.1760354936891 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Shell snapshot created successfully (51600 bytes)
+[ERROR] AxiosError: AxiosError: Request failed with status code 401
+    at pN (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:713:1075)
+    at IncomingMessage.<anonymous> (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:714:9910)
+    at IncomingMessage.emit (node:events:531:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at pQ1.request (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:716:2078)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async cIA (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:877:25947)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.93871.1760354937143
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 36073 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.93871.1760354937143 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Failed to fetch Grove notice config: AxiosError: Request failed with status code 401
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.93871.1760354937209
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 36074 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.93871.1760354937209 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Executing hooks for SessionStart:startup
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.93871.1760354937246
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 35969 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.93871.1760354937246 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.93871.1760354937251
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 35969 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.93871.1760354937251 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.93871.1760354937257
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 36424 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.93871.1760354937257 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=undefined
+[DEBUG] Skipping plugin installations - ENABLE_PLUGINS not set
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.93871.1760354937270
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 36529 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.93871.1760354937270 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.93871.1760354937445
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 36529 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.93871.1760354937445 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.93871.1760354938490
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 36529 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.93871.1760354938490 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.93871.1760354968533
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 36529 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.93871.1760354968533 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.93871.1760354970592
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 36529 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.93871.1760354970592 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Applying permission update: Setting mode to 'plan'
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Added snapshot for 7d235eca-2069-403a-a567-ac44710022a7, tracking 0 files
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.93871.1760355054336
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 36858 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.93871.1760355054336 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: pwd
+[DEBUG] Bash tool description: Check current working directory
+[DEBUG] Bash tool invoked with command: ls -la
+[DEBUG] Bash tool description: List files in current directory
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: WebSearch
+[DEBUG] Executing hooks for PreToolUse:WebSearch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: WebSearch
+[DEBUG] Executing hooks for PreToolUse:WebSearch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/levi/data/docker_silly/.claude/settings.local.json.tmp.93871.1760355087269
+[DEBUG] Temp file written successfully, size: 97 bytes
+[DEBUG] Renaming /Users/levi/data/docker_silly/.claude/settings.local.json.tmp.93871.1760355087269 to /Users/levi/data/docker_silly/.claude/settings.local.json
+[DEBUG] File /Users/levi/data/docker_silly/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["WebSearch"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.93871.1760355087950
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 36858 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.93871.1760355087950 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] Executing hooks for PostToolUse:WebSearch
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:WebSearch
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: WebFetch
+[DEBUG] Executing hooks for PreToolUse:WebFetch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/levi/data/docker_silly/.claude/settings.local.json.tmp.93871.1760355190840
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 134 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/data/docker_silly/.claude/settings.local.json.tmp.93871.1760355190840 to /Users/levi/data/docker_silly/.claude/settings.local.json
+[DEBUG] File /Users/levi/data/docker_silly/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["WebFetch(domain:github.com)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.93871.1760355191515
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 36858 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.93871.1760355191515 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Executing hooks for PostToolUse:WebFetch
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: ExitPlanMode
+[DEBUG] Executing hooks for PreToolUse:ExitPlanMode
+[DEBUG] Getting matching hook commands for PreToolUse with query: ExitPlanMode
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "ExitPlanMode" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Executing hooks for PostToolUse:ExitPlanMode
+[DEBUG] Getting matching hook commands for PostToolUse with query: ExitPlanMode
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "ExitPlanMode" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.93871.1760355258149
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 36858 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.93871.1760355258149 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json.tmp.93871.1760355264340
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 450 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json.tmp.93871.1760355264340 to /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json
+[DEBUG] File /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Tracked file modification for /Users/levi/data/docker_silly/docker-compose.yml
+[DEBUG] Writing to temp file: /Users/levi/data/docker_silly/docker-compose.yml.tmp.93871.1760355274428
+[DEBUG] Temp file written successfully, size: 1217 bytes
+[DEBUG] Renaming /Users/levi/data/docker_silly/docker-compose.yml.tmp.93871.1760355274428 to /Users/levi/data/docker_silly/docker-compose.yml
+[DEBUG] File /Users/levi/data/docker_silly/docker-compose.yml written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json.tmp.93871.1760355279271
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 452 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json.tmp.93871.1760355279271 to /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json
+[DEBUG] File /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Tracked file modification for /Users/levi/data/docker_silly/.env
+[DEBUG] Writing to temp file: /Users/levi/data/docker_silly/.env.tmp.93871.1760355285014
+[DEBUG] Temp file written successfully, size: 378 bytes
+[DEBUG] Renaming /Users/levi/data/docker_silly/.env.tmp.93871.1760355285014 to /Users/levi/data/docker_silly/.env
+[DEBUG] File /Users/levi/data/docker_silly/.env written atomically
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:1115:394
+    at Object.useMemo (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:32:25928)
+    at T3Q.useMemo (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:8:7000)
+    at M$ (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:1115:286)
+    at PC (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:32:19415)
+    at $p (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:42814)
+    at G9 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38355)
+    at qh (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38283)
+    at gC (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38137)
+    at yH (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:35216)
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json.tmp.93871.1760355289394
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 454 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json.tmp.93871.1760355289394 to /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json
+[DEBUG] File /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Tracked file modification for /Users/levi/data/docker_silly/README.md
+[DEBUG] Writing to temp file: /Users/levi/data/docker_silly/README.md.tmp.93871.1760355316173
+[DEBUG] Temp file written successfully, size: 4971 bytes
+[DEBUG] Renaming /Users/levi/data/docker_silly/README.md.tmp.93871.1760355316173 to /Users/levi/data/docker_silly/README.md
+[DEBUG] File /Users/levi/data/docker_silly/README.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json.tmp.93871.1760355321127
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 594 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json.tmp.93871.1760355321127 to /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json
+[DEBUG] File /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Tracked file modification for /Users/levi/data/docker_silly/.gitignore
+[DEBUG] Writing to temp file: /Users/levi/data/docker_silly/.gitignore.tmp.93871.1760355327401
+[DEBUG] Temp file written successfully, size: 649 bytes
+[DEBUG] Renaming /Users/levi/data/docker_silly/.gitignore.tmp.93871.1760355327401 to /Users/levi/data/docker_silly/.gitignore
+[DEBUG] File /Users/levi/data/docker_silly/.gitignore written atomically
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:1115:394
+    at Object.useMemo (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:32:25928)
+    at T3Q.useMemo (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:8:7000)
+    at M$ (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:1115:286)
+    at PC (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:32:19415)
+    at $p (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:42814)
+    at G9 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38355)
+    at qh (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38283)
+    at gC (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38137)
+    at yH (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:35216)
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json.tmp.93871.1760355331813
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json.tmp.93871.1760355331813 to /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json
+[DEBUG] File /Users/levi/.claude/todos/ab10d8cd-a7ef-4cac-bf54-98349e6070fd-agent-ab10d8cd-a7ef-4cac-bf54-98349e6070fd.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: ls -la
+[DEBUG] Bash tool description: List all created files
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at wK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:985)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:713
+    at Array.map (<anonymous>)
+    at mX (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:704)
+    at EOB (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:12387)
+    at PC (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:32:19415)
+    at $p (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:42814)
+    at G9 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38355)
+    at qh (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38283)
+    at gC (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38137)
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.93871.1760355358118
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 36858 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.93871.1760355358118 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1760354936765-loni36.sh
+[DEBUG] FileHistory: Making snapshot for message 1ea597a6-4eb1-4ab9-a09f-fe75cdf58fc6
+[DEBUG] FileHistory: Added snapshot for 1ea597a6-4eb1-4ab9-a09f-fe75cdf58fc6, tracking 4 files
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.93871.1760355360427
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 36941 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.93871.1760355360427 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.93871.1760355360435
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 37396 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.93871.1760355360435 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically

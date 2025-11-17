@@ -1,0 +1,1970 @@
+[DEBUG] Watching for changes in setting files /Users/levi/.claude/settings.json...
+[DEBUG] [LSP MANAGER] initializeLspServerManager() called
+[DEBUG] [LSP MANAGER] Created manager instance, state=pending
+[DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+[DEBUG] [LSP SERVER MANAGER] initialize() called
+[DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+[DEBUG] Applying permission update: Adding 28 allow rule(s) to destination 'userSettings': ["WebSearch","Bash(git:*)","Bash(gh:*)","Bash(brew:*)","Bash(npm:*)","Bash(yarn:*)","Bash(pnpm:*)","Bash(pip:*)","Bash(pipenv:*)","Bash(python:*)","Bash(node:*)","Bash(npx:*)","Bash(docker:*)","Bash(docker-compose:*)","mcp__plugin_exa-mcp-server_exa__web_search_exa","mcp__plugin_exa-mcp-server_exa__get_code_context_exa","mcp__firecrawl__firecrawl_scrape","mcp__firecrawl__firecrawl_search","mcp__firecrawl__firecrawl_map","mcp__firecrawl__firecrawl_crawl","mcp__firecrawl__firecrawl_extract","mcp__dayone__create_entry","mcp__dayone__search_entries","mcp__dayone__get_entry","mcp__n8n__search_nodes","mcp__n8n__get_node_documentation","mcp__n8n__n8n_health_check","mcp__n8n__n8n_list_workflows"]
+[DEBUG] Applying permission update: Adding 4 ask rule(s) to destination 'userSettings': ["Bash(rm:*)","Bash(sudo:*)","Bash(kill:*)","Bash(pkill:*)"]
+[DEBUG] Loading plugin exa-mcp-server from source: "./"
+[DEBUG] Plugin exa-mcp-server has no entry.skills defined
+[DEBUG] Loading plugin document-skills from source: "./"
+[DEBUG] Processing 4 skill paths for plugin document-skills
+[DEBUG] Checking skill path: ./document-skills/xlsx -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/xlsx (exists: true)
+[DEBUG] Checking skill path: ./document-skills/docx -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/docx (exists: true)
+[DEBUG] Checking skill path: ./document-skills/pptx -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pptx (exists: true)
+[DEBUG] Checking skill path: ./document-skills/pdf -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pdf (exists: true)
+[DEBUG] Found 4 valid skill paths for plugin document-skills, setting skillsPaths
+[DEBUG] Loading plugin example-skills from source: "./"
+[DEBUG] Processing 10 skill paths for plugin example-skills
+[DEBUG] Checking skill path: ./skill-creator -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/skill-creator (exists: true)
+[DEBUG] Checking skill path: ./mcp-builder -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/mcp-builder (exists: true)
+[DEBUG] Checking skill path: ./canvas-design -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/canvas-design (exists: true)
+[DEBUG] Checking skill path: ./algorithmic-art -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/algorithmic-art (exists: true)
+[DEBUG] Checking skill path: ./internal-comms -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/internal-comms (exists: true)
+[DEBUG] Checking skill path: ./webapp-testing -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/webapp-testing (exists: true)
+[DEBUG] Checking skill path: ./artifacts-builder -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/artifacts-builder (exists: true)
+[DEBUG] Checking skill path: ./slack-gif-creator -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/slack-gif-creator (exists: true)
+[DEBUG] Checking skill path: ./theme-factory -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/theme-factory (exists: true)
+[DEBUG] Checking skill path: ./brand-guidelines -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/brand-guidelines (exists: true)
+[DEBUG] Found 10 valid skill paths for plugin example-skills, setting skillsPaths
+[DEBUG] Found 3 plugins (3 enabled, 0 disabled)
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/levi/.claude/skills, project=/Users/levi/data/finance/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] getPluginSkills: Processing 3 enabled plugins
+[DEBUG] Checking plugin exa-mcp-server: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Checking plugin document-skills: skillsPath=none, skillsPaths=4 paths
+[DEBUG] Attempting to load skills from plugin document-skills skillsPaths: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/xlsx, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/docx, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pptx, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pdf
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/xlsx for plugin document-skills
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+[DEBUG] Loaded 1 skills from plugin document-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/xlsx
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/docx for plugin document-skills
+[DEBUG] Loaded 1 skills from plugin document-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/docx
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pptx for plugin document-skills
+[DEBUG] Loaded 1 skills from plugin document-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pptx
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pdf for plugin document-skills
+[DEBUG] Loaded 1 skills from plugin document-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pdf
+[DEBUG] Checking plugin example-skills: skillsPath=none, skillsPaths=10 paths
+[DEBUG] Attempting to load skills from plugin example-skills skillsPaths: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/skill-creator, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/mcp-builder, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/canvas-design, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/algorithmic-art, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/internal-comms, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/webapp-testing, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/artifacts-builder, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/slack-gif-creator, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/theme-factory, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/brand-guidelines
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/skill-creator for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/skill-creator
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/mcp-builder for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/mcp-builder
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/canvas-design for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/canvas-design
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/algorithmic-art for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/algorithmic-art
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/internal-comms for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/internal-comms
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/webapp-testing for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/webapp-testing
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/artifacts-builder for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/artifacts-builder
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/slack-gif-creator for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/slack-gif-creator
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/theme-factory for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/theme-factory
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/brand-guidelines for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/brand-guidelines
+[DEBUG] Total plugin skills loaded: 14
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 14 plugin skills
+[DEBUG] Total LSP servers loaded: 0
+[DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+[DEBUG] LSP manager initialized with 0 servers
+[DEBUG] LSP server manager initialized successfully
+[DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+[DEBUG] Acquired lock on running version: /Users/levi/.local/share/claude/versions/2.0.35
+[DEBUG] Registered 0 hooks from 3 plugins
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/levi/.zshrc
+[DEBUG] Snapshots directory: /Users/levi/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1762694074545-ro1s6s.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694074546
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694074546 to /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json
+[DEBUG] File /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.10232.1762694074551
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 42419 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.10232.1762694074551 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.10232.1762694074552
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 42419 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.10232.1762694074552 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.10232.1762694074615
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44037 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.10232.1762694074615 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[ERROR] AxiosError: Error
+    at Ez (/$bunfs/root/claude:54:1142)
+    at <anonymous> (/$bunfs/root/claude:59:10074)
+    at emit (node:events:92:22)
+    at endReadableNT (internal:streams/readable:861:50)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:61:2146)
+    at processTicksAndRejections (native:7:39)
+[DEBUG] Shell snapshot created successfully (52372 bytes)
+[DEBUG] Failed to fetch Grove notice config: AxiosError: Request failed with status code 401
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Initializing HTTP transport to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Node version: v24.3.0, Platform: darwin
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+[DEBUG] MCP server "dayone": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "n8n": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.10232.1762694074907
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44037 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.10232.1762694074907 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Proxy options: default
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport options: {"url":"https://mcp.exa.ai/mcp","headers":{"User-Agent":"claude-code/2.0.35"},"hasAuthProvider":true,"timeoutMs":60000}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport created successfully
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Client created, setting up request handler
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Testing basic HTTP connectivity to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Parsed URL: host=mcp.exa.ai, port=default, protocol=https:
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.10232.1762694074920
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44142 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.10232.1762694074920 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.10232.1762694074927
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44142 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.10232.1762694074927 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[ERROR] MCP server "dayone" Server stderr: warning
+[ERROR] MCP server "dayone" Server stderr: : The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/levi/.local/share/claude/versions/2.0.35)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.10232.1762694075122
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44037 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.10232.1762694075122 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.10232.1762694075123
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44037 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.10232.1762694075123 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.10232.1762694075124
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44466 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.10232.1762694075124 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: native
+[DEBUG] performStartupChecks called
+[DEBUG] Trust not accepted for current directory - skipping plugin installations
+[DEBUG] Loaded plugins - Enabled: 3, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token expires in -252650s, attempting proactive refresh
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Starting token refresh
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.10232.1762694075173
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44466 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.10232.1762694075173 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Found client info
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token refresh successful, saving new tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Saving tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token expires in: 3600
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token refreshed successfully
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3599s
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.10232.1762694076097
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44466 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.10232.1762694076097 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3599s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Successfully connected to http server in 1319ms
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"exa-search-server","title":"Exa","version":"3.0.9"}}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3599s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3599s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3599s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3598s
+[DEBUG] Checking for native installer update to version 2.0.36
+[DEBUG] Downloading native installer version 2.0.36
+[DEBUG] MCP server "n8n": Successfully connected to undefined server in 2569ms
+[DEBUG] MCP server "n8n": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"n8n-documentation-mcp","version":"2.22.13"}}
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Successfully updated to version 2.0.36
+[DEBUG] MCP server "dayone": Connection timeout triggered after 30005ms (limit: 30000ms)
+[DEBUG] MCP server "dayone": Connection failed after 30009ms: Connection to MCP server "dayone" timed out after 30000ms
+[ERROR] MCP server "dayone" Connection failed: Connection to MCP server "dayone" timed out after 30000ms
+[DEBUG] MCP server "exa": Starting connection with timeout of 30000ms
+[ERROR] MCP server "exa" Server stderr: [10488] Using automatically selected callback port: 5153
+[ERROR] MCP server "exa" Server stderr: [10488] [10488] Connecting to remote server: https://mcp.exa.ai/mcp
+[10488] Using transport strategy: http-first
+[ERROR] MCP server "exa" Server stderr: [10488] Connected to remote server using StreamableHTTPClientTransport
+[ERROR] MCP server "exa" Server stderr: [10488] Local STDIO server running
+[10488] Proxy established successfully between local STDIO and remote StreamableHTTPClientTransport
+[10488] Press Ctrl+C to exit
+[ERROR] MCP server "exa" Server stderr: [10488] [Local→Remote] initialize
+[ERROR] MCP server "exa" Server stderr: [10488] {
+  "jsonrpc": "2.0",
+  "id": 0,
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code (via mcp-remote 0.1.30)",
+      "version": "2.0.35"
+    }
+  }
+}
+[ERROR] MCP server "exa" Server stderr: [10488] [Remote→Local] 0
+[DEBUG] MCP server "exa": Successfully connected to undefined server in 1251ms
+[DEBUG] MCP server "exa": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"exa-search-server","title":"Exa","version":"3.0.9"}}
+[ERROR] MCP server "exa" Server stderr: [10488] [Local→Remote] notifications/initialized
+[ERROR] MCP server "exa" Server stderr: [10488] [Local→Remote] tools/list
+[ERROR] MCP server "exa" Server stderr: [10488] [Local→Remote] prompts/list
+[10488] [Local→Remote] resources/list
+[ERROR] MCP server "exa" Server stderr: [10488] [Remote→Local] 1
+[ERROR] MCP server "exa" Server stderr: [10488] [Remote→Local] 3
+[ERROR] MCP server "exa" Server stderr: [10488] [Remote→Local] 2
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Added snapshot for c0645de8-b7ba-4572-a727-b979c7af0ffc, tracking 0 files
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/levi/.claude/settings.json.tmp.10232.1762694120685
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1826 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/settings.json.tmp.10232.1762694120685 to /Users/levi/.claude/settings.json
+[DEBUG] File /Users/levi/.claude/settings.json written atomically
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694125070
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 580 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694125070 to /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json
+[DEBUG] File /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] No hook environment files found
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694134023
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 582 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694134023 to /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json
+[DEBUG] File /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Permission suggestions for Write: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: native
+[DEBUG] FileHistory: Tracked file modification for /Users/levi/data/finance/CLAUDE.md
+[DEBUG] Writing to temp file: /Users/levi/data/finance/CLAUDE.md.tmp.10232.1762694153794
+[DEBUG] Temp file written successfully, size: 1239 bytes
+[DEBUG] Renaming /Users/levi/data/finance/CLAUDE.md.tmp.10232.1762694153794 to /Users/levi/data/finance/CLAUDE.md
+[DEBUG] File /Users/levi/data/finance/CLAUDE.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Checking for native installer update to version 2.0.36
+[DEBUG] Version 2.0.36 already installed, updating symlink
+[DEBUG] Successfully updated to version 2.0.36
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694158404
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 584 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694158404 to /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json
+[DEBUG] File /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "mkdir:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/levi/data/finance/.claude/settings.local.json.tmp.10232.1762694170752
+[DEBUG] Temp file written successfully, size: 101 bytes
+[DEBUG] Renaming /Users/levi/data/finance/.claude/settings.local.json.tmp.10232.1762694170752 to /Users/levi/data/finance/.claude/settings.local.json
+[DEBUG] File /Users/levi/data/finance/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Bash(mkdir:*)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: native
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] Checking for native installer update to version 2.0.36
+[DEBUG] Version 2.0.36 already installed, updating symlink
+[DEBUG] Successfully updated to version 2.0.36
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/levi/.claude/settings.json.tmp.10232.1762694176361
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1825 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/settings.json.tmp.10232.1762694176361 to /Users/levi/.claude/settings.json
+[DEBUG] File /Users/levi/.claude/settings.json written atomically
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Permission suggestions for Write: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at <anonymous> (/$bunfs/root/claude:1806:194)
+    at useMemo (/$bunfs/root/claude:101:26175)
+    at <anonymous> (/$bunfs/root/claude:41:12726)
+    at g5 (/$bunfs/root/claude:1806:88)
+    at DH (/$bunfs/root/claude:101:19663)
+    at t6 (/$bunfs/root/claude:103:42806)
+    at rN (/$bunfs/root/claude:103:38344)
+    at uD (/$bunfs/root/claude:103:38272)
+    at ZJ (/$bunfs/root/claude:103:38126)
+    at nN (/$bunfs/root/claude:103:35203)
+[DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+[DEBUG] AutoUpdaterWrapper: Installation type: native
+[DEBUG] FileHistory: Tracked file modification for /Users/levi/data/finance/.gitignore
+[DEBUG] Writing to temp file: /Users/levi/data/finance/.gitignore.tmp.10232.1762694184401
+[DEBUG] Temp file written successfully, size: 394 bytes
+[DEBUG] Renaming /Users/levi/data/finance/.gitignore.tmp.10232.1762694184401 to /Users/levi/data/finance/.gitignore
+[DEBUG] File /Users/levi/data/finance/.gitignore written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at <anonymous> (/$bunfs/root/claude:1806:194)
+    at useMemo (/$bunfs/root/claude:101:26175)
+    at <anonymous> (/$bunfs/root/claude:41:12726)
+    at g5 (/$bunfs/root/claude:1806:88)
+    at DH (/$bunfs/root/claude:101:19663)
+    at t6 (/$bunfs/root/claude:103:42806)
+    at rN (/$bunfs/root/claude:103:38344)
+    at uD (/$bunfs/root/claude:103:38272)
+    at ZJ (/$bunfs/root/claude:103:38126)
+    at nN (/$bunfs/root/claude:103:35203)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at <anonymous> (/$bunfs/root/claude:1806:194)
+    at useMemo (/$bunfs/root/claude:101:26175)
+    at <anonymous> (/$bunfs/root/claude:41:12726)
+    at g5 (/$bunfs/root/claude:1806:88)
+    at DH (/$bunfs/root/claude:101:19663)
+    at t6 (/$bunfs/root/claude:103:42806)
+    at rN (/$bunfs/root/claude:103:38344)
+    at uD (/$bunfs/root/claude:103:38272)
+    at ZJ (/$bunfs/root/claude:103:38126)
+    at nN (/$bunfs/root/claude:103:35203)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Checking for native installer update to version 2.0.36
+[DEBUG] Version 2.0.36 already installed, updating symlink
+[DEBUG] Successfully updated to version 2.0.36
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694188766
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 586 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694188766 to /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json
+[DEBUG] File /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/levi/data/finance/README.md
+[DEBUG] Writing to temp file: /Users/levi/data/finance/README.md.tmp.10232.1762694197980
+[DEBUG] Temp file written successfully, size: 1303 bytes
+[DEBUG] Renaming /Users/levi/data/finance/README.md.tmp.10232.1762694197980 to /Users/levi/data/finance/README.md
+[DEBUG] File /Users/levi/data/finance/README.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694202484
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694202484 to /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json
+[DEBUG] File /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at rJ (/$bunfs/root/claude:1003:4395)
+    at <anonymous> (/$bunfs/root/claude:1003:4117)
+    at map (native:1:11)
+    at $q (/$bunfs/root/claude:1003:4109)
+    at WZB (/$bunfs/root/claude:1687:6605)
+    at DH (/$bunfs/root/claude:101:19663)
+    at t6 (/$bunfs/root/claude:103:42806)
+    at rN (/$bunfs/root/claude:103:38344)
+    at uD (/$bunfs/root/claude:103:38272)
+    at ZJ (/$bunfs/root/claude:103:38126)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.10232.1762694210079
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44494 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.10232.1762694210079 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.10232.1762694210084
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44494 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.10232.1762694210084 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 1e3b6761-913b-435e-8fca-0735800859ee
+[DEBUG] FileHistory: Added snapshot for 1e3b6761-913b-435e-8fca-0735800859ee, tracking 3 files
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694307451
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 714 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694307451 to /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json
+[DEBUG] File /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addDirectories",
+    "directories": [
+      "/Users/levi/data/finance/.claude"
+    ],
+    "destination": "session"
+  },
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Applying permission update: Adding 1 directory with destination 'session': ["/Users/levi/data/finance/.claude"]
+[DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+[DEBUG] AutoUpdaterWrapper: Installation type: native
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] Checking for native installer update to version 2.0.36
+[DEBUG] Version 2.0.36 already installed, updating symlink
+[DEBUG] Successfully updated to version 2.0.36
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694324406
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 716 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694324406 to /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json
+[DEBUG] File /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/levi/data/finance/categories.txt
+[DEBUG] Writing to temp file: /Users/levi/data/finance/categories.txt.tmp.10232.1762694330146
+[DEBUG] Temp file written successfully, size: 896 bytes
+[DEBUG] Renaming /Users/levi/data/finance/categories.txt.tmp.10232.1762694330146 to /Users/levi/data/finance/categories.txt
+[DEBUG] File /Users/levi/data/finance/categories.txt written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694336316
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 718 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694336316 to /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json
+[DEBUG] File /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+[DEBUG] AutoUpdaterWrapper: Installation type: native
+[DEBUG] FileHistory: Tracked file modification for /Users/levi/data/finance/.claude/commands/process-statement.md
+[DEBUG] Writing to temp file: /Users/levi/data/finance/.claude/commands/process-statement.md.tmp.10232.1762694359940
+[DEBUG] Temp file written successfully, size: 2471 bytes
+[DEBUG] Renaming /Users/levi/data/finance/.claude/commands/process-statement.md.tmp.10232.1762694359940 to /Users/levi/data/finance/.claude/commands/process-statement.md
+[DEBUG] File /Users/levi/data/finance/.claude/commands/process-statement.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Checking for native installer update to version 2.0.36
+[DEBUG] Version 2.0.36 already installed, updating symlink
+[DEBUG] Successfully updated to version 2.0.36
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694365072
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 720 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694365072 to /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json
+[DEBUG] File /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/data/finance/CLAUDE.md.tmp.10232.1762694374904
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1457 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/data/finance/CLAUDE.md.tmp.10232.1762694374904 to /Users/levi/data/finance/CLAUDE.md
+[DEBUG] File /Users/levi/data/finance/CLAUDE.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/data/finance/CLAUDE.md.tmp.10232.1762694390779
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 3195 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/data/finance/CLAUDE.md.tmp.10232.1762694390779 to /Users/levi/data/finance/CLAUDE.md
+[DEBUG] File /Users/levi/data/finance/CLAUDE.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694395729
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 722 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694395729 to /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json
+[DEBUG] File /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/levi/data/finance/USAGE.md
+[DEBUG] Writing to temp file: /Users/levi/data/finance/USAGE.md.tmp.10232.1762694427066
+[DEBUG] Temp file written successfully, size: 5444 bytes
+[DEBUG] Renaming /Users/levi/data/finance/USAGE.md.tmp.10232.1762694427066 to /Users/levi/data/finance/USAGE.md
+[DEBUG] File /Users/levi/data/finance/USAGE.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694432231
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json.tmp.10232.1762694432231 to /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json
+[DEBUG] File /Users/levi/.claude/todos/f3de7c4b-b14c-45df-bb72-4f19aa9194d1-agent-f3de7c4b-b14c-45df-bb72-4f19aa9194d1.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/data/finance/README.md.tmp.10232.1762694456209
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 3581 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/data/finance/README.md.tmp.10232.1762694456209 to /Users/levi/data/finance/README.md
+[DEBUG] File /Users/levi/data/finance/README.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Skills and commands included in Skill tool: xlsx, docx, pptx, pdf, skill-creator, mcp-builder, canvas-design, algorithmic-art, internal-comms, webapp-testing, artifacts-builder, slack-gif-creator, theme-factory, brand-guidelines
+[DEBUG] Skill prompt: showing "document-skills:xlsx" (userFacingName="xlsx")
+[DEBUG] Skill prompt: showing "document-skills:docx" (userFacingName="docx")
+[DEBUG] Skill prompt: showing "document-skills:pptx" (userFacingName="pptx")
+[DEBUG] Skill prompt: showing "document-skills:pdf" (userFacingName="pdf")
+[DEBUG] Skill prompt: showing "example-skills:skill-creator" (userFacingName="skill-creator")
+[DEBUG] Skill prompt: showing "example-skills:mcp-builder" (userFacingName="mcp-builder")
+[DEBUG] Skill prompt: showing "example-skills:canvas-design" (userFacingName="canvas-design")
+[DEBUG] Skill prompt: showing "example-skills:algorithmic-art" (userFacingName="algorithmic-art")
+[DEBUG] Skill prompt: showing "example-skills:internal-comms" (userFacingName="internal-comms")
+[DEBUG] Skill prompt: showing "example-skills:webapp-testing" (userFacingName="webapp-testing")
+[DEBUG] Skill prompt: showing "example-skills:artifacts-builder" (userFacingName="artifacts-builder")
+[DEBUG] Skill prompt: showing "example-skills:slack-gif-creator" (userFacingName="slack-gif-creator")
+[DEBUG] Skill prompt: showing "example-skills:theme-factory" (userFacingName="theme-factory")
+[DEBUG] Skill prompt: showing "example-skills:brand-guidelines" (userFacingName="brand-guidelines")
+[DEBUG] Slash commands included in SlashCommand tool: /graham, /graham
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at rJ (/$bunfs/root/claude:1003:4395)
+    at <anonymous> (/$bunfs/root/claude:1003:4117)
+    at map (native:1:11)
+    at $q (/$bunfs/root/claude:1003:4109)
+    at WZB (/$bunfs/root/claude:1687:6605)
+    at DH (/$bunfs/root/claude:101:19663)
+    at t6 (/$bunfs/root/claude:103:42806)
+    at rN (/$bunfs/root/claude:103:38344)
+    at uD (/$bunfs/root/claude:103:38272)
+    at ZJ (/$bunfs/root/claude:103:38126)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at rJ (/$bunfs/root/claude:1003:4395)
+    at <anonymous> (/$bunfs/root/claude:1003:5408)
+    at map (native:1:11)
+    at rJ (/$bunfs/root/claude:1003:5380)
+    at <anonymous> (/$bunfs/root/claude:1003:5295)
+    at map (native:1:11)
+    at rJ (/$bunfs/root/claude:1003:5285)
+    at <anonymous> (/$bunfs/root/claude:1003:4117)
+    at map (native:1:11)
+    at $q (/$bunfs/root/claude:1003:4109)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: csv
+    at rJ (/$bunfs/root/claude:1003:4395)
+    at <anonymous> (/$bunfs/root/claude:1003:4117)
+    at map (native:1:11)
+    at $q (/$bunfs/root/claude:1003:4109)
+    at WZB (/$bunfs/root/claude:1687:6605)
+    at DH (/$bunfs/root/claude:101:19663)
+    at t6 (/$bunfs/root/claude:103:42806)
+    at rN (/$bunfs/root/claude:103:38344)
+    at uD (/$bunfs/root/claude:103:38272)
+    at ZJ (/$bunfs/root/claude:103:38126)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.10232.1762694478887
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44494 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.10232.1762694478887 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.10232.1762694478895
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44494 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.10232.1762694478895 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: native
+[DEBUG] Checking for native installer update to version 2.0.36
+[DEBUG] Version 2.0.36 already installed, updating symlink
+[DEBUG] Successfully updated to version 2.0.36
+[DEBUG] AutoUpdaterWrapper: Installation type: native
+[DEBUG] Checking for native installer update to version 2.0.36
+[DEBUG] Version 2.0.36 already installed, updating symlink
+[DEBUG] Successfully updated to version 2.0.36
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1762694074545-ro1s6s.sh
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport closed/disconnected, attempting automatic reconnection
+[DEBUG] LSP server manager shut down successfully
+[DEBUG] FileHistory: Making snapshot for message 9d3ea881-fb98-4939-99da-9542f917f81e
+[DEBUG] FileHistory: Added snapshot for 9d3ea881-fb98-4939-99da-9542f917f81e, tracking 6 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/exit</command-name>
+            <command-message>exit</command-message>
+            <...
+[DEBUG] UserCommandMessage rendering: "exit" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.10232.1762694494304
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44494 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.10232.1762694494304 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Initializing HTTP transport to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Node version: v24.3.0, Platform: darwin
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.10232.1762694494306
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44958 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.10232.1762694494306 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically

@@ -1,0 +1,128 @@
+# Ghostty Configuration
+# Catppuccin Mocha Theme + LazyVim Optimized Settings
+
+# ==========================================
+# Theme
+# ==========================================
+theme = catppuccin-mocha
+
+# ==========================================
+# Font Configuration
+# ==========================================
+# Common monospace fonts for macOS (uncomment your preference):
+# font-family = "JetBrains Mono"
+# font-family = "FiraCode Nerd Font"
+# font-family = "MesloLGS Nerd Font"
+font-family = "SF Mono"
+
+font-size = 14
+
+# Font features (ligatures, etc.)
+font-feature = -calt
+font-feature = -liga
+
+# ==========================================
+# Window & Appearance
+# ==========================================
+window-padding-x = 8
+window-padding-y = 8
+window-padding-balance = true
+
+# Window decorations (macos-titlebar-style options: native, transparent, tabs)
+macos-titlebar-style = native
+
+# Window opacity (1.0 = fully opaque, 0.0 = fully transparent)
+background-opacity = 1.0
+
+# Blur behind window when transparent
+background-blur-radius = 20
+
+# ==========================================
+# Cursor
+# ==========================================
+cursor-style = block
+cursor-style-blink = true
+
+# ==========================================
+# Shell Integration
+# ==========================================
+shell-integration = detect
+shell-integration-features = cursor,sudo,title
+
+# ==========================================
+# Scrollback
+# ==========================================
+scrollback-limit = 10000
+
+# ==========================================
+# Mouse & Selection
+# ==========================================
+mouse-hide-while-typing = true
+copy-on-select = clipboard
+clipboard-trim-trailing-spaces = true
+
+# ==========================================
+# macOS Specific
+# ==========================================
+macos-non-native-fullscreen = false
+macos-option-as-alt = true
+macos-titlebar-proxy-icon = hidden
+
+# ==========================================
+# Performance
+# ==========================================
+# Adjust based on your display refresh rate
+# Common values: 60, 120, 144
+# target-fps = 120
+
+# ==========================================
+# Neovim/LazyVim Optimizations
+# ==========================================
+# Enable true color support (24-bit color)
+# This is automatic in Ghostty but can be verified
+
+# Undercurl support for LSP diagnostics
+shell-integration-features = cursor,sudo,title
+
+# Confirm before closing with running processes
+confirm-close-surface = true
+
+# ==========================================
+# Keybindings (macOS defaults)
+# ==========================================
+# Ghostty uses native macOS keybindings by default
+# Uncomment to customize:
+
+# keybind = cmd+t=new_tab
+# keybind = cmd+w=close_surface
+# keybind = cmd+n=new_window
+# keybind = cmd+shift+[=previous_tab
+# keybind = cmd+shift+]=next_tab
+# keybind = cmd+plus=increase_font_size:1
+# keybind = cmd+minus=decrease_font_size:1
+# keybind = cmd+zero=reset_font_size
+
+# Split panes (if you prefer terminal splitting over tmux)
+# keybind = cmd+d=new_split:right
+# keybind = cmd+shift+d=new_split:down
+
+# ==========================================
+# Advanced Settings
+# ==========================================
+# Auto-update checking
+auto-update = check
+
+# Command to run (defaults to your shell)
+# command = /bin/zsh
+
+# Working directory
+# working-directory = ~
+
+# ==========================================
+# Custom Configuration for Oh My Zsh
+# ==========================================
+# If you experience issues with Oh My Zsh themes,
+# you may need to adjust these:
+
+# Uncomment if using Powerlevel10k or similar themes:
+# adjust-cell-width = emoji+ambiguous-as-double

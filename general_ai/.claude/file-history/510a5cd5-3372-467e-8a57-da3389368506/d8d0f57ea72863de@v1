@@ -1,0 +1,93 @@
+# Finance - Banking Transaction PDF to CSV Processor
+
+## Overview
+This project processes banking transaction PDFs and converts them to CSV format for analysis and record-keeping.
+
+## Project Structure
+
+```
+/Users/levi/data/finance/
+├── .claude/
+│   └── commands/
+│       └── process-statement.md    # PDF to CSV processing command
+├── input/                          # Place PDF files here for processing
+├── output/                         # Generated CSV files
+├── scripts/                        # Processing scripts
+├── categories.txt                  # Transaction category definitions
+├── CLAUDE.md                      # This file
+├── README.md                      # Project documentation
+└── .gitignore                     # Git ignore rules
+```
+
+## Workflow
+
+### Quick Start
+1. **Input**: Place banking transaction PDF files in `input/` directory
+2. **Process**: Run `/process-statement` command with the PDF filename
+3. **Validate**: Review validation checks (transaction count, amount tally)
+4. **Output**: CSV file automatically saved to `output/` directory
+
+### Using the `/process-statement` Command
+
+```
+/process-statement
+```
+
+Then when prompted, provide the path to your PDF file:
+```
+input/statement-march-2024.pdf
+```
+
+The command will:
+1. Read the PDF using Claude's PDF skills
+2. Extract and categorize all transactions
+3. Perform validation checks:
+   - Transaction count matches PDF
+   - Amount totals are correct
+   - All dates within statement period
+   - No missing data
+4. Save CSV to `output/statement-YYYY-MM-DD.csv`
+5. Provide a summary report
+
+### Transaction Categories
+
+All transactions are categorized using predefined categories from `categories.txt`:
+- **Expense categories**: Auto, Bank Charge, Business Expenses, Cash, Charity, Children, Clothing, Computers, Dining, Education, Gifts Given, Groceries, Household Expenses, Housing Related, Insurance, Interest Expense, Medical, Misc, Personal Care, Pet, Postage and Delivery, Recreation, Rent, Subscriptions, Taxes (various), Transport, Utilities, Vacation
+- **Income categories**: Income, Business Reimbursement, Dividend Income, Gifts Received, Interest Income, Other Income, Rental Income, Salary, Self Bonus/Income, Spouse Income
+
+### CSV Format
+
+Output format:
+```csv
+Date,Transaction Details,Amount,Category
+DD-MM-YYYY,Merchant Name,123.45,Expense: Category
+```
+
+Specifications:
+- Date: DD-MM-YYYY format
+- Transaction Details: Cleaned merchant names (no reference codes)
+- Amount: Positive for debits, negative for credits
+- Category: From categories.txt
+
+### Validation Checks
+
+The command includes automatic validation:
+- Transaction count verification
+- Amount tally against statement total
+- Date range validation
+- Complete data checks
+
+## Processing Features
+
+- Intelligent PDF extraction using Claude's PDF skills
+- Automatic transaction categorization
+- Merchant name standardization
+- Built-in validation checks
+- Clean, consistent CSV output
+
+## Notes
+
+- PDFs and CSVs are gitignored (contain sensitive data)
+- Always review the validation checks before using the CSV
+- Keep original PDFs in `input/` as source of truth
+- If validation fails, the command will flag issues for manual review

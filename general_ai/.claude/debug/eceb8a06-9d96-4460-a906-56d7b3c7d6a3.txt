@@ -1,0 +1,240 @@
+[DEBUG] Watching for changes in setting files /Users/levi/.claude/settings.json, /Users/levi/data/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 10 allow rule(s) to destination 'localSettings': ["WebSearch","Bash(git config:*)","Bash(brew install:*)","Bash(gh:*)","mcp__plugin_exa-mcp-server_exa__web_search_exa","mcp__firecrawl__firecrawl_scrape","mcp__n8n__search_nodes","mcp__n8n__get_node_documentation","mcp__n8n__n8n_health_check","mcp__n8n__n8n_list_workflows"]
+[DEBUG] Loading plugin exa-mcp-server from source: "./"
+[DEBUG] Plugin exa-mcp-server has no entry.skills defined
+[DEBUG] Found 1 plugins (1 enabled, 0 disabled)
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: true, type: boolean
+[DEBUG] ENABLE_SKILLS check passed, loading skills...
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/levi/.claude/skills, project=/Users/levi/data/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/levi/.zshrc
+[DEBUG] Snapshots directory: /Users/levi/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1760950444179-9whtu3.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/eceb8a06-9d96-4460-a906-56d7b3c7d6a3-agent-eceb8a06-9d96-4460-a906-56d7b3c7d6a3.json.tmp.88865.1760950444180
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/levi/.claude/todos/eceb8a06-9d96-4460-a906-56d7b3c7d6a3-agent-eceb8a06-9d96-4460-a906-56d7b3c7d6a3.json.tmp.88865.1760950444180 to /Users/levi/.claude/todos/eceb8a06-9d96-4460-a906-56d7b3c7d6a3-agent-eceb8a06-9d96-4460-a906-56d7b3c7d6a3.json
+[DEBUG] File /Users/levi/.claude/todos/eceb8a06-9d96-4460-a906-56d7b3c7d6a3-agent-eceb8a06-9d96-4460-a906-56d7b3c7d6a3.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88865.1760950444190
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45430 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88865.1760950444190 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] getPluginSkills: Processing 1 enabled plugins
+[DEBUG] Checking plugin exa-mcp-server: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Registered 0 hooks from 1 plugins
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 0 plugin skills
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88865.1760950444306
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45430 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88865.1760950444306 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88865.1760950444313
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45430 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88865.1760950444313 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Shell snapshot created successfully (52354 bytes)
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Initializing HTTP transport to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Node version: v22.20.0, Platform: darwin
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+[DEBUG] MCP server "dayone": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "n8n": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88865.1760950444948
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45430 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88865.1760950444948 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": MTLS options: default
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport options: {"url":"https://mcp.exa.ai/mcp","headers":{"User-Agent":"claude-code/2.0.22"},"hasAuthProvider":true,"timeoutMs":60000}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport created successfully
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Client created, setting up request handler
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Testing basic HTTP connectivity to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Parsed URL: host=mcp.exa.ai, port=default, protocol=https:
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3310s
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88865.1760950444999
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45325 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88865.1760950444999 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88865.1760950445005
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45325 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88865.1760950445005 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88865.1760950445018
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45430 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88865.1760950445018 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Found 1 enabled plugins
+[DEBUG] Loaded plugins - Enabled: 1, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] Found 0 missing plugins (not installed):
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[ERROR] MCP server "dayone" Server stderr: warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+[ERROR] MCP server "dayone" Server stderr: INFO:__main__:Day One CLI verified successfully
+[DEBUG] MCP server "dayone": Successfully connected to undefined server in 351ms
+[DEBUG] MCP server "dayone": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"mcp-dayone","version":"2.0.0"}}
+[ERROR] MCP server "dayone" Server stderr: INFO:mcp.server.lowlevel.server:Processing request of type ListToolsRequest
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3310s
+[DEBUG] MCP server "n8n": Successfully connected to undefined server in 408ms
+[DEBUG] MCP server "n8n": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"n8n-documentation-mcp","version":"2.20.3"}}
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3310s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Successfully connected to http server in 752ms
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"exa-search-server","title":"Exa","version":"3.0.6"}}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3310s
+[DEBUG] MCP server "exa": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "firecrawl": Starting connection with timeout of 30000ms
+[ERROR] MCP server "exa" Server stderr: [89131] Using automatically selected callback port: 5153
+[ERROR] MCP server "exa" Server stderr: [89131] [89131] Connecting to remote server: https://mcp.exa.ai/mcp
+[89131] Using transport strategy: http-first
+[DEBUG] MCP server "firecrawl": Successfully connected to stdio server in 393ms
+[DEBUG] MCP server "firecrawl": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"firecrawl-fastmcp","version":"3.0.0"}}
+[ERROR] MCP server "exa" Server stderr: [89131] Connected to remote server using StreamableHTTPClientTransport
+[ERROR] MCP server "exa" Server stderr: [89131] Local STDIO server running
+[89131] Proxy established successfully between local STDIO and remote StreamableHTTPClientTransport
+[89131] Press Ctrl+C to exit
+[ERROR] MCP server "exa" Server stderr: [89131] [Local→Remote] initialize
+[ERROR] MCP server "exa" Server stderr: [89131] {
+  "jsonrpc": "2.0",
+  "id": 0,
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code (via mcp-remote 0.1.29)",
+      "version": "2.0.22"
+    }
+  }
+}
+[ERROR] MCP server "exa" Server stderr: [89131] [Remote→Local] 0
+[DEBUG] MCP server "exa": Successfully connected to undefined server in 1312ms
+[DEBUG] MCP server "exa": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"exa-search-server","title":"Exa","version":"3.0.6"}}
+[ERROR] MCP server "exa" Server stderr: [89131] [Local→Remote] notifications/initialized
+[ERROR] MCP server "exa" Server stderr: [89131] [Local→Remote] tools/list
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[ERROR] MCP server "exa" Server stderr: [89131] [Remote→Local] 1
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3304s
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88865.1760950466459
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45430 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88865.1760950466459 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] UserCommandMessage rendering: "mcp" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88865.1760950466487
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45430 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88865.1760950466487 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88865.1760950483925
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45430 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88865.1760950483925 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] UserCommandMessage rendering: "status" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88865.1760950483949
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45430 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88865.1760950483949 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1760950444179-9whtu3.sh
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport closed/disconnected, attempting automatic reconnection
+[DEBUG] MCP server "firecrawl": Sending SIGINT to MCP server process
+[DEBUG] FileHistory: Added snapshot for ee953887-906b-4421-a3de-4af8d95819b4, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/exit</command-name>
+            <command-message>exit</command-message>
+            <...
+[DEBUG] UserCommandMessage rendering: "exit" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88865.1760950487322
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45430 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88865.1760950487322 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Initializing HTTP transport to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Node version: v22.20.0, Platform: darwin
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": MTLS options: default
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport options: {"url":"https://mcp.exa.ai/mcp","headers":{"User-Agent":"claude-code/2.0.22"},"hasAuthProvider":true,"timeoutMs":60000}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport created successfully
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Client created, setting up request handler
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Testing basic HTTP connectivity to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Parsed URL: host=mcp.exa.ai, port=default, protocol=https:
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3268s
+[DEBUG] MCP server "exa": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "n8n": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "dayone": Starting connection with timeout of 30000ms
+[ERROR] MCP server "dayone" Server stderr: warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+[DEBUG] MCP server "firecrawl": MCP server process exited cleanly
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88865.1760950487407
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45839 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88865.1760950487407 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically

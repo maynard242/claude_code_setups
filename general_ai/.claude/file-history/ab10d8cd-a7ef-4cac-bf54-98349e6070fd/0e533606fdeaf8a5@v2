@@ -1,0 +1,211 @@
+# SillyTavern Docker Setup with Ollama
+
+This Docker Compose setup runs SillyTavern with persistent data storage and Ollama integration.
+
+## Prerequisites
+
+- Docker and Docker Compose installed
+- Ollama installed and running on your Mac ([https://ollama.com/](https://ollama.com/))
+- At least one Ollama model pulled (e.g., `ollama pull llama2`)
+
+## Quick Start
+
+### 1. Start SillyTavern
+
+```bash
+docker compose up -d
+```
+
+This will:
+- Pull the latest SillyTavern image
+- Create persistent volumes in the current directory
+- Start the container in the background
+
+### 2. Access SillyTavern
+
+Open your browser and navigate to:
+```
+http://localhost:8000
+```
+
+### 3. Connect to Ollama
+
+1. In SillyTavern, click the **plug icon** (top-right) to open API Connections
+2. Select **Chat Completion** sources
+3. Choose **Text Completion** or **Chat Completion** API
+4. Set the API URL to:
+   ```
+   http://host.docker.internal:11434
+   ```
+5. Click **Connect**
+6. Select your Ollama model from the dropdown
+
+## Directory Structure
+
+All persistent data is stored in subdirectories:
+
+```
+docker_silly/
+├── docker-compose.yml    # Docker Compose configuration
+├── .env                  # Environment variables
+├── README.md            # This file
+├── config/              # SillyTavern configuration files
+├── data/                # User data (chats, characters, etc.)
+├── plugins/             # Installed plugins
+└── extensions/          # Third-party extensions
+```
+
+## Managing the Container
+
+### View logs
+```bash
+docker compose logs -f
+```
+
+### Stop SillyTavern
+```bash
+docker compose down
+```
+
+### Restart SillyTavern
+```bash
+docker compose restart
+```
+
+### Update to latest version
+```bash
+docker compose pull
+docker compose up -d
+```
+
+### Check container status
+```bash
+docker compose ps
+```
+
+## Data Backup
+
+All your data is stored in the local directories. To backup:
+
+```bash
+# Backup everything
+tar -czf sillytavern-backup-$(date +%Y%m%d).tar.gz config/ data/ plugins/ extensions/
+
+# Or backup just user data
+tar -czf sillytavern-data-backup-$(date +%Y%m%d).tar.gz data/
+```
+
+## Troubleshooting
+
+### Can't connect to Ollama
+
+**Problem**: "Connection refused" or "Cannot connect to Ollama"
+
+**Solutions**:
+1. Verify Ollama is running: `ollama list` in terminal
+2. Check if Ollama is accessible: `curl http://localhost:11434/api/tags`
+3. Ensure you're using `http://host.docker.internal:11434` (not `localhost`)
+4. Restart Ollama: `killall ollama && ollama serve`
+
+### SillyTavern won't start
+
+**Problem**: Container exits immediately
+
+**Solutions**:
+1. Check logs: `docker compose logs`
+2. Verify port 8000 is not in use: `lsof -i :8000`
+3. Remove old containers: `docker compose down -v` then `docker compose up -d`
+
+### Data not persisting
+
+**Problem**: Settings/chats disappear after restart
+
+**Solutions**:
+1. Verify volumes are mounted: `docker compose config`
+2. Check directory permissions: `ls -la config/ data/`
+3. Ensure Docker has file access permissions in macOS System Settings
+
+### Update issues
+
+**Problem**: New version not loading after update
+
+**Solutions**:
+```bash
+docker compose down
+docker compose pull
+docker system prune -f  # Remove old images
+docker compose up -d
+```
+
+## Configuration
+
+### Change Port
+
+Edit `docker-compose.yml` and change the port mapping:
+```yaml
+ports:
+  - "8080:8000"  # Change 8080 to your desired port
+```
+
+Then restart: `docker compose up -d`
+
+### Use Docker-Managed Volumes
+
+If you prefer Docker to manage volumes centrally instead of local directories:
+
+1. Uncomment the `volumes:` section at the bottom of `docker-compose.yml`
+2. Update the volume mounts in the service to use named volumes:
+   ```yaml
+   volumes:
+     - sillytavern_config:/home/node/app/config
+     - sillytavern_data:/home/node/app/data
+     - sillytavern_plugins:/home/node/app/plugins
+     - sillytavern_extensions:/home/node/app/public/scripts/extensions/third-party
+   ```
+3. Restart: `docker compose up -d`
+
+## Ollama Model Management
+
+### Pull a new model
+```bash
+ollama pull mistral
+ollama pull codellama
+ollama pull llama2
+```
+
+### List available models
+```bash
+ollama list
+```
+
+### Remove a model
+```bash
+ollama rm <model-name>
+```
+
+## Resources
+
+- [SillyTavern GitHub](https://github.com/SillyTavern/SillyTavern)
+- [SillyTavern Documentation](https://docs.sillytavern.app/)
+- [Ollama Documentation](https://github.com/ollama/ollama)
+- [Docker Compose Documentation](https://docs.docker.com/compose/)
+
+## Advanced Usage
+
+### Run with GPU support (if Ollama uses GPU)
+
+Ollama automatically uses GPU if available. No additional Docker configuration needed for the SillyTavern container.
+
+### Custom Ollama Port
+
+If your Ollama runs on a different port:
+
+1. Edit `.env` file:
+   ```
+   OLLAMA_API_URL=http://host.docker.internal:YOUR_PORT
+   ```
+2. Use this URL in SillyTavern's API connection settings
+
+## License
+
+SillyTavern is licensed under AGPL-3.0. See the [official repository](https://github.com/SillyTavern/SillyTavern) for details.

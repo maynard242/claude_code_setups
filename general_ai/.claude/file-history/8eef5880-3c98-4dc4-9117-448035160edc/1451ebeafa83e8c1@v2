@@ -1,0 +1,733 @@
+# Claude Code Router Setup Guide
+
+A complete guide to setting up and using Claude Code Router - a powerful tool that lets you route Claude Code requests to different AI models.
+
+---
+
+## What is Claude Code Router?
+
+**Claude Code Router** is an open-source proxy that sits between Claude Code and AI model providers. It allows you to:
+
+- **Route to any model**: Use GPT-5, DeepSeek, Gemini, Qwen, local models (Ollama), or any OpenAI-compatible API
+- **Smart routing**: Different models for different tasks (background tasks, reasoning, long context)
+- **Cost optimization**: Use cheaper/local models for simple tasks, powerful models for complex work
+- **Dynamic switching**: Change models on-the-fly with `/model` command
+- **Keep Claude Code updates**: Continue getting official Claude Code improvements while using any model
+
+**GitHub**: https://github.com/musistudio/claude-code-router (20.8k stars)
+
+---
+
+## Installation
+
+### Prerequisites
+- Node.js installed on your system
+- Claude Code installed
+
+### Step 1: Install Claude Code
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+### Step 2: Install Claude Code Router
+```bash
+npm install -g @musistudio/claude-code-router
+```
+
+That's it! The router is now installed globally as `ccr`.
+
+---
+
+## Basic Configuration
+
+### Step 3: Create Configuration File
+
+The router stores its config at `~/.claude-code-router/config.json`. You can create it manually or use the UI (recommended).
+
+#### Option A: Use the UI (Recommended)
+```bash
+ccr ui
+```
+
+This opens a web interface where you can:
+- Import pre-configured templates
+- Add providers and models visually
+- Edit configuration with validation
+- Test your setup
+
+#### Option B: Manual Configuration
+
+Create `~/.claude-code-router/config.json`:
+
+```json
+{
+  "LOG": true,
+  "LOG_LEVEL": "debug",
+  "API_TIMEOUT_MS": 600000,
+  "Providers": [
+    {
+      "name": "openai",
+      "api_base_url": "https://api.openai.com/v1/chat/completions",
+      "api_key": "sk-your-api-key-here",
+      "models": ["gpt-4o", "gpt-4o-mini"]
+    }
+  ],
+  "Router": {
+    "default": "openai,gpt-4o"
+  }
+}
+```
+
+---
+
+## Advanced Configuration
+
+### Configuration Structure
+
+```json
+{
+  "PROXY_URL": "http://127.0.0.1:7890",          // Optional: HTTP proxy
+  "LOG": true,                                    // Enable/disable logging
+  "LOG_LEVEL": "debug",                          // Log level: fatal|error|warn|info|debug|trace
+  "APIKEY": "your-secret-key",                   // Optional: Secure your router
+  "HOST": "127.0.0.1",                           // Server host (127.0.0.1 if no APIKEY)
+  "NON_INTERACTIVE_MODE": false,                 // For CI/CD environments
+  "API_TIMEOUT_MS": 600000,                      // API timeout in milliseconds
+
+  "Providers": [/* provider configs */],
+  "Router": {/* routing rules */}
+}
+```
+
+### Environment Variables
+
+You can use environment variables in your config:
+
+```json
+{
+  "Providers": [
+    {
+      "name": "openai",
+      "api_base_url": "https://api.openai.com/v1/chat/completions",
+      "api_key": "$OPENAI_API_KEY",
+      "models": ["gpt-4o"]
+    },
+    {
+      "name": "deepseek",
+      "api_base_url": "https://api.deepseek.com/chat/completions",
+      "api_key": "${DEEPSEEK_API_KEY}",
+      "models": ["deepseek-chat", "deepseek-reasoner"]
+    }
+  ]
+}
+```
+
+Then set in your shell:
+```bash
+export OPENAI_API_KEY="sk-..."
+export DEEPSEEK_API_KEY="sk-..."
+```
+
+---
+
+## Provider Configuration
+
+### Provider Structure
+
+```json
+{
+  "name": "provider-name",
+  "api_base_url": "https://api.example.com/v1/chat/completions",
+  "api_key": "your-api-key",
+  "models": ["model-1", "model-2"],
+  "transformer": {
+    "use": ["transformer-name"]
+  }
+}
+```
+
+### Example Providers
+
+#### OpenAI / OpenAI-Compatible APIs
+```json
+{
+  "name": "openai",
+  "api_base_url": "https://api.openai.com/v1/chat/completions",
+  "api_key": "sk-...",
+  "models": ["gpt-4o", "gpt-4o-mini", "o1-preview"]
+}
+```
+
+#### DeepSeek
+```json
+{
+  "name": "deepseek",
+  "api_base_url": "https://api.deepseek.com/chat/completions",
+  "api_key": "sk-...",
+  "models": ["deepseek-chat", "deepseek-reasoner"],
+  "transformer": {
+    "use": ["deepseek"],
+    "deepseek-chat": {
+      "use": ["tooluse"]
+    }
+  }
+}
+```
+
+#### OpenRouter (Access 100+ Models)
+```json
+{
+  "name": "openrouter",
+  "api_base_url": "https://openrouter.ai/api/v1/chat/completions",
+  "api_key": "sk-or-...",
+  "models": [
+    "google/gemini-2.5-pro-preview",
+    "anthropic/claude-sonnet-4",
+    "openai/gpt-4o",
+    "meta-llama/llama-3.3-70b-instruct"
+  ],
+  "transformer": {
+    "use": ["openrouter"]
+  }
+}
+```
+
+#### Ollama (Local Models)
+```json
+{
+  "name": "ollama",
+  "api_base_url": "http://localhost:11434/v1/chat/completions",
+  "api_key": "ollama",
+  "models": ["qwen2.5-coder:latest", "llama3.2:latest"]
+}
+```
+
+#### Google Gemini
+```json
+{
+  "name": "gemini",
+  "api_base_url": "https://generativelanguage.googleapis.com/v1beta/models/",
+  "api_key": "your-gemini-key",
+  "models": ["gemini-2.5-flash", "gemini-2.5-pro"],
+  "transformer": {
+    "use": ["gemini"]
+  }
+}
+```
+
+---
+
+## Router Configuration
+
+The `Router` object defines which model to use for different scenarios:
+
+```json
+{
+  "Router": {
+    "default": "provider,model-name",
+    "background": "provider,model-name",
+    "think": "provider,model-name",
+    "longContext": "provider,model-name",
+    "longContextThreshold": 60000,
+    "webSearch": "provider,model-name",
+    "image": "provider,model-name"
+  }
+}
+```
+
+### Router Types
+
+| Type | Purpose | Example Use Case |
+|------|---------|------------------|
+| `default` | General coding tasks | Main model for most work |
+| `background` | Background operations | File searches, simple tasks (use local/cheap model) |
+| `think` | Reasoning-heavy tasks | Plan mode, complex problem solving |
+| `longContext` | Long context handling | Large codebases, many files |
+| `longContextThreshold` | Token threshold for long context | Default: 60000 tokens |
+| `webSearch` | Web search tasks | Requires model with web search support |
+| `image` | Image-related tasks | Vision models for screenshots, diagrams |
+
+### Example Router Configuration
+
+```json
+{
+  "Router": {
+    "default": "deepseek,deepseek-chat",
+    "background": "ollama,qwen2.5-coder:latest",
+    "think": "deepseek,deepseek-reasoner",
+    "longContext": "openrouter,google/gemini-2.5-pro-preview",
+    "longContextThreshold": 60000,
+    "webSearch": "gemini,gemini-2.5-flash",
+    "image": "openrouter,anthropic/claude-sonnet-4"
+  }
+}
+```
+
+**Strategy**: Use local/cheap models for background tasks, powerful models for complex reasoning.
+
+---
+
+## Transformers
+
+Transformers adapt requests/responses for different API formats.
+
+### Available Built-in Transformers
+
+- `Anthropic` - Preserves original Claude format
+- `deepseek` - DeepSeek API format
+- `gemini` - Google Gemini API format
+- `openrouter` - OpenRouter API format (with provider routing)
+- `groq` - Groq API format
+- `maxtoken` - Set specific max_tokens limit
+- `tooluse` - Optimize tool usage via tool_choice
+- `reasoning` - Process reasoning_content field
+- `sampling` - Handle temperature, top_p, etc.
+- `enhancetool` - Error tolerance for tool calls
+- `cleancache` - Remove cache_control fields
+- `vertex-gemini` - Vertex AI authentication
+
+### Global Transformer (All Models)
+```json
+{
+  "name": "openrouter",
+  "transformer": {
+    "use": ["openrouter"]
+  }
+}
+```
+
+### Model-Specific Transformer
+```json
+{
+  "name": "deepseek",
+  "transformer": {
+    "use": ["deepseek"],
+    "deepseek-chat": {
+      "use": ["tooluse"]
+    }
+  }
+}
+```
+
+### Transformer with Options
+```json
+{
+  "name": "custom-provider",
+  "transformer": {
+    "use": [
+      ["maxtoken", { "max_tokens": 16384 }]
+    ]
+  }
+}
+```
+
+### Custom Transformers
+
+Create your own transformer:
+
+```json
+{
+  "transformers": [
+    {
+      "path": "/path/to/custom-transformer.js",
+      "options": {
+        "project": "my-project"
+      }
+    }
+  ]
+}
+```
+
+---
+
+## Running Claude Code Router
+
+### Start the Router
+```bash
+ccr code
+```
+
+This will:
+1. Start the router proxy server on `http://localhost:3456`
+2. Launch Claude Code configured to use the router
+3. Route all requests according to your configuration
+
+### Restart After Config Changes
+```bash
+ccr restart
+```
+
+### Stop the Router
+```bash
+ccr stop
+```
+
+### Check Router Status
+```bash
+ccr status
+```
+
+---
+
+## Using the Router
+
+### Dynamic Model Switching
+
+While in Claude Code, you can switch models on-the-fly:
+
+```
+/model provider,model-name
+```
+
+**Examples:**
+```
+/model openrouter,anthropic/claude-sonnet-4
+/model deepseek,deepseek-reasoner
+/model ollama,qwen2.5-coder:latest
+```
+
+### CLI Model Management
+
+Interactive terminal interface for managing models:
+
+```bash
+ccr model
+```
+
+This provides:
+- View current configuration
+- Switch models for each router type
+- Add new models to providers
+- Create new providers
+- Configure transformers
+
+### Status Line (Beta)
+
+Enable a status line in Claude Code to monitor:
+- Current model in use
+- Router status
+- Request/response metrics
+
+Enable in the UI or add to config:
+```json
+{
+  "statusline": {
+    "enabled": true
+  }
+}
+```
+
+---
+
+## Example Configurations
+
+### Cost-Optimized Setup
+```json
+{
+  "Providers": [
+    {
+      "name": "deepseek",
+      "api_base_url": "https://api.deepseek.com/chat/completions",
+      "api_key": "$DEEPSEEK_API_KEY",
+      "models": ["deepseek-chat", "deepseek-reasoner"],
+      "transformer": {
+        "use": ["deepseek"],
+        "deepseek-chat": { "use": ["tooluse"] }
+      }
+    },
+    {
+      "name": "ollama",
+      "api_base_url": "http://localhost:11434/v1/chat/completions",
+      "api_key": "ollama",
+      "models": ["qwen2.5-coder:7b"]
+    }
+  ],
+  "Router": {
+    "default": "deepseek,deepseek-chat",
+    "background": "ollama,qwen2.5-coder:7b",
+    "think": "deepseek,deepseek-reasoner"
+  }
+}
+```
+
+### Multi-Model Power Setup
+```json
+{
+  "Providers": [
+    {
+      "name": "openrouter",
+      "api_base_url": "https://openrouter.ai/api/v1/chat/completions",
+      "api_key": "$OPENROUTER_API_KEY",
+      "models": [
+        "anthropic/claude-sonnet-4",
+        "google/gemini-2.5-pro-preview",
+        "openai/o1-preview"
+      ],
+      "transformer": { "use": ["openrouter"] }
+    }
+  ],
+  "Router": {
+    "default": "openrouter,anthropic/claude-sonnet-4",
+    "think": "openrouter,openai/o1-preview",
+    "longContext": "openrouter,google/gemini-2.5-pro-preview"
+  }
+}
+```
+
+### Local-First Setup
+```json
+{
+  "Providers": [
+    {
+      "name": "ollama",
+      "api_base_url": "http://localhost:11434/v1/chat/completions",
+      "api_key": "ollama",
+      "models": [
+        "qwen2.5-coder:32b",
+        "deepseek-r1:14b",
+        "llama3.2:latest"
+      ]
+    }
+  ],
+  "Router": {
+    "default": "ollama,qwen2.5-coder:32b",
+    "background": "ollama,llama3.2:latest",
+    "think": "ollama,deepseek-r1:14b"
+  }
+}
+```
+
+---
+
+## Advanced Features
+
+### Custom Router Logic
+
+For complex routing rules, create a custom router:
+
+**config.json:**
+```json
+{
+  "CUSTOM_ROUTER_PATH": "/path/to/custom-router.js"
+}
+```
+
+**custom-router.js:**
+```javascript
+/**
+ * Custom router function
+ * @param {object} req - Request object from Claude Code
+ * @param {object} config - Configuration object
+ * @returns {Promise<string|null>} - "provider,model" or null for default
+ */
+module.exports = async function router(req, config) {
+  const userMessage = req.body.messages.find(m => m.role === "user")?.content;
+
+  // Route code reviews to powerful model
+  if (userMessage && userMessage.includes("review this code")) {
+    return "openrouter,anthropic/claude-sonnet-4";
+  }
+
+  // Route refactoring to reasoning model
+  if (userMessage && userMessage.includes("refactor")) {
+    return "deepseek,deepseek-reasoner";
+  }
+
+  // Use default routing
+  return null;
+};
+```
+
+### Subagent Routing
+
+Route specific subagent tasks to specific models by adding a tag to the subagent prompt:
+
+```
+<CCR-SUBAGENT-MODEL>provider,model</CCR-SUBAGENT-MODEL>
+Please analyze this codebase for security vulnerabilities...
+```
+
+### GitHub Actions Integration
+
+Use Claude Code Router in CI/CD:
+
+**.github/workflows/claude.yaml:**
+```yaml
+name: Claude Code
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  claude:
+    if: contains(github.event.comment.body, '@claude')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+      issues: read
+      id-token: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Prepare Environment
+        run: |
+          curl -fsSL https://bun.sh/install | bash
+          mkdir -p $HOME/.claude-code-router
+          cat << 'EOF' > $HOME/.claude-code-router/config.json
+          {
+            "log": true,
+            "NON_INTERACTIVE_MODE": true,
+            "Providers": [
+              {
+                "name": "deepseek",
+                "api_base_url": "https://api.deepseek.com/chat/completions",
+                "api_key": "${{ secrets.DEEPSEEK_API_KEY }}",
+                "models": ["deepseek-chat"],
+                "transformer": {
+                  "use": ["deepseek"],
+                  "deepseek-chat": { "use": ["tooluse"] }
+                }
+              }
+            ],
+            "Router": {
+              "default": "deepseek,deepseek-chat"
+            }
+          }
+          EOF
+        shell: bash
+
+      - name: Start Claude Code Router
+        run: |
+          nohup ~/.bun/bin/bunx @musistudio/claude-code-router start &
+        shell: bash
+
+      - name: Run Claude Code
+        uses: anthropics/claude-code-action@beta
+        env:
+          ANTHROPIC_BASE_URL: http://localhost:3456
+        with:
+          anthropic_api_key: "any-string-is-ok"
+```
+
+---
+
+## Troubleshooting
+
+### Router Won't Start
+```bash
+# Check if port 3456 is in use
+lsof -i :3456
+
+# Kill existing process
+ccr stop
+
+# Start with debug logging
+ccr code
+```
+
+### Configuration Errors
+```bash
+# Validate config using UI
+ccr ui
+
+# Check logs
+tail -f ~/.claude-code-router/logs/ccr-*.log
+tail -f ~/.claude-code-router/claude-code-router.log
+```
+
+### Model Not Working
+- Verify API key is correct
+- Check API endpoint URL
+- Ensure correct transformer is configured
+- Review logs for error messages
+
+### Environment Variables Not Working
+```bash
+# Test variable interpolation
+echo $OPENAI_API_KEY
+
+# Restart router after setting variables
+export OPENAI_API_KEY="sk-..."
+ccr restart
+```
+
+---
+
+## Best Practices
+
+### Security
+- Never commit API keys to git
+- Use environment variables for sensitive data
+- Set `APIKEY` if exposing router over network
+- Keep `HOST` as `127.0.0.1` unless needed
+
+### Cost Optimization
+- Use local models (Ollama) for background tasks
+- Route simple tasks to cheaper models
+- Use powerful models only for complex reasoning
+- Monitor API usage through logs
+
+### Performance
+- Use `background` routing for file operations
+- Set appropriate `API_TIMEOUT_MS`
+- Consider local models for faster response
+- Use `longContext` routing to avoid token limits
+
+### Configuration Management
+- Keep config in version control (without API keys)
+- Use environment variables for secrets
+- Document your routing strategy
+- Test configuration with `ccr ui`
+
+---
+
+## Resources
+
+- **GitHub Repository**: https://github.com/musistudio/claude-code-router
+- **Discord Community**: https://discord.gg/rdftVMaUcS
+- **Claude Code Docs**: https://docs.anthropic.com/claude-code
+- **OpenRouter**: https://openrouter.ai/ (Access to 100+ models)
+- **Ollama**: https://ollama.ai/ (Local model hosting)
+
+---
+
+## Quick Start Checklist
+
+- [ ] Install Claude Code: `npm install -g @anthropic-ai/claude-code`
+- [ ] Install Router: `npm install -g @musistudio/claude-code-router`
+- [ ] Open UI: `ccr ui`
+- [ ] Configure at least one provider
+- [ ] Set default router
+- [ ] Test with: `ccr code`
+- [ ] Try switching models: `/model provider,model`
+- [ ] Optimize routing for your workflow
+
+---
+
+## Example: Getting Started in 5 Minutes
+
+```bash
+# 1. Install
+npm install -g @anthropic-ai/claude-code
+npm install -g @musistudio/claude-code-router
+
+# 2. Open UI and configure
+ccr ui
+# Add your API keys and models in the browser
+
+# 3. Start using
+ccr code
+
+# 4. Inside Claude Code, switch models anytime:
+/model deepseek,deepseek-chat
+/model openrouter,anthropic/claude-sonnet-4
+```
+
+---
+
+**Pro Tip**: Start with OpenRouter as your provider - it gives you access to 100+ models with a single API key, making it easy to experiment with different models without managing multiple API accounts.
+
+Happy routing!

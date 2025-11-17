@@ -1,0 +1,272 @@
+[DEBUG] Watching for changes in setting files /Users/levi/.claude/settings.json, /Users/levi/data/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 4 allow rule(s) to destination 'localSettings': ["WebSearch","Bash(git config:*)","Bash(brew install:*)","Bash(gh:*)"]
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/levi/.zshrc
+[DEBUG] Snapshots directory: /Users/levi/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1760444191295-6o6sff.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/bd692f3c-1b8c-4083-b237-55d38d219ea0-agent-bd692f3c-1b8c-4083-b237-55d38d219ea0.json.tmp.18681.1760444191296
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/levi/.claude/todos/bd692f3c-1b8c-4083-b237-55d38d219ea0-agent-bd692f3c-1b8c-4083-b237-55d38d219ea0.json.tmp.18681.1760444191296 to /Users/levi/.claude/todos/bd692f3c-1b8c-4083-b237-55d38d219ea0-agent-bd692f3c-1b8c-4083-b237-55d38d219ea0.json
+[DEBUG] File /Users/levi/.claude/todos/bd692f3c-1b8c-4083-b237-55d38d219ea0-agent-bd692f3c-1b8c-4083-b237-55d38d219ea0.json written atomically
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg)
+[DEBUG] Summarizing all 6 messages (~0 tokens)
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/levi/.claude/skills, project=/Users/levi/data/.claude/skills
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Shell snapshot created successfully (51600 bytes)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444191509
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39048 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444191509 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444191516
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39048 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444191516 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444192097
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39048 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444192097 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Executing hooks for SessionStart:startup
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444192136
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38943 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444192136 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444192143
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 38943 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444192143 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=true
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444192157
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39048 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444192157 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444213424
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39049 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444213424 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] FileHistory: Added snapshot for b104aee1-6d17-46b8-b9ad-f1e6bc4411be, tracking 0 files
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444276961
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39050 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444276961 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444276969
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39135 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444276969 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444651845
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39135 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444651845 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Added marketplace source: exa-mcp-server
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Writing to temp file: /Users/levi/.claude/settings.json.tmp.18681.1760444687797
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 105 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude/settings.json.tmp.18681.1760444687797 to /Users/levi/.claude/settings.json
+[DEBUG] File /Users/levi/.claude/settings.json written atomically
+[DEBUG] Loading plugin exa-mcp-server from source: "./"
+[DEBUG] Found 1 plugins (1 enabled, 0 disabled)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] FileHistory: Making snapshot for message 662a4839-e6a3-44bf-bb89-e0d3b3450adf
+[DEBUG] FileHistory: Added snapshot for 662a4839-e6a3-44bf-bb89-e0d3b3450adf, tracking 0 files
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444687837
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39135 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444687837 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444687844
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39259 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444687844 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message fca87365-ecbc-46c1-8e4e-1be70d746150
+[DEBUG] FileHistory: Added snapshot for fca87365-ecbc-46c1-8e4e-1be70d746150, tracking 0 files
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/levi/.claude/skills, project=/Users/levi/data/.claude/skills
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444731615
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39259 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444731615 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444731630
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39259 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444731630 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444731638
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39343 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444731638 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 1ba1c009-7277-44de-b23a-d1129d1a76bc
+[DEBUG] FileHistory: Added snapshot for 1ba1c009-7277-44de-b23a-d1129d1a76bc, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "export EXA_API_KEY=\"a664bcfc-96d0-44c1-b765-3916401b7c97\""
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Bash tool invoked with command: export EXA_API_KEY="a664bcfc-96d0-44c1-b765-3916401b7c97"
+[DEBUG] Bash tool description: Export EXA_API_KEY environment variable
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444808965
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39343 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444808965 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444808978
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39343 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444808978 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444808984
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39516 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444808984 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1760444191295-6o6sff.sh
+[DEBUG] FileHistory: Making snapshot for message 89139a53-afc3-473a-8064-753835e53c8c
+[DEBUG] FileHistory: Added snapshot for 89139a53-afc3-473a-8064-753835e53c8c, tracking 0 files
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444820463
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39516 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444820463 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444820470
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39599 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444820470 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.18681.1760444820477
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 40007 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.18681.1760444820477 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically

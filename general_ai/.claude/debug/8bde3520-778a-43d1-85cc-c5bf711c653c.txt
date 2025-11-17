@@ -1,0 +1,226 @@
+[DEBUG] Watching for changes in setting files /Users/levi/.claude/settings.json, /Users/levi/data/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 28 allow rule(s) to destination 'userSettings': ["WebSearch","Bash(git:*)","Bash(gh:*)","Bash(brew:*)","Bash(npm:*)","Bash(yarn:*)","Bash(pnpm:*)","Bash(pip:*)","Bash(pipenv:*)","Bash(python:*)","Bash(node:*)","Bash(npx:*)","Bash(docker:*)","Bash(docker-compose:*)","mcp__plugin_exa-mcp-server_exa__web_search_exa","mcp__plugin_exa-mcp-server_exa__get_code_context_exa","mcp__firecrawl__firecrawl_scrape","mcp__firecrawl__firecrawl_search","mcp__firecrawl__firecrawl_map","mcp__firecrawl__firecrawl_crawl","mcp__firecrawl__firecrawl_extract","mcp__dayone__create_entry","mcp__dayone__search_entries","mcp__dayone__get_entry","mcp__n8n__search_nodes","mcp__n8n__get_node_documentation","mcp__n8n__n8n_health_check","mcp__n8n__n8n_list_workflows"]
+[DEBUG] Applying permission update: Adding 4 ask rule(s) to destination 'userSettings': ["Bash(rm:*)","Bash(sudo:*)","Bash(kill:*)","Bash(pkill:*)"]
+[DEBUG] Loading plugin exa-mcp-server from source: "./"
+[DEBUG] Plugin exa-mcp-server has no entry.skills defined
+[DEBUG] Loading plugin document-skills from source: "./"
+[DEBUG] Processing 4 skill paths for plugin document-skills
+[DEBUG] Checking skill path: ./document-skills/xlsx -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/xlsx (exists: true)
+[DEBUG] Checking skill path: ./document-skills/docx -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/docx (exists: true)
+[DEBUG] Checking skill path: ./document-skills/pptx -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pptx (exists: true)
+[DEBUG] Checking skill path: ./document-skills/pdf -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pdf (exists: true)
+[DEBUG] Found 4 valid skill paths for plugin document-skills, setting skillsPaths
+[DEBUG] Loading plugin example-skills from source: "./"
+[DEBUG] Processing 10 skill paths for plugin example-skills
+[DEBUG] Checking skill path: ./skill-creator -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/skill-creator (exists: true)
+[DEBUG] Checking skill path: ./mcp-builder -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/mcp-builder (exists: true)
+[DEBUG] Checking skill path: ./canvas-design -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/canvas-design (exists: true)
+[DEBUG] Checking skill path: ./algorithmic-art -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/algorithmic-art (exists: true)
+[DEBUG] Checking skill path: ./internal-comms -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/internal-comms (exists: true)
+[DEBUG] Checking skill path: ./webapp-testing -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/webapp-testing (exists: true)
+[DEBUG] Checking skill path: ./artifacts-builder -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/artifacts-builder (exists: true)
+[DEBUG] Checking skill path: ./slack-gif-creator -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/slack-gif-creator (exists: true)
+[DEBUG] Checking skill path: ./theme-factory -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/theme-factory (exists: true)
+[DEBUG] Checking skill path: ./brand-guidelines -> /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/brand-guidelines (exists: true)
+[DEBUG] Found 10 valid skill paths for plugin example-skills, setting skillsPaths
+[DEBUG] Found 3 plugins (3 enabled, 0 disabled)
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/levi/.claude/skills, project=/Users/levi/data/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] getPluginSkills: Processing 3 enabled plugins
+[DEBUG] Checking plugin exa-mcp-server: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Checking plugin document-skills: skillsPath=none, skillsPaths=4 paths
+[DEBUG] Attempting to load skills from plugin document-skills skillsPaths: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/xlsx, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/docx, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pptx, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pdf
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/xlsx for plugin document-skills
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+[DEBUG] Loaded 1 skills from plugin document-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/xlsx
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/docx for plugin document-skills
+[DEBUG] Loaded 1 skills from plugin document-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/docx
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pptx for plugin document-skills
+[DEBUG] Loaded 1 skills from plugin document-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pptx
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pdf for plugin document-skills
+[DEBUG] Loaded 1 skills from plugin document-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/document-skills/pdf
+[DEBUG] Checking plugin example-skills: skillsPath=none, skillsPaths=10 paths
+[DEBUG] Attempting to load skills from plugin example-skills skillsPaths: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/skill-creator, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/mcp-builder, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/canvas-design, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/algorithmic-art, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/internal-comms, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/webapp-testing, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/artifacts-builder, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/slack-gif-creator, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/theme-factory, /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/brand-guidelines
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/skill-creator for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/skill-creator
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/mcp-builder for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/mcp-builder
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/canvas-design for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/canvas-design
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/algorithmic-art for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/algorithmic-art
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/internal-comms for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/internal-comms
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/webapp-testing for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/webapp-testing
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/artifacts-builder for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/artifacts-builder
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/slack-gif-creator for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/slack-gif-creator
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/theme-factory for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/theme-factory
+[DEBUG] Loading from skillPath: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/brand-guidelines for plugin example-skills
+[DEBUG] Loaded 1 skills from plugin example-skills custom path: /Users/levi/.claude/plugins/marketplaces/anthropic-agent-skills/brand-guidelines
+[DEBUG] Total plugin skills loaded: 14
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 14 plugin skills
+[DEBUG] Summarizing last 5 of 62 messages (~137084 tokens)
+[DEBUG] Total LSP servers loaded: 0
+[DEBUG] LSP manager initialized with 0 servers
+[DEBUG] LSP server manager initialized successfully
+[DEBUG] Registered 0 hooks from 3 plugins
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/levi/.zshrc
+[DEBUG] Snapshots directory: /Users/levi/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1762313686849-w50nor.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/8bde3520-778a-43d1-85cc-c5bf711c653c-agent-8bde3520-778a-43d1-85cc-c5bf711c653c.json.tmp.16294.1762313686849
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/levi/.claude/todos/8bde3520-778a-43d1-85cc-c5bf711c653c-agent-8bde3520-778a-43d1-85cc-c5bf711c653c.json.tmp.16294.1762313686849 to /Users/levi/.claude/todos/8bde3520-778a-43d1-85cc-c5bf711c653c-agent-8bde3520-778a-43d1-85cc-c5bf711c653c.json
+[DEBUG] File /Users/levi/.claude/todos/8bde3520-778a-43d1-85cc-c5bf711c653c-agent-8bde3520-778a-43d1-85cc-c5bf711c653c.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.16294.1762313686853
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 42123 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.16294.1762313686853 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.16294.1762313686895
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 42123 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.16294.1762313686895 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.16294.1762313686896
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 42123 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.16294.1762313686896 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.16294.1762313686897
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 42123 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.16294.1762313686897 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Shell snapshot created successfully (52372 bytes)
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/levi/.local/share/claude/versions/2.0.32)
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Initializing HTTP transport to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Node version: v24.3.0, Platform: darwin
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+[DEBUG] MCP server "dayone": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "n8n": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.16294.1762313687626
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 42123 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.16294.1762313687626 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": MTLS options: default
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport options: {"url":"https://mcp.exa.ai/mcp","headers":{"User-Agent":"claude-code/2.0.32"},"hasAuthProvider":true,"timeoutMs":60000}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport created successfully
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Client created, setting up request handler
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Testing basic HTTP connectivity to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Parsed URL: host=mcp.exa.ai, port=default, protocol=https:
+[ERROR] MCP server "dayone" Server stderr: warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.16294.1762313687647
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 42123 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.16294.1762313687647 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.16294.1762313687663
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 42018 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.16294.1762313687663 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.16294.1762313687664
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 42018 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.16294.1762313687664 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: native, using native: true
+[DEBUG] performStartupChecks called
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Found 3 enabled plugins
+[DEBUG] Schema version mismatch (current: 0, expected: 1), syncing installed_plugins.json
+[DEBUG] Loaded 3 installed plugins from /Users/levi/.claude/plugins/installed_plugins.json (schema version 1)
+[DEBUG] Plugin exa-mcp-server@exa-mcp-server already in installed_plugins.json, skipping
+[DEBUG] Plugin document-skills@anthropic-agent-skills already in installed_plugins.json, skipping
+[DEBUG] Plugin example-skills@anthropic-agent-skills already in installed_plugins.json, skipping
+[DEBUG] Saved 3 installed plugins to /Users/levi/.claude/plugins/installed_plugins.json (schema version 1)
+[DEBUG] Updated installed_plugins.json to schema version 1 (0 plugins added, 3 skipped)
+[DEBUG] Found 3 installed plugins
+[DEBUG] Loaded plugins - Enabled: 3, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] Found 0 missing plugins (not installed):
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token expires in -86434s, attempting proactive refresh
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Starting token refresh
+[DEBUG] Summarizing all 5 messages (~0 tokens)
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Found client info
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token refresh successful, saving new tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Saving tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token expires in: 3600
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token refreshed successfully
+[ERROR] MCP server "dayone" Server stderr: ERROR:__main__:Failed to initialize Day One tools: Day One CLI 'dayone' not found or not working. Please install Day One CLI first. Error: Command '['dayone', '--version']' returned non-zero exit status 64.
+[DEBUG] MCP server "dayone": Connection failed after 389ms: MCP error -32000: Connection closed
+[ERROR] MCP server "dayone" Connection failed: MCP error -32000: Connection closed
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3599s
+[DEBUG] Stream started - received first chunk
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3599s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Successfully connected to http server in 1030ms
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"exa-search-server","title":"Exa","version":"3.0.7"}}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3599s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3599s
+[DEBUG] Checking for native installer update to version 2.0.33
+[DEBUG] Downloading native installer version 2.0.33
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: native, using native: true
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1762313686849-w50nor.sh
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport closed/disconnected, attempting automatic reconnection
+[DEBUG] LSP server manager shut down successfully
+[DEBUG] FileHistory: Added snapshot for 1d964b12-408b-4cbc-8236-3aa0832dce38, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/exit</command-name>
+            <command-message>exit</command-message>
+            <...
+[DEBUG] UserCommandMessage rendering: "exit" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Initializing HTTP transport to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Node version: v24.3.0, Platform: darwin
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.16294.1762313692509
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 42409 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.16294.1762313692509 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically

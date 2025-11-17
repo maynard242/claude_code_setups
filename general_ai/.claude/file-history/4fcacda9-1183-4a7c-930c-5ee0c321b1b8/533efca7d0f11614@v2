@@ -1,0 +1,60 @@
+# Data Directory
+
+## Overview
+This directory contains various development projects, experiments, and data files. It serves as the main workspace for personal projects and learning.
+
+## Directory Structure
+
+```
+/Users/levi/data/
+├── agent_test/              # OpenRouter chat application (Python/pipenv)
+├── docker_silly/            # Docker experiments and testing
+├── Projects/
+│   ├── mcp-dayone/         # Day One MCP server integration (production)
+│   └── nscc/               # NSCC related work
+└── CLAUDE.md               # This file
+```
+
+## Key Projects
+
+### agent_test/
+OpenRouter chat application. See `agent_test/CLAUDE.md` for details.
+- Stack: Python, pipenv, openai library, python-dotenv
+- Purpose: Testing OpenRouter API integration
+
+### docker_silly/
+Docker experimentation and testing workspace.
+
+### Projects/mcp-dayone/
+Production-ready Day One MCP server integration. See `Projects/mcp-dayone/CLAUDE.md` for comprehensive documentation.
+- Custom MCP server for Day One journaling
+- Full architecture and API documentation
+
+### Projects/nscc/
+NSCC related project files.
+
+## Universal Commands
+
+### `/graham` - Talent Evaluation
+Universal command for analyzing public profiles using Graham Duncan's "What's going on here, with this human?" framework.
+
+**Usage:**
+```
+/graham [person's name]
+```
+
+The command will:
+1. Confirm the person's identity
+2. Research their public profile (LinkedIn, Twitter, writings, interviews)
+3. Conduct comprehensive talent analysis
+4. Generate structured assessment report
+
+**Note:** This command is available in any directory. Analysis output should be saved as `PERSON-NAME-YYYY-MM-DD.md` in the current working directory.
+
+## Development Patterns
+
+When working in this directory:
+- Each subdirectory may have its own CLAUDE.md with project-specific context
+- Use universal commands (like `/graham`) for common workflows
+- Project-specific tools and setups are documented in respective CLAUDE.md files
+- MCP integrations (Exa, Firecrawl, Day One, n8n) are available globally

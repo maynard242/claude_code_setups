@@ -1,0 +1,172 @@
+# Claude Code Project Guide
+
+## Project Overview
+This document helps Claude Code understand and work effectively with this project.
+
+## Project Structure
+```
+.
+├── src/           # Source code
+├── tests/         # Test files
+├── docs/          # Documentation
+└── scripts/       # Build and utility scripts
+```
+
+## Development Workflow
+
+### Getting Started
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Run tests
+npm test
+
+# Build for production
+npm run build
+```
+
+### Code Style
+- Use TypeScript for type safety
+- Follow existing naming conventions
+- Write tests for new features
+- Keep functions small and focused
+
+### Testing
+- Unit tests go in `tests/unit/`
+- Integration tests go in `tests/integration/`
+- Run tests before committing
+- Aim for >80% code coverage
+
+## Common Tasks
+
+### Adding a New Feature
+1. Create feature branch
+2. Implement feature with tests
+3. Update documentation
+4. Submit PR for review
+
+### Fixing Bugs
+1. Write failing test that reproduces bug
+2. Fix the bug
+3. Verify test passes
+4. Check for similar issues
+
+### Refactoring
+1. Ensure tests are comprehensive
+2. Make incremental changes
+3. Run tests after each change
+4. Update documentation as needed
+
+## Architecture
+
+### Key Components
+- **Component A**: Handles X functionality
+- **Component B**: Manages Y operations
+- **Component C**: Coordinates Z processes
+
+### Design Patterns
+- Repository pattern for data access
+- Factory pattern for object creation
+- Observer pattern for event handling
+
+## Important Files
+- `package.json` - Dependencies and scripts
+- `tsconfig.json` - TypeScript configuration
+- `.env.example` - Environment variables template
+
+## Dependencies
+- **Framework**: React/Vue/etc
+- **Testing**: Jest/Vitest/etc
+- **Build**: Webpack/Vite/etc
+
+## Best Practices
+- Write self-documenting code
+- Add comments for complex logic
+- Keep dependencies updated
+- Use meaningful commit messages
+- Review changes before committing
+
+## Gotchas & Quirks
+- List any project-specific quirks here
+- Known issues or limitations
+- Workarounds for common problems
+
+## Resources
+- [Project Documentation](./docs)
+- [API Reference](./docs/api)
+- [Contributing Guide](./CONTRIBUTING.md)
+
+## Contact
+- Maintainer: [Name]
+- Issues: [Issue Tracker URL]
+- Discussions: [Discussion Forum URL]
+
+### AI Agentic Workflows
+
+## Graham method
+The '/graham' command will:
+
+1. Ask for a name to evaluate
+2. Confirm the identity of the person
+3. Run the analysis in the ~/data/.claude/commands/graham.md
+4. Save the file in the PERSON'S NAME-DD-MM-YY.md in the current directory
+
+## Research & Data Tools
+
+Claude Code has access to powerful web research and data gathering tools via MCP:
+
+### Exa Search Tools
+
+**`web_search_exa`** - General web search
+- **Use for:** Finding current information, news, articles, documentation
+- **Returns:** Content from the most relevant websites
+- **When to use:** Research tasks, finding latest information, discovering resources
+- **Example queries:** "latest AI research 2025", "best practices for React Server Components"
+
+**`get_code_context_exa`** - Code-specific search
+- **Use for:** API documentation, SDK examples, library usage patterns
+- **Returns:** High-quality code context and examples (dynamic token allocation)
+- **When to use:** Implementing new libraries, finding API examples, understanding frameworks
+- **Example queries:** "Next.js partial prerendering configuration", "Python pandas dataframe filtering"
+- **Note:** Uses dynamic token mode by default for optimal efficiency
+
+### Firecrawl Tools
+
+**`firecrawl_scrape`** - Single page extraction (fastest)
+- **Use for:** Extracting content from a specific known URL
+- **Returns:** Markdown, HTML, screenshots, or structured data
+- **Best for:** Documentation pages, blog posts, single articles
+
+**`firecrawl_search`** - Web search with optional scraping
+- **Use for:** Finding and extracting content across multiple sources
+- **Returns:** Search results with optional scraped content
+- **Best for:** Research tasks when you don't know the exact URL
+
+**`firecrawl_map`** - Website URL discovery
+- **Use for:** Discovering all indexed URLs on a website
+- **Returns:** Array of URLs found on the site
+- **Best for:** Understanding site structure before scraping
+
+**`firecrawl_crawl`** - Multi-page comprehensive crawling
+- **Use for:** Extracting content from multiple related pages
+- **Returns:** Content from all crawled pages
+- **Warning:** Can be slow and use many tokens; use map + scrape for better control
+
+**`firecrawl_extract`** - LLM-powered structured data extraction
+- **Use for:** Extracting specific structured data (prices, names, details)
+- **Returns:** Structured data matching your JSON schema
+- **Best for:** Gathering structured information from web pages
+
+### When to Use These Tools
+
+- **Researching new technologies:** Use `get_code_context_exa` for code examples and patterns
+- **Finding current information:** Use `web_search_exa` for latest news and updates
+- **Scraping documentation:** Use `firecrawl_scrape` for specific pages
+- **Data gathering projects:** Use `firecrawl_crawl` or `firecrawl_extract` for structured data
+- **Understanding a website:** Use `firecrawl_map` to discover available pages
+
+

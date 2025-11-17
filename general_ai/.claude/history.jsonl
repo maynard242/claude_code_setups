@@ -1,0 +1,236 @@
+{"display":"help me write a good claude.md file","pastedContents":{},"timestamp":1759900618628,"project":"/Users/levi"}
+{"display":"propose a good CLAUDE.md","pastedContents":{},"timestamp":1759901067806,"project":"/Users/levi"}
+{"display":"/init ","pastedContents":{},"timestamp":1759901128347,"project":"/Users/levi"}
+{"display":"/init ","pastedContents":{},"timestamp":1759901128353,"project":"/Users/levi"}
+{"display":"build me a simple chat interface to claude sonnet to test","pastedContents":{},"timestamp":1759902344531,"project":"/Users/levi/data/agent_test"}
+{"display":"I don't need a web interface. and we jsut make this a terminal chat","pastedContents":{},"timestamp":1759902403124,"project":"/Users/levi/data/agent_test"}
+{"display":"instead of npm, do this in python?","pastedContents":{},"timestamp":1759902456056,"project":"/Users/levi/data/agent_test"}
+{"display":"ls","pastedContents":{},"timestamp":1759902540077,"project":"/Users/levi/data/agent_test"}
+{"display":"can you test this program","pastedContents":{},"timestamp":1759902552293,"project":"/Users/levi/data/agent_test"}
+{"display":"/model ","pastedContents":{},"timestamp":1759926926624,"project":"/Users/levi/data/agent_test"}
+{"display":"/model ","pastedContents":{},"timestamp":1759926926632,"project":"/Users/levi/data/agent_test"}
+{"display":"/model ","pastedContents":{},"timestamp":1759926926632,"project":"/Users/levi/data/agent_test"}
+{"display":"/models --models","pastedContents":{},"timestamp":1759926937914,"project":"/Users/levi/data/agent_test"}
+{"display":"/models --models","pastedContents":{},"timestamp":1759926937922,"project":"/Users/levi/data/agent_test"}
+{"display":"/model ","pastedContents":{},"timestamp":1759926961238,"project":"/Users/levi/data/agent_test"}
+{"display":"/model ","pastedContents":{},"timestamp":1759926961246,"project":"/Users/levi/data/agent_test"}
+{"display":"/model ","pastedContents":{},"timestamp":1759926961246,"project":"/Users/levi/data/agent_test"}
+{"display":"/model haiku","pastedContents":{},"timestamp":1759927104992,"project":"/Users/levi/data/agent_test"}
+{"display":"/model haiku","pastedContents":{},"timestamp":1759927104999,"project":"/Users/levi/data/agent_test"}
+{"display":"/model haiku","pastedContents":{},"timestamp":1759927104999,"project":"/Users/levi/data/agent_test"}
+{"display":"/model sonnet","pastedContents":{},"timestamp":1759927110418,"project":"/Users/levi/data/agent_test"}
+{"display":"/model sonnet","pastedContents":{},"timestamp":1759927110425,"project":"/Users/levi/data/agent_test"}
+{"display":"/model sonnet","pastedContents":{},"timestamp":1759927110425,"project":"/Users/levi/data/agent_test"}
+{"display":"/model default","pastedContents":{},"timestamp":1759927129931,"project":"/Users/levi/data/agent_test"}
+{"display":"/model default","pastedContents":{},"timestamp":1759927129937,"project":"/Users/levi/data/agent_test"}
+{"display":"/model default","pastedContents":{},"timestamp":1759927129938,"project":"/Users/levi/data/agent_test"}
+{"display":"/init ","pastedContents":{},"timestamp":1759927170014,"project":"/Users/levi/data/agent_test"}
+{"display":"/init ","pastedContents":{},"timestamp":1759927170022,"project":"/Users/levi/data/agent_test"}
+{"display":"pls debug and test is app. ","pastedContents":{},"timestamp":1759927235028,"project":"/Users/levi/data/agent_test"}
+{"display":"pls change this to use openrouter's llm (default choice)","pastedContents":{},"timestamp":1759928335764,"project":"/Users/levi/data/agent_test"}
+{"display":"pip install -r requirements.txt","pastedContents":{},"timestamp":1759928504877,"project":"/Users/levi/data/agent_test"}
+{"display":"/graham ","pastedContents":{},"timestamp":1760020902380,"project":"/Users/levi/data"}
+{"display":"/graham ","pastedContents":{},"timestamp":1760020902387,"project":"/Users/levi/data"}
+{"display":"Leslie Teo, AI Singapore","pastedContents":{},"timestamp":1760020915927,"project":"/Users/levi/data"}
+{"display":"yes","pastedContents":{},"timestamp":1760020996660,"project":"/Users/levi/data"}
+{"display":"i am using a macbook. help me create a docker compose file to downlown silly tavern's official repo, run it. I am going to connect it to ollama. I want data to persist in a volume which can be centrally managed by docker or in ~/data/docker_silly","pastedContents":{},"timestamp":1760355054334,"project":"/Users/levi/data/docker_silly"}
+{"display":"what are best practices when i set up any project folder with regards to git. I am using github","pastedContents":{},"timestamp":1760355661033,"project":"/Users/levi/data/docker_silly"}
+{"display":"i am confused my term remote origin etc what are these","pastedContents":{},"timestamp":1760355752772,"project":"/Users/levi/data/docker_silly"}
+{"display":"is is git config setting correct","pastedContents":{},"timestamp":1760355822804,"project":"/Users/levi/data/docker_silly"}
+{"display":"help me set up my git (for github). my name is maynard242 and email is lteo@ischool.berkeley.edu","pastedContents":{},"timestamp":1760362921490,"project":"/Users/levi/data"}
+{"display":"should i make other git config settings","pastedContents":{},"timestamp":1760362979203,"project":"/Users/levi/data"}
+{"display":"yes","pastedContents":{},"timestamp":1760363040726,"project":"/Users/levi/data"}
+{"display":"ok let's install gh","pastedContents":{},"timestamp":1760363097791,"project":"/Users/levi/data"}
+{"display":"/plugin ","pastedContents":{},"timestamp":1760443828513,"project":"/Users/levi/data"}
+{"display":"/plugin ","pastedContents":{},"timestamp":1760443828522,"project":"/Users/levi/data"}
+{"display":"/plugin ","pastedContents":{},"timestamp":1760443828522,"project":"/Users/levi/data"}
+{"display":"/plugin marketplace add exa-labs/exa-mcp-server","pastedContents":{},"timestamp":1760444067974,"project":"/Users/levi/data"}
+{"display":"/plugin marketplace add exa-labs/exa-mcp-server","pastedContents":{},"timestamp":1760444067980,"project":"/Users/levi/data"}
+{"display":"/plugin marketplace add exa-labs/exa-mcp-server","pastedContents":{},"timestamp":1760444067981,"project":"/Users/levi/data"}
+{"display":"/plugin ","pastedContents":{},"timestamp":1760444276968,"project":"/Users/levi/data"}
+{"display":"/plugin ","pastedContents":{},"timestamp":1760444276974,"project":"/Users/levi/data"}
+{"display":"/plugin ","pastedContents":{},"timestamp":1760444276975,"project":"/Users/levi/data"}
+{"display":"/plugin marketplace add exa-labs/exa-mcp-server","pastedContents":{},"timestamp":1760444687843,"project":"/Users/levi/data"}
+{"display":"/plugin marketplace add exa-labs/exa-mcp-server","pastedContents":{},"timestamp":1760444687850,"project":"/Users/levi/data"}
+{"display":"/plugin marketplace add exa-labs/exa-mcp-server","pastedContents":{},"timestamp":1760444687850,"project":"/Users/levi/data"}
+{"display":"export ","pastedContents":{},"timestamp":1760444731637,"project":"/Users/levi/data"}
+{"display":"I want to export my EXA API key i.e. export EXA_API_KEY=\"a664bcfc-96d0-44c1-b765-3916401b7c97\"","pastedContents":{},"timestamp":1760444808983,"project":"/Users/levi/data"}
+{"display":"/plugin ","pastedContents":{},"timestamp":1760444939931,"project":"/Users/levi/data"}
+{"display":"/plugin ","pastedContents":{},"timestamp":1760444939938,"project":"/Users/levi/data"}
+{"display":"/plugin ","pastedContents":{},"timestamp":1760444939938,"project":"/Users/levi/data"}
+{"display":"/mcp exa-mcp-server","pastedContents":{},"timestamp":1760445014015,"project":"/Users/levi/data"}
+{"display":"/mcp exa-mcp-server","pastedContents":{},"timestamp":1760445014021,"project":"/Users/levi/data"}
+{"display":"/mcp exa-mcp-server","pastedContents":{},"timestamp":1760445014021,"project":"/Users/levi/data"}
+{"display":"how do i use or exa","pastedContents":{},"timestamp":1760445097039,"project":"/Users/levi/data"}
+{"display":"search exa for the latest news on aspire partners","pastedContents":{},"timestamp":1760445182857,"project":"/Users/levi/data"}
+{"display":"what is the lastest financial advisory platfrom in singapore that was set up by KKR","pastedContents":{},"timestamp":1760445243451,"project":"/Users/levi/data"}
+{"display":"ok, exa is installed as a plugin and working. do i also need to set it up in claude desktop?","pastedContents":{},"timestamp":1760445297983,"project":"/Users/levi/data"}
+{"display":"test firecrawl","pastedContents":{},"timestamp":1760449319479,"project":"/Users/levi/data"}
+{"display":"how do I use exa and firecrawl? should we write these capabilities into claude.md","pastedContents":{},"timestamp":1760449376250,"project":"/Users/levi/data"}
+{"display":"Yes please add it in","pastedContents":{},"timestamp":1760449450041,"project":"/Users/levi/data"}
+{"display":"/exit","pastedContents":{},"timestamp":1760449461658,"project":"/Users/levi/data"}
+{"display":"/exit","pastedContents":{},"timestamp":1760449461666,"project":"/Users/levi/data"}
+{"display":"/exit","pastedContents":{},"timestamp":1760449461666,"project":"/Users/levi/data"}
+{"display":"how do i uninstall abacus.ai's DeepAgent which I downloaded into terminal","pastedContents":{},"timestamp":1760449601632,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760449617294,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760449617302,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760449617302,"project":"/Users/levi/data"}
+{"display":"claude mcp","pastedContents":{},"timestamp":1760580825037,"project":"/Users/levi/data"}
+{"display":"claude mcp add-from-claude-desktop --scope global","pastedContents":{},"timestamp":1760580877860,"project":"/Users/levi/data"}
+{"display":"claude mcp add-from-claude-desktop --scope user","pastedContents":{},"timestamp":1760581047238,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760581069113,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760581069121,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760581069121,"project":"/Users/levi/data"}
+{"display":"explain how gmail node works in n8n and what operations it supports","pastedContents":{},"timestamp":1760581216805,"project":"/Users/levi/data"}
+{"display":"coonect to my n8n instance and show me all existing workflows","pastedContents":{},"timestamp":1760581294497,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760581560383,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760581560389,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760581560389,"project":"/Users/levi/data"}
+{"display":"can you access my n8n server","pastedContents":{},"timestamp":1760583700688,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760844836680,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760844836681,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760844836681,"project":"/Users/levi/data"}
+{"display":"cmonitor","pastedContents":{},"timestamp":1760844847842,"project":"/Users/levi/data"}
+{"display":"2","pastedContents":{},"timestamp":1760844871001,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760844879928,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760844879935,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760844879935,"project":"/Users/levi/data"}
+{"display":"how can i import skills","pastedContents":{},"timestamp":1760950209116,"project":"/Users/levi/data"}
+{"display":"/skills","pastedContents":{},"timestamp":1760950236135,"project":"/Users/levi/data"}
+{"display":"/skills","pastedContents":{},"timestamp":1760950236143,"project":"/Users/levi/data"}
+{"display":"/skills doesnt work","pastedContents":{},"timestamp":1760950263162,"project":"/Users/levi/data"}
+{"display":"/skills doesnt work","pastedContents":{},"timestamp":1760950263169,"project":"/Users/levi/data"}
+{"display":"this doesn't work /skills","pastedContents":{},"timestamp":1760950326279,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760950390418,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760950390426,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760950390426,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760950487329,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760950487330,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760950487330,"project":"/Users/levi/data"}
+{"display":"/marketplace","pastedContents":{},"timestamp":1760960625128,"project":"/Users/levi/data"}
+{"display":"/marketplace","pastedContents":{},"timestamp":1760960625137,"project":"/Users/levi/data"}
+{"display":"/plugin ","pastedContents":{},"timestamp":1760960688576,"project":"/Users/levi/data"}
+{"display":"/plugin ","pastedContents":{},"timestamp":1760960688583,"project":"/Users/levi/data"}
+{"display":"/plugin ","pastedContents":{},"timestamp":1760960688583,"project":"/Users/levi/data"}
+{"display":"claude","pastedContents":{},"timestamp":1760960723965,"project":"/Users/levi/data"}
+{"display":"marketplace","pastedContents":{},"timestamp":1760960739115,"project":"/Users/levi/data"}
+{"display":"/plugin ","pastedContents":{},"timestamp":1760960781497,"project":"/Users/levi/data"}
+{"display":"/plugin ","pastedContents":{},"timestamp":1760960781504,"project":"/Users/levi/data"}
+{"display":"/plugin ","pastedContents":{},"timestamp":1760960781504,"project":"/Users/levi/data"}
+{"display":"/plugin ","pastedContents":{},"timestamp":1760960809980,"project":"/Users/levi/data"}
+{"display":"/plugin ","pastedContents":{},"timestamp":1760960809981,"project":"/Users/levi/data"}
+{"display":"/plugin ","pastedContents":{},"timestamp":1760960809981,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760960815286,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760960815292,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760960815293,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760960844269,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760960844270,"project":"/Users/levi/data"}
+{"display":"/exit ","pastedContents":{},"timestamp":1760960844270,"project":"/Users/levi/data"}
+{"display":"skills","pastedContents":{},"timestamp":1760960955400,"project":"/Users/levi/data"}
+{"display":"/exit","pastedContents":{},"timestamp":1760961043191,"project":"/Users/levi/data"}
+{"display":"/exit","pastedContents":{},"timestamp":1760961043199,"project":"/Users/levi/data"}
+{"display":"/exit","pastedContents":{},"timestamp":1760961043199,"project":"/Users/levi/data"}
+{"display":"what are the different modes that you have","pastedContents":{},"timestamp":1762131268583,"project":"/Users/levi/data/Projects/nscc"}
+{"display":"can you read pdfs","pastedContents":{},"timestamp":1762131299490,"project":"/Users/levi/data/Projects/nscc"}
+{"display":"/bye","pastedContents":{},"timestamp":1762131317905,"project":"/Users/levi/data/Projects/nscc"}
+{"display":"/bye","pastedContents":{},"timestamp":1762131317913,"project":"/Users/levi/data/Projects/nscc"}
+{"display":"I am a member of the NSCC board. Please read and summarize the papers @\"6. Update on 3.0_V4.pdf\" and @\"6.1 Draft Paper NSCC 3.0.pdf\" and summarize them","pastedContents":{},"timestamp":1762131692001,"project":"/Users/levi/data/Projects/nscc","sessionId":"0f543d15-b40f-4595-ad69-10c89d290ec2"}
+{"display":"I would like to focus on how we plan for the need for GPUs. Is the way we estimate demand robust?","pastedContents":{},"timestamp":1762131785518,"project":"/Users/levi/data/Projects/nscc","sessionId":"0f543d15-b40f-4595-ad69-10c89d290ec2"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762175334129,"project":"/Users/levi/data","sessionId":"34788674-02e2-48ce-8aed-e810f4dcc81c"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762175334129,"project":"/Users/levi/data","sessionId":"34788674-02e2-48ce-8aed-e810f4dcc81c"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762175334129,"project":"/Users/levi/data","sessionId":"34788674-02e2-48ce-8aed-e810f4dcc81c"}
+{"display":"how do i turn on planning mode","pastedContents":{},"timestamp":1762175368609,"project":"/Users/levi/data","sessionId":"5cb3d310-4860-40b8-bfc7-11513da152d1"}
+{"display":"so tab for thinking, and /plan for planning","pastedContents":{},"timestamp":1762175405721,"project":"/Users/levi/data","sessionId":"5cb3d310-4860-40b8-bfc7-11513da152d1"}
+{"display":"hello","pastedContents":{},"timestamp":1762175439729,"project":"/Users/levi/data","sessionId":"29c83a08-837c-492b-b0b3-8a2b55bc1f7a"}
+{"display":"test","pastedContents":{},"timestamp":1762175448853,"project":"/Users/levi/data","sessionId":"29c83a08-837c-492b-b0b3-8a2b55bc1f7a"}
+{"display":"/statusline ","pastedContents":{},"timestamp":1762176931030,"project":"/Users/levi/data","sessionId":"0a51a4c6-8d3b-4979-a762-154f7309d919"}
+{"display":"/statusline ","pastedContents":{},"timestamp":1762176931031,"project":"/Users/levi/data","sessionId":"0a51a4c6-8d3b-4979-a762-154f7309d919"}
+{"display":"/statusline ","pastedContents":{},"timestamp":1762177017202,"project":"/Users/levi/data","sessionId":"02e8a755-ae28-4625-98e7-97391e5fafdd"}
+{"display":"/statusline ","pastedContents":{},"timestamp":1762177017203,"project":"/Users/levi/data","sessionId":"02e8a755-ae28-4625-98e7-97391e5fafdd"}
+{"display":"/exit","pastedContents":{},"timestamp":1762177020713,"project":"/Users/levi/data","sessionId":"02e8a755-ae28-4625-98e7-97391e5fafdd"}
+{"display":"/exit","pastedContents":{},"timestamp":1762177020713,"project":"/Users/levi/data","sessionId":"02e8a755-ae28-4625-98e7-97391e5fafdd"}
+{"display":"/exit","pastedContents":{},"timestamp":1762177020713,"project":"/Users/levi/data","sessionId":"02e8a755-ae28-4625-98e7-97391e5fafdd"}
+{"display":"search new on SEA-LION","pastedContents":{},"timestamp":1762178181708,"project":"/Users/levi/data","sessionId":"38bf9c3d-0f73-44ab-aad1-505702a8f7a1"}
+{"display":"did you use @prompts/search/search_guidance.md ","pastedContents":{},"timestamp":1762178285459,"project":"/Users/levi/data","sessionId":"38bf9c3d-0f73-44ab-aad1-505702a8f7a1"}
+{"display":"I'm running Cloud code on my MacBook Pro using iTerminal and with Oh My Zsh installed.I seem to be missing the status line. Am I doing anything wrong?  ","pastedContents":{},"timestamp":1762178794024,"project":"/Users/levi/data","sessionId":"38bf9c3d-0f73-44ab-aad1-505702a8f7a1"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762178812102,"project":"/Users/levi/data","sessionId":"38bf9c3d-0f73-44ab-aad1-505702a8f7a1"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762178812102,"project":"/Users/levi/data","sessionId":"38bf9c3d-0f73-44ab-aad1-505702a8f7a1"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762178812102,"project":"/Users/levi/data","sessionId":"38bf9c3d-0f73-44ab-aad1-505702a8f7a1"}
+{"display":"/statusline ","pastedContents":{},"timestamp":1762178981512,"project":"/Users/levi/data","sessionId":"e0f11c8f-caf0-404f-8018-99b34c9b5d83"}
+{"display":"/statusline ","pastedContents":{},"timestamp":1762178981513,"project":"/Users/levi/data","sessionId":"e0f11c8f-caf0-404f-8018-99b34c9b5d83"}
+{"display":"ls","pastedContents":{},"timestamp":1762178981513,"project":"/Users/levi/data","sessionId":"e0f11c8f-caf0-404f-8018-99b34c9b5d83"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762179001791,"project":"/Users/levi/data","sessionId":"e0f11c8f-caf0-404f-8018-99b34c9b5d83"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762179001791,"project":"/Users/levi/data","sessionId":"e0f11c8f-caf0-404f-8018-99b34c9b5d83"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762179001791,"project":"/Users/levi/data","sessionId":"e0f11c8f-caf0-404f-8018-99b34c9b5d83"}
+{"display":"/plan i want to include @prompts/search/search_guidance.md as guidance when i start claude code. should it be in the CLAUDE.md file?","pastedContents":{},"timestamp":1762179073436,"project":"/Users/levi/data","sessionId":"c1ad9178-44de-4506-86fc-4d113da49c45"}
+{"display":"/plan i want to include @prompts/search/search_guidance.md as guidance when i start claude code. should it be in the CLAUDE.md file?","pastedContents":{},"timestamp":1762179073436,"project":"/Users/levi/data","sessionId":"c1ad9178-44de-4506-86fc-4d113da49c45"}
+{"display":"how do i get claude code to plan","pastedContents":{},"timestamp":1762179119132,"project":"/Users/levi/data","sessionId":"c1ad9178-44de-4506-86fc-4d113da49c45"}
+{"display":"/agents ","pastedContents":{},"timestamp":1762179322764,"project":"/Users/levi/data","sessionId":"c1ad9178-44de-4506-86fc-4d113da49c45"}
+{"display":"/agents ","pastedContents":{},"timestamp":1762179322764,"project":"/Users/levi/data","sessionId":"c1ad9178-44de-4506-86fc-4d113da49c45"}
+{"display":"/agents ","pastedContents":{},"timestamp":1762179322764,"project":"/Users/levi/data","sessionId":"c1ad9178-44de-4506-86fc-4d113da49c45"}
+{"display":"i just created a web-research agent. can you enrich this agent with guidance from @prompts/search/search_guidance.md ","pastedContents":{},"timestamp":1762179514932,"project":"/Users/levi/data","sessionId":"c1ad9178-44de-4506-86fc-4d113da49c45"}
+{"display":"how do i use my agent? will it's use be automatic?","pastedContents":{},"timestamp":1762179566501,"project":"/Users/levi/data","sessionId":"c1ad9178-44de-4506-86fc-4d113da49c45"}
+{"display":"use the web-researcher to find out up to date information on leslie teo from singapore","pastedContents":{},"timestamp":1762179659569,"project":"/Users/levi/data","sessionId":"c1ad9178-44de-4506-86fc-4d113da49c45"}
+{"display":"what does the explore agent do","pastedContents":{},"timestamp":1762179741316,"project":"/Users/levi/data","sessionId":"c1ad9178-44de-4506-86fc-4d113da49c45"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762179766807,"project":"/Users/levi/data","sessionId":"c1ad9178-44de-4506-86fc-4d113da49c45"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762179766808,"project":"/Users/levi/data","sessionId":"c1ad9178-44de-4506-86fc-4d113da49c45"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762179766808,"project":"/Users/levi/data","sessionId":"c1ad9178-44de-4506-86fc-4d113da49c45"}
+{"display":"build me a 10 step tutorial to learn about claude code","pastedContents":{},"timestamp":1762179929719,"project":"/Users/levi/data","sessionId":"8eef5880-3c98-4dc4-9117-448035160edc"}
+{"display":"build me a 10 step tutorial to learn about claude code. i want to focus on basic file operations, optimal set up, and focus on agents, skills, and orhestration. I am less interested in coding per se.","pastedContents":{},"timestamp":1762180097840,"project":"/Users/levi/data","sessionId":"8eef5880-3c98-4dc4-9117-448035160edc"}
+{"display":"do you know how to set up claude code router","pastedContents":{},"timestamp":1762180527066,"project":"/Users/levi/data","sessionId":"8eef5880-3c98-4dc4-9117-448035160edc"}
+{"display":"look this up on github and claude code router project","pastedContents":{},"timestamp":1762180763797,"project":"/Users/levi/data","sessionId":"8eef5880-3c98-4dc4-9117-448035160edc"}
+{"display":"could you create a config.json file set up for openrouter and perplexity api","pastedContents":{},"timestamp":1762180902261,"project":"/Users/levi/data","sessionId":"8eef5880-3c98-4dc4-9117-448035160edc"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762180921387,"project":"/Users/levi/data","sessionId":"8eef5880-3c98-4dc4-9117-448035160edc"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762180921387,"project":"/Users/levi/data","sessionId":"8eef5880-3c98-4dc4-9117-448035160edc"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762180921387,"project":"/Users/levi/data","sessionId":"8eef5880-3c98-4dc4-9117-448035160edc"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762223702021,"project":"/Users/levi/data","sessionId":"efd384af-5921-4f46-a48d-c101f17bbc5e"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762223702021,"project":"/Users/levi/data","sessionId":"efd384af-5921-4f46-a48d-c101f17bbc5e"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762223702021,"project":"/Users/levi/data","sessionId":"efd384af-5921-4f46-a48d-c101f17bbc5e"}
+{"display":"how me think through my claude set up. I wonder if my directory structure is correct? should my claude.md file be more project specific. Rather, i want one that is general but different ones for different projects. Are my agents set up correctly? Skills?\n\nbasically, i want to create some universal memories, skills, agents. Rest can be project based","pastedContents":{},"timestamp":1762234098351,"project":"/Users/levi/data","sessionId":"4fcacda9-1183-4a7c-930c-5ee0c321b1b8"}
+{"display":"retrt","pastedContents":{},"timestamp":1762235952806,"project":"/Users/levi/data","sessionId":"4fcacda9-1183-4a7c-930c-5ee0c321b1b8"}
+{"display":"how does claude 4.5 sonnet and haiku compare to Qwen Vl 32B","pastedContents":{},"timestamp":1762437967567,"project":"/Users/levi/data","sessionId":"a2be89f8-7f5d-4ab2-8d64-bd7a59c171f7"}
+{"display":"I want to USE my machine for inference running ollama or vllm. I have a choice between a Mac Studio with 128G or AMD macine with 128G. Is Rocm a viable choice.","pastedContents":{},"timestamp":1762438357556,"project":"/Users/levi/data","sessionId":"a2be89f8-7f5d-4ab2-8d64-bd7a59c171f7"}
+{"display":"/exit","pastedContents":{},"timestamp":1762499952622,"project":"/Users/levi/data","sessionId":"a2be89f8-7f5d-4ab2-8d64-bd7a59c171f7"}
+{"display":"/exit","pastedContents":{},"timestamp":1762499952622,"project":"/Users/levi/data","sessionId":"a2be89f8-7f5d-4ab2-8d64-bd7a59c171f7"}
+{"display":"/exit","pastedContents":{},"timestamp":1762499952622,"project":"/Users/levi/data","sessionId":"a2be89f8-7f5d-4ab2-8d64-bd7a59c171f7"}
+{"display":"can you init this directory because we are going to process banking transation pdf here to csv","pastedContents":{},"timestamp":1762694210084,"project":"/Users/levi/data/finance","sessionId":"f3de7c4b-b14c-45df-bb72-4f19aa9194d1"}
+{"display":"actually here's my prompt - can you create a command for this and save the required files in thsi project directory? Then I can call this command later. I would like to use claude to process the pdfs, and I would like some checks eg. total tranastions tally to be done\n\n[Pasted text #1 +70 lines]","pastedContents":{},"timestamp":1762694478895,"project":"/Users/levi/data/finance","sessionId":"f3de7c4b-b14c-45df-bb72-4f19aa9194d1"}
+{"display":"/process-statement Treasures Consolidated Statement_Jul2025.pdf","pastedContents":{},"timestamp":1762695019910,"project":"/Users/levi/data/finance","sessionId":"c83bf93d-eb07-4d96-b449-b235cf7eea27"}
+{"display":"/process-statement Treasures Consolidated Statement_Jul2025.pdf","pastedContents":{},"timestamp":1762695019911,"project":"/Users/levi/data/finance","sessionId":"c83bf93d-eb07-4d96-b449-b235cf7eea27"}
+{"display":"/process-statement Treasures Consolidated Statement_Aug2025.pdf","pastedContents":{},"timestamp":1762695107104,"project":"/Users/levi/data/finance","sessionId":"c83bf93d-eb07-4d96-b449-b235cf7eea27"}
+{"display":"/process-statement Treasures Consolidated Statement_Aug2025.pdf","pastedContents":{},"timestamp":1762695107104,"project":"/Users/levi/data/finance","sessionId":"c83bf93d-eb07-4d96-b449-b235cf7eea27"}
+{"display":"/process-statement Treasures Consolidated Statement_Sep2025.pdf","pastedContents":{},"timestamp":1762695197311,"project":"/Users/levi/data/finance","sessionId":"c83bf93d-eb07-4d96-b449-b235cf7eea27"}
+{"display":"/process-statement Treasures Consolidated Statement_Sep2025.pdf","pastedContents":{},"timestamp":1762695197311,"project":"/Users/levi/data/finance","sessionId":"c83bf93d-eb07-4d96-b449-b235cf7eea27"}
+{"display":"/process-statement Treasures Consolidated Statement_Oct2025.pdf","pastedContents":{},"timestamp":1762695282705,"project":"/Users/levi/data/finance","sessionId":"c83bf93d-eb07-4d96-b449-b235cf7eea27"}
+{"display":"/process-statement Treasures Consolidated Statement_Oct2025.pdf","pastedContents":{},"timestamp":1762695282705,"project":"/Users/levi/data/finance","sessionId":"c83bf93d-eb07-4d96-b449-b235cf7eea27"}
+{"display":"/docker","pastedContents":{},"timestamp":1762851926527,"project":"/Users/levi/data","sessionId":"5f5f99ef-2303-4371-a83f-427c25d02cf1"}
+{"display":"/docker","pastedContents":{},"timestamp":1762851926527,"project":"/Users/levi/data","sessionId":"5f5f99ef-2303-4371-a83f-427c25d02cf1"}
+{"display":"how can i stop an mcp server","pastedContents":{},"timestamp":1762851978127,"project":"/Users/levi/data","sessionId":"5f5f99ef-2303-4371-a83f-427c25d02cf1"}
+{"display":"n8n","pastedContents":{},"timestamp":1762851996762,"project":"/Users/levi/data","sessionId":"5f5f99ef-2303-4371-a83f-427c25d02cf1"}
+{"display":"can you help me implement method 2","pastedContents":{},"timestamp":1762852085496,"project":"/Users/levi/data","sessionId":"5f5f99ef-2303-4371-a83f-427c25d02cf1"}
+{"display":"I want you to comment it out not remove the json for n8n","pastedContents":{},"timestamp":1762852132537,"project":"/Users/levi/data","sessionId":"5f5f99ef-2303-4371-a83f-427c25d02cf1"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762852150725,"project":"/Users/levi/data","sessionId":"5f5f99ef-2303-4371-a83f-427c25d02cf1"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762852150726,"project":"/Users/levi/data","sessionId":"5f5f99ef-2303-4371-a83f-427c25d02cf1"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762852150726,"project":"/Users/levi/data","sessionId":"5f5f99ef-2303-4371-a83f-427c25d02cf1"}
+{"display":"/docker","pastedContents":{},"timestamp":1762852539114,"project":"/Users/levi/data","sessionId":"66a59fb7-9a1b-4f54-a108-2fd4114281ff"}
+{"display":"/docker","pastedContents":{},"timestamp":1762852539114,"project":"/Users/levi/data","sessionId":"66a59fb7-9a1b-4f54-a108-2fd4114281ff"}
+{"display":"/mcp ","pastedContents":{},"timestamp":1762852574518,"project":"/Users/levi/data","sessionId":"66a59fb7-9a1b-4f54-a108-2fd4114281ff"}
+{"display":"/mcp ","pastedContents":{},"timestamp":1762852574518,"project":"/Users/levi/data","sessionId":"66a59fb7-9a1b-4f54-a108-2fd4114281ff"}
+{"display":"/mcp ","pastedContents":{},"timestamp":1762852574518,"project":"/Users/levi/data","sessionId":"66a59fb7-9a1b-4f54-a108-2fd4114281ff"}
+{"display":"/exit","pastedContents":{},"timestamp":1762852586858,"project":"/Users/levi/data","sessionId":"66a59fb7-9a1b-4f54-a108-2fd4114281ff"}
+{"display":"/exit","pastedContents":{},"timestamp":1762852586859,"project":"/Users/levi/data","sessionId":"66a59fb7-9a1b-4f54-a108-2fd4114281ff"}
+{"display":"/exit","pastedContents":{},"timestamp":1762852586859,"project":"/Users/levi/data","sessionId":"66a59fb7-9a1b-4f54-a108-2fd4114281ff"}
+{"display":"i just install ghostty. can you pls help me create a config file with the more common settings setup. I want to use catpuccin mocha as my theme. I am using ghostty on a mac, have omz installed (but might change). want to use lazy vim","pastedContents":{},"timestamp":1762862628498,"project":"/Users/levi/data","sessionId":"9a9a485a-bf74-4a98-8fe4-16eaee800ed2"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762862755075,"project":"/Users/levi/data","sessionId":"9a9a485a-bf74-4a98-8fe4-16eaee800ed2"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762862755075,"project":"/Users/levi/data","sessionId":"9a9a485a-bf74-4a98-8fe4-16eaee800ed2"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762862755075,"project":"/Users/levi/data","sessionId":"9a9a485a-bf74-4a98-8fe4-16eaee800ed2"}
+{"display":"/process-statement ","pastedContents":{},"timestamp":1762866242497,"project":"/Users/levi/data/finance","sessionId":"63de403e-f713-40a0-a029-dcec2a02a025"}
+{"display":"/process-statement ","pastedContents":{},"timestamp":1762866242497,"project":"/Users/levi/data/finance","sessionId":"63de403e-f713-40a0-a029-dcec2a02a025"}
+{"display":"ls","pastedContents":{},"timestamp":1762866264905,"project":"/Users/levi/data/finance","sessionId":"63de403e-f713-40a0-a029-dcec2a02a025"}
+{"display":"/process-statement Treasures Consolidated Statement_Sep2025.pdf","pastedContents":{},"timestamp":1762866792811,"project":"/Users/levi/data/finance","sessionId":"510a5cd5-3372-467e-8a57-da3389368506"}
+{"display":"/process-statement Treasures Consolidated Statement_Sep2025.pdf","pastedContents":{},"timestamp":1762866792811,"project":"/Users/levi/data/finance","sessionId":"510a5cd5-3372-467e-8a57-da3389368506"}
+{"display":"please modify the /process-statement command so that it will process all the pdf files in the input directory and output just one csv file in the output directory","pastedContents":{},"timestamp":1762867364085,"project":"/Users/levi/data/finance","sessionId":"510a5cd5-3372-467e-8a57-da3389368506"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762869856534,"project":"/Users/levi/data/finance","sessionId":"510a5cd5-3372-467e-8a57-da3389368506"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762869856534,"project":"/Users/levi/data/finance","sessionId":"510a5cd5-3372-467e-8a57-da3389368506"}
+{"display":"/exit ","pastedContents":{},"timestamp":1762869856534,"project":"/Users/levi/data/finance","sessionId":"510a5cd5-3372-467e-8a57-da3389368506"}
+{"display":"bye","pastedContents":{},"timestamp":1762869856535,"project":"/Users/levi/data/finance","sessionId":"510a5cd5-3372-467e-8a57-da3389368506"}

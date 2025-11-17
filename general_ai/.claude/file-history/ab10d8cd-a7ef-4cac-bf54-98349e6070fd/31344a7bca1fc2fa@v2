@@ -1,0 +1,13 @@
+# SillyTavern Docker Configuration
+
+# Port for SillyTavern web interface
+SILLYTAVERN_PORT=8000
+
+# Ollama API URL (use host.docker.internal on macOS/Windows, or host IP on Linux)
+OLLAMA_API_URL=http://host.docker.internal:11434
+
+# Node environment
+NODE_ENV=production
+
+# Optional: Set custom data directory (if not using relative paths)
+# DATA_ROOT=/Users/levi/data/docker_silly

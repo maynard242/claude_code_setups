@@ -1,0 +1,102 @@
+[DEBUG] Watching for changes in setting files /Users/levi/.claude/settings.json...
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/levi/.zshrc
+[DEBUG] Snapshots directory: /Users/levi/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1759902098850-j1zjm7.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/b956e71c-c78e-4863-b5dd-f08a0347adf1-agent-b956e71c-c78e-4863-b5dd-f08a0347adf1.json.tmp.88249.1759902098851
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/levi/.claude/todos/b956e71c-c78e-4863-b5dd-f08a0347adf1-agent-b956e71c-c78e-4863-b5dd-f08a0347adf1.json.tmp.88249.1759902098851 to /Users/levi/.claude/todos/b956e71c-c78e-4863-b5dd-f08a0347adf1-agent-b956e71c-c78e-4863-b5dd-f08a0347adf1.json
+[DEBUG] File /Users/levi/.claude/todos/b956e71c-c78e-4863-b5dd-f08a0347adf1-agent-b956e71c-c78e-4863-b5dd-f08a0347adf1.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88249.1759902098860
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 31606 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88249.1759902098860 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/levi/.claude/skills, project=/Users/levi/data/agent_test/.claude/skills
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Summarizing all 2 messages (~0 tokens)
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg)
+[DEBUG] Shell snapshot created successfully (51367 bytes)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88249.1759902099100
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 31606 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88249.1759902099100 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88249.1759902099812
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 31606 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88249.1759902099812 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Executing hooks for SessionStart:startup
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88249.1759902099852
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 31501 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88249.1759902099852 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88249.1759902099858
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 31501 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88249.1759902099858 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88249.1759902099863
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 31501 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88249.1759902099863 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=undefined
+[DEBUG] Skipping plugin installations - ENABLE_PLUGINS not set
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88249.1759902099875
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 31606 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88249.1759902099875 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88249.1759902111411
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 31637 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88249.1759902111411 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88249.1759902111436
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 31664 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88249.1759902111436 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1759902098850-j1zjm7.sh
+[DEBUG] FileHistory: Added snapshot for af914ef5-a50d-4a93-993b-a244008e00af, tracking 0 files
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88249.1759902113834
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 31698 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88249.1759902113834 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.88249.1759902113842
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 32091 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.88249.1759902113842 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically

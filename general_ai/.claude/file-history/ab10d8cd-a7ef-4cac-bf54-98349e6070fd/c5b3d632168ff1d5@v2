@@ -1,0 +1,43 @@
+# SillyTavern data directories (contain user data and should not be committed)
+config/
+data/
+plugins/
+extensions/
+
+# Environment variables (may contain sensitive information)
+.env
+
+# Backup files
+*.tar.gz
+*.zip
+*.bak
+
+# Docker volumes (if using named volumes)
+.volumes/
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk

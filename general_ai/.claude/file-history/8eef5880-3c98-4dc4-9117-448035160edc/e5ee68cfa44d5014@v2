@@ -1,0 +1,456 @@
+# Claude Code Router Setup Instructions
+## OpenRouter + Perplexity Configuration
+
+This guide will help you set up Claude Code Router with OpenRouter and Perplexity API.
+
+---
+
+## Prerequisites
+
+1. **OpenRouter Account**: Sign up at https://openrouter.ai/
+   - Get your API key from https://openrouter.ai/keys
+   - Add credits to your account (pay-as-you-go)
+
+2. **Perplexity Account**: Sign up at https://www.perplexity.ai/
+   - Get your API key from https://www.perplexity.ai/settings/api
+   - Purchase API credits
+
+---
+
+## Installation Steps
+
+### Step 1: Install Claude Code Router
+
+```bash
+npm install -g @anthropic-ai/claude-code
+npm install -g @musistudio/claude-code-router
+```
+
+### Step 2: Set Up Environment Variables
+
+Add these to your shell configuration file (`~/.zshrc`, `~/.bashrc`, or `~/.bash_profile`):
+
+```bash
+export OPENROUTER_API_KEY="sk-or-v1-YOUR-KEY-HERE"
+export PERPLEXITY_API_KEY="pplx-YOUR-KEY-HERE"
+```
+
+Then reload your shell:
+```bash
+source ~/.zshrc  # or source ~/.bashrc
+```
+
+**Verify your environment variables:**
+```bash
+echo $OPENROUTER_API_KEY
+echo $PERPLEXITY_API_KEY
+```
+
+### Step 3: Copy Configuration File
+
+Copy the provided `claude-code-router-config.json` to the router's config directory:
+
+```bash
+# Create the directory if it doesn't exist
+mkdir -p ~/.claude-code-router
+
+# Copy the config file
+cp claude-code-router-config.json ~/.claude-code-router/config.json
+```
+
+### Step 4: Start Using Claude Code Router
+
+```bash
+ccr code
+```
+
+---
+
+## Configuration Explained
+
+### OpenRouter Provider
+
+**Available Models:**
+- `anthropic/claude-sonnet-4` - Most capable Claude model
+- `anthropic/claude-3.5-sonnet` - Fast and capable
+- `google/gemini-2.5-pro-preview` - Best for long context (2M tokens)
+- `google/gemini-2.5-flash-preview` - Fast and cheap
+- `openai/gpt-4o` - OpenAI's latest multimodal model
+- `openai/gpt-4o-mini` - Cheaper GPT-4 variant
+- `openai/o1-preview` - Advanced reasoning model
+- `deepseek/deepseek-chat` - Excellent coding model (cheap)
+- `deepseek/deepseek-reasoner` - Deep reasoning capabilities
+- `meta-llama/llama-3.3-70b-instruct` - Open source powerhouse
+- `qwen/qwen-2.5-coder-32b-instruct` - Specialized coding model
+
+**Why OpenRouter?**
+- Access 100+ models with one API key
+- Unified billing across all providers
+- Automatic fallback if a model is down
+- Pay only for what you use
+
+### Perplexity Provider
+
+**Available Models:**
+- `sonar-pro` - Enhanced search with citations (default for web search)
+- `sonar` - Fast search-augmented responses
+- `sonar-reasoning` - Deep reasoning with web search
+
+**Why Perplexity?**
+- Real-time web search built-in
+- Provides citations and sources
+- Up-to-date information
+- Great for research tasks
+
+### Routing Strategy
+
+```json
+{
+  "default": "openrouter,anthropic/claude-sonnet-4",
+  "background": "openrouter,google/gemini-2.5-flash-preview",
+  "think": "openrouter,openai/o1-preview",
+  "longContext": "openrouter,google/gemini-2.5-pro-preview",
+  "webSearch": "perplexity,sonar-pro"
+}
+```
+
+**Explanation:**
+- **Default**: Claude Sonnet 4 for general tasks (most capable)
+- **Background**: Gemini Flash for simple operations (fast & cheap)
+- **Think**: O1 Preview for complex reasoning (Plan mode)
+- **Long Context**: Gemini Pro for huge contexts (2M token window)
+- **Web Search**: Perplexity Sonar Pro for current information
+
+---
+
+## Cost Optimization Tips
+
+### Estimated Costs (as of 2025)
+
+**OpenRouter Pricing (approximate):**
+- Claude Sonnet 4: $3/$15 per 1M tokens (input/output)
+- Gemini Flash: $0.075/$0.30 per 1M tokens
+- GPT-4o: $2.50/$10 per 1M tokens
+- O1 Preview: $15/$60 per 1M tokens
+- DeepSeek Chat: $0.14/$0.28 per 1M tokens
+
+**Perplexity Pricing:**
+- Sonar Pro: $3/$15 per 1M tokens
+- Sonar: $1/$5 per 1M tokens
+
+### Cost Saving Strategies
+
+1. **Use Gemini Flash for Background Tasks**
+   - File searches, simple operations
+   - 20x cheaper than Claude Sonnet 4
+
+2. **Use DeepSeek for Coding Tasks**
+   - Excellent code quality
+   - 20x cheaper than Claude Sonnet 4
+   - Update config: `"default": "openrouter,deepseek/deepseek-chat"`
+
+3. **Reserve O1 for Complex Problems Only**
+   - 4x more expensive than Claude
+   - Use only when you need deep reasoning
+
+4. **Use Perplexity Sparingly**
+   - Only for tasks requiring web search
+   - Consider using free models for non-web tasks
+
+---
+
+## Customization Options
+
+### Budget-Conscious Configuration
+
+Replace the Router section with:
+
+```json
+{
+  "Router": {
+    "default": "openrouter,deepseek/deepseek-chat",
+    "background": "openrouter,google/gemini-2.5-flash-preview",
+    "think": "openrouter,deepseek/deepseek-reasoner",
+    "longContext": "openrouter,google/gemini-2.5-pro-preview",
+    "webSearch": "perplexity,sonar"
+  }
+}
+```
+
+**Cost savings**: ~90% compared to using Claude Sonnet 4 for everything
+
+### Power User Configuration
+
+```json
+{
+  "Router": {
+    "default": "openrouter,anthropic/claude-sonnet-4",
+    "background": "openrouter,anthropic/claude-3.5-sonnet",
+    "think": "openrouter,openai/o1-preview",
+    "longContext": "openrouter,google/gemini-2.5-pro-preview",
+    "webSearch": "perplexity,sonar-pro"
+  }
+}
+```
+
+**Focus**: Maximum capability across all task types
+
+### Balanced Configuration (Recommended)
+
+```json
+{
+  "Router": {
+    "default": "openrouter,deepseek/deepseek-chat",
+    "background": "openrouter,google/gemini-2.5-flash-preview",
+    "think": "openrouter,anthropic/claude-sonnet-4",
+    "longContext": "openrouter,google/gemini-2.5-pro-preview",
+    "webSearch": "perplexity,sonar-pro"
+  }
+}
+```
+
+**Sweet spot**: DeepSeek for most work, Claude for hard problems
+
+---
+
+## Dynamic Model Switching
+
+While using Claude Code, you can switch models on-the-fly:
+
+### Switch to Different Models
+
+```bash
+# Use Claude Sonnet 4
+/model openrouter,anthropic/claude-sonnet-4
+
+# Use DeepSeek (cheap & good)
+/model openrouter,deepseek/deepseek-chat
+
+# Use O1 for reasoning
+/model openrouter,openai/o1-preview
+
+# Use Perplexity for web search
+/model perplexity,sonar-pro
+
+# Use Gemini Pro for long context
+/model openrouter,google/gemini-2.5-pro-preview
+```
+
+### Common Scenarios
+
+**Working on a complex algorithm:**
+```
+/model openrouter,openai/o1-preview
+```
+
+**Need current information:**
+```
+/model perplexity,sonar-pro
+```
+
+**Processing a huge codebase:**
+```
+/model openrouter,google/gemini-2.5-pro-preview
+```
+
+**Want to save money on simple tasks:**
+```
+/model openrouter,deepseek/deepseek-chat
+```
+
+---
+
+## CLI Model Management
+
+Interactive terminal interface:
+
+```bash
+ccr model
+```
+
+This allows you to:
+- View current model configuration
+- Switch models for different router types
+- Add new models
+- Update providers
+
+---
+
+## Web UI Configuration
+
+For a visual configuration experience:
+
+```bash
+ccr ui
+```
+
+Opens a browser interface where you can:
+- Edit configuration visually
+- Import templates
+- Test your setup
+- Manage providers and models
+
+---
+
+## Troubleshooting
+
+### Error: "Invalid API Key"
+
+**OpenRouter:**
+```bash
+# Check your key
+echo $OPENROUTER_API_KEY
+
+# Get a new key from https://openrouter.ai/keys
+export OPENROUTER_API_KEY="sk-or-v1-..."
+
+# Restart router
+ccr restart
+```
+
+**Perplexity:**
+```bash
+# Check your key
+echo $PERPLEXITY_API_KEY
+
+# Get a new key from https://www.perplexity.ai/settings/api
+export PERPLEXITY_API_KEY="pplx-..."
+
+# Restart router
+ccr restart
+```
+
+### Error: "Insufficient Credits"
+
+**OpenRouter:**
+- Visit https://openrouter.ai/account
+- Add credits to your account
+
+**Perplexity:**
+- Visit https://www.perplexity.ai/settings/api
+- Purchase API credits
+
+### Router Won't Start
+
+```bash
+# Stop existing router
+ccr stop
+
+# Check logs
+tail -f ~/.claude-code-router/logs/ccr-*.log
+
+# Start with fresh config
+ccr code
+```
+
+### Configuration Not Loading
+
+```bash
+# Check config file location
+ls -la ~/.claude-code-router/config.json
+
+# Validate JSON syntax
+cat ~/.claude-code-router/config.json | python -m json.tool
+
+# Use UI to fix issues
+ccr ui
+```
+
+---
+
+## Testing Your Setup
+
+### 1. Start the Router
+```bash
+ccr code
+```
+
+### 2. Test Default Model
+```
+Hello! What model are you currently using?
+```
+
+### 3. Test Model Switching
+```
+/model openrouter,deepseek/deepseek-chat
+What model are you now?
+```
+
+### 4. Test Web Search (Perplexity)
+```
+/model perplexity,sonar-pro
+What are the latest developments in AI this week?
+```
+
+### 5. Test Long Context (Gemini)
+```
+/model openrouter,google/gemini-2.5-pro-preview
+Read all files in this large codebase and summarize the architecture
+```
+
+---
+
+## Next Steps
+
+1. ✅ Install Claude Code Router
+2. ✅ Set up environment variables
+3. ✅ Copy configuration file
+4. ✅ Test the setup
+5. 🎯 Customize routing strategy for your needs
+6. 🎯 Experiment with different models
+7. 🎯 Monitor costs and adjust configuration
+
+---
+
+## Useful Commands
+
+```bash
+# Start router and Claude Code
+ccr code
+
+# Stop router
+ccr stop
+
+# Restart router (after config changes)
+ccr restart
+
+# Check status
+ccr status
+
+# Open web UI
+ccr ui
+
+# Manage models in terminal
+ccr model
+
+# View logs
+tail -f ~/.claude-code-router/logs/ccr-*.log
+```
+
+---
+
+## Resources
+
+- **OpenRouter**: https://openrouter.ai/
+- **OpenRouter Docs**: https://openrouter.ai/docs
+- **Perplexity API**: https://www.perplexity.ai/settings/api
+- **Claude Code Router**: https://github.com/musistudio/claude-code-router
+- **Discord Support**: https://discord.gg/rdftVMaUcS
+
+---
+
+## Quick Reference: Model Selection Guide
+
+| Task Type | Recommended Model | Why |
+|-----------|------------------|-----|
+| General coding | DeepSeek Chat | Excellent quality, very cheap |
+| Complex reasoning | O1 Preview | Best reasoning capabilities |
+| Web search | Perplexity Sonar Pro | Real-time search with citations |
+| Large codebases | Gemini 2.5 Pro | 2M token context window |
+| Background tasks | Gemini Flash | Fast and cheap |
+| Premium tasks | Claude Sonnet 4 | Most capable overall |
+| Open source preference | Llama 3.3 70B | Best open source model |
+
+---
+
+**You're all set! Run `ccr code` to start coding with your new multi-model setup.**

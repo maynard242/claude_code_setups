@@ -1,0 +1,29 @@
+[DEBUG] Watching for changes in setting files /Users/levi/.claude/settings.json, /Users/levi/data/.claude/settings.local.json...
+[DEBUG] Loading plugin exa-mcp-server from source: "./"
+[DEBUG] Plugin exa-mcp-server has no entry.skills defined
+[DEBUG] Found 1 plugins (1 enabled, 0 disabled)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87853.1760950136457
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45022 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87853.1760950136457 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[ERROR] AxiosError: AxiosError: Request failed with status code 401
+    at fO (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:24:1136)
+    at IncomingMessage.<anonymous> (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:29:9841)
+    at IncomingMessage.emit (node:events:531:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at q31.request (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async YXB (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:1498:25937)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.87853.1760950149919
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 45371 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.87853.1760950149919 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)

@@ -1,0 +1,464 @@
+[DEBUG] Watching for changes in setting files /Users/levi/.claude/settings.json, /Users/levi/data/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 4 allow rule(s) to destination 'localSettings': ["WebSearch","Bash(git config:*)","Bash(brew install:*)","Bash(gh:*)"]
+[DEBUG] Loading plugin exa-mcp-server from source: "./"
+[DEBUG] Found 1 plugins (1 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/levi/.zshrc
+[DEBUG] Snapshots directory: /Users/levi/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1760444922027-a14zzv.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/c435a3cd-d72a-4779-a397-6a8fbfd4c010-agent-c435a3cd-d72a-4779-a397-6a8fbfd4c010.json.tmp.19385.1760444922028
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/levi/.claude/todos/c435a3cd-d72a-4779-a397-6a8fbfd4c010-agent-c435a3cd-d72a-4779-a397-6a8fbfd4c010.json.tmp.19385.1760444922028 to /Users/levi/.claude/todos/c435a3cd-d72a-4779-a397-6a8fbfd4c010-agent-c435a3cd-d72a-4779-a397-6a8fbfd4c010.json
+[DEBUG] File /Users/levi/.claude/todos/c435a3cd-d72a-4779-a397-6a8fbfd4c010-agent-c435a3cd-d72a-4779-a397-6a8fbfd4c010.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760444922038
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39599 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760444922038 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Registered 0 hooks from 1 plugins
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg)
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/levi/.claude/skills, project=/Users/levi/data/.claude/skills
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Shell snapshot created successfully (51600 bytes)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760444922249
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39599 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760444922249 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760444922256
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39599 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760444922256 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Initializing HTTP transport to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Node version: v22.20.0, Platform: darwin
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": MTLS options: default
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport options: {"url":"https://mcp.exa.ai/mcp","headers":{"User-Agent":"claude-code/2.0.14"},"hasAuthProvider":true,"timeoutMs":60000}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport created successfully
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Client created, setting up request handler
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Testing basic HTTP connectivity to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Parsed URL: host=mcp.exa.ai, port=default, protocol=https:
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760444922739
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39599 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760444922739 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Executing hooks for SessionStart:startup
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": No token data found
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760444922795
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39494 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760444922795 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760444922802
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39494 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760444922802 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=true
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760444922813
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39599 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760444922813 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Found 1 enabled plugins
+[DEBUG] Loaded plugins - Enabled: 1, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] Found 0 missing plugins (not installed):
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": No token data found
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": No token data found
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Successfully connected to http server in 807ms
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"exa-search-server","title":"Exa","version":"3.0.5"}}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": No token data found
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760444937089
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39600 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760444937089 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] FileHistory: Added snapshot for 68b3039a-c37b-4842-a625-6acee01bace1, tracking 0 files
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760444939926
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39601 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760444939926 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760444939932
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39686 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760444939932 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": No token data found
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Using redirect port: 59528
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Fetched OAuth metadata with scope: NONE
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Generated new OAuth state
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Starting SDK auth
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Server URL: https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": No client info found
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token expired without refresh token
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Saving code verifier
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Authorization URL: https://mcp.exa.ai/auth/authorize?response_type=code&client_id=v4.local.1Ji0kjH-2lYs-Mw7LSvCN-VTSfVli68Dog1LtA3WLxJy6S92UE4fRt-EOoli3Ae3hfBJDaGJTzYhlZ7zMztgNvzb3zOEB9SXQNMvwTZjph8_6As-N-gmHJ66As5ySP15rFbQnLIhKd3mPFE1dEnIHwE0PT6zjA6pBYumotjp2JHMOF-MmChT0k_fPKG1B2bZuLp0PUcZD12kFnH_2pYfFM4C6vN24W6OR0mm3DhCgbm37jN7BuLxFRzv9oIHnrZUV9ez9Wqc9VM-4zjym7lovwzpDJ9ALAHTUr0jqQQwwcl45Chq7It25BSUvpSMKYDql9zafbfz4-DxtDjGLzgVhiKrKMYpziVyqmBvkGgDPNRcZmZ2EiQ-rrzgbCE3FE68x7z835xYFw5JN-Wh2O10_Oo9clo0xulOMPCWa6W9QLROpoKU2HD8RIvvhphzwZ6E51pSbqXJL86ZNUIOXjarVLLI3kNY3l34_NsG6FBISb6Ec67gVv4b2GTru7UpsXZHsuJv7neYlgyQ__APSPTTrJZ_vR3bWJOWyTOSypOWboqvLzhLjUeI8DJgmdcVwudVsAXeCGz-&code_challenge=lxfVZrJBiaQNNUvEV7bpyzIuJHD1aYEaY3vSCbTZdyg&code_challenge_method=S256&redirect_uri=http%3A%2F%2Flocalhost%3A59528%2Fcallback&state=jmDxYxPl3O6-zzAiq3qWbg6rUwDSXUMNi5duUNKJIJU&resource=https%3A%2F%2Fmcp.exa.ai%2Fmcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Scopes in URL: NOT FOUND
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": No scopes available from URL or metadata
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Redirecting to authorization URL
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Authorization URL: https://mcp.exa.ai/auth/authorize?response_type=code&client_id=v4.local.1Ji0kjH-2lYs-Mw7LSvCN-VTSfVli68Dog1LtA3WLxJy6S92UE4fRt-EOoli3Ae3hfBJDaGJTzYhlZ7zMztgNvzb3zOEB9SXQNMvwTZjph8_6As-N-gmHJ66As5ySP15rFbQnLIhKd3mPFE1dEnIHwE0PT6zjA6pBYumotjp2JHMOF-MmChT0k_fPKG1B2bZuLp0PUcZD12kFnH_2pYfFM4C6vN24W6OR0mm3DhCgbm37jN7BuLxFRzv9oIHnrZUV9ez9Wqc9VM-4zjym7lovwzpDJ9ALAHTUr0jqQQwwcl45Chq7It25BSUvpSMKYDql9zafbfz4-DxtDjGLzgVhiKrKMYpziVyqmBvkGgDPNRcZmZ2EiQ-rrzgbCE3FE68x7z835xYFw5JN-Wh2O10_Oo9clo0xulOMPCWa6W9QLROpoKU2HD8RIvvhphzwZ6E51pSbqXJL86ZNUIOXjarVLLI3kNY3l34_NsG6FBISb6Ec67gVv4b2GTru7UpsXZHsuJv7neYlgyQ__APSPTTrJZ_vR3bWJOWyTOSypOWboqvLzhLjUeI8DJgmdcVwudVsAXeCGz-&code_challenge=lxfVZrJBiaQNNUvEV7bpyzIuJHD1aYEaY3vSCbTZdyg&code_challenge_method=S256&redirect_uri=http%3A%2F%2Flocalhost%3A59528%2Fcallback&state=jmDxYxPl3O6-zzAiq3qWbg6rUwDSXUMNi5duUNKJIJU&resource=https%3A%2F%2Fmcp.exa.ai%2Fmcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Opening authorization URL: https://mcp.exa.ai/auth/authorize?response_type=code&client_id=v4.local.1Ji0kjH-2lYs-Mw7LSvCN-VTSfVli68Dog1LtA3WLxJy6S92UE4fRt-EOoli3Ae3hfBJDaGJTzYhlZ7zMztgNvzb3zOEB9SXQNMvwTZjph8_6As-N-gmHJ66As5ySP15rFbQnLIhKd3mPFE1dEnIHwE0PT6zjA6pBYumotjp2JHMOF-MmChT0k_fPKG1B2bZuLp0PUcZD12kFnH_2pYfFM4C6vN24W6OR0mm3DhCgbm37jN7BuLxFRzv9oIHnrZUV9ez9Wqc9VM-4zjym7lovwzpDJ9ALAHTUr0jqQQwwcl45Chq7It25BSUvpSMKYDql9zafbfz4-DxtDjGLzgVhiKrKMYpziVyqmBvkGgDPNRcZmZ2EiQ-rrzgbCE3FE68x7z835xYFw5JN-Wh2O10_Oo9clo0xulOMPCWa6W9QLROpoKU2HD8RIvvhphzwZ6E51pSbqXJL86ZNUIOXjarVLLI3kNY3l34_NsG6FBISb6Ec67gVv4b2GTru7UpsXZHsuJv7neYlgyQ__APSPTTrJZ_vR3bWJOWyTOSypOWboqvLzhLjUeI8DJgmdcVwudVsAXeCGz-&code_challenge=lxfVZrJBiaQNNUvEV7bpyzIuJHD1aYEaY3vSCbTZdyg&code_challenge_method=S256&redirect_uri=http%3A%2F%2Flocalhost%3A59528%2Fcallback&state=jmDxYxPl3O6-zzAiq3qWbg6rUwDSXUMNi5duUNKJIJU&resource=https%3A%2F%2Fmcp.exa.ai%2Fmcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Initial auth result: REDIRECT
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": MCP OAuth server cleaned up
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Completing auth flow with authorization code
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Found client info
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning code verifier
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": addClientAuthentication called
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Current params: grant_type=authorization_code&code=rObcFrXQje-UP52UpZGUQKEAt4Osm1ICp9U78vpt-8E&code_verifier=N4nuOZ2-.3dzHlrWGsX5-MhlSKYkHUG3nEE2325juWs&redirect_uri=http%3A%2F%2Flocalhost%3A59528%2Fcallback
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Stored scopes: NONE
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Adding client_id: v4.local.1Ji0kjH-2lYs-Mw7LSvCN-VTSfVli68Dog1LtA3WLxJy6S92UE4fRt-EOoli3Ae3hfBJDaGJTzYhlZ7zMztgNvzb3zOEB9SXQNMvwTZjph8_6As-N-gmHJ66As5ySP15rFbQnLIhKd3mPFE1dEnIHwE0PT6zjA6pBYumotjp2JHMOF-MmChT0k_fPKG1B2bZuLp0PUcZD12kFnH_2pYfFM4C6vN24W6OR0mm3DhCgbm37jN7BuLxFRzv9oIHnrZUV9ez9Wqc9VM-4zjym7lovwzpDJ9ALAHTUr0jqQQwwcl45Chq7It25BSUvpSMKYDql9zafbfz4-DxtDjGLzgVhiKrKMYpziVyqmBvkGgDPNRcZmZ2EiQ-rrzgbCE3FE68x7z835xYFw5JN-Wh2O10_Oo9clo0xulOMPCWa6W9QLROpoKU2HD8RIvvhphzwZ6E51pSbqXJL86ZNUIOXjarVLLI3kNY3l34_NsG6FBISb6Ec67gVv4b2GTru7UpsXZHsuJv7neYlgyQ__APSPTTrJZ_vR3bWJOWyTOSypOWboqvLzhLjUeI8DJgmdcVwudVsAXeCGz-
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": ERROR: No scopes stored to add to token request!
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Final params: grant_type=authorization_code&code=rObcFrXQje-UP52UpZGUQKEAt4Osm1ICp9U78vpt-8E&code_verifier=N4nuOZ2-.3dzHlrWGsX5-MhlSKYkHUG3nEE2325juWs&redirect_uri=http%3A%2F%2Flocalhost%3A59528%2Fcallback&client_id=v4.local.1Ji0kjH-2lYs-Mw7LSvCN-VTSfVli68Dog1LtA3WLxJy6S92UE4fRt-EOoli3Ae3hfBJDaGJTzYhlZ7zMztgNvzb3zOEB9SXQNMvwTZjph8_6As-N-gmHJ66As5ySP15rFbQnLIhKd3mPFE1dEnIHwE0PT6zjA6pBYumotjp2JHMOF-MmChT0k_fPKG1B2bZuLp0PUcZD12kFnH_2pYfFM4C6vN24W6OR0mm3DhCgbm37jN7BuLxFRzv9oIHnrZUV9ez9Wqc9VM-4zjym7lovwzpDJ9ALAHTUr0jqQQwwcl45Chq7It25BSUvpSMKYDql9zafbfz4-DxtDjGLzgVhiKrKMYpziVyqmBvkGgDPNRcZmZ2EiQ-rrzgbCE3FE68x7z835xYFw5JN-Wh2O10_Oo9clo0xulOMPCWa6W9QLROpoKU2HD8RIvvhphzwZ6E51pSbqXJL86ZNUIOXjarVLLI3kNY3l34_NsG6FBISb6Ec67gVv4b2GTru7UpsXZHsuJv7neYlgyQ__APSPTTrJZ_vR3bWJOWyTOSypOWboqvLzhLjUeI8DJgmdcVwudVsAXeCGz-
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Saving tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token expires in: 3600
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Auth result: AUTHORIZED
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3599s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Tokens after auth: Present
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token access_token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token expires_in: 3599.922
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport closed/disconnected, attempting automatic reconnection
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Initializing HTTP transport to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Node version: v22.20.0, Platform: darwin
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": MTLS options: default
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport options: {"url":"https://mcp.exa.ai/mcp","headers":{"User-Agent":"claude-code/2.0.14"},"hasAuthProvider":true,"timeoutMs":60000}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport created successfully
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Client created, setting up request handler
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Testing basic HTTP connectivity to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Parsed URL: host=mcp.exa.ai, port=default, protocol=https:
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3599s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3599s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3599s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3597s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Successfully connected to http server in 2073ms
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"exa-search-server","title":"Exa","version":"3.0.5"}}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3597s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP reconnection successful after 2543ms
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3597s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3597s
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] FileHistory: Making snapshot for message b85e67f7-0515-4fdc-a82b-e39941754ff2
+[DEBUG] FileHistory: Added snapshot for b85e67f7-0515-4fdc-a82b-e39941754ff2, tracking 0 files
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760445014000
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39687 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760445014000 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760445014015
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39783 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760445014015 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3541s
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760445075492
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39783 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760445075492 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760445075514
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39783 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760445075514 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 7454fc3d-bf4f-43c7-9a99-1c5f7ee18747
+[DEBUG] FileHistory: Added snapshot for 7454fc3d-bf4f-43c7-9a99-1c5f7ee18747, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760445097021
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39783 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760445097021 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760445097033
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39783 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760445097033 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760445097040
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39879 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760445097040 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message f9486e06-d9f0-4266-ace1-ed1455dbe790
+[DEBUG] FileHistory: Added snapshot for f9486e06-d9f0-4266-ace1-ed1455dbe790, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: mcp__plugin_exa-mcp-server_exa__web_search_exa
+[DEBUG] Executing hooks for PreToolUse:mcp__plugin_exa-mcp-server_exa__web_search_exa
+[DEBUG] Getting matching hook commands for PreToolUse with query: mcp__plugin_exa-mcp-server_exa__web_search_exa
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__plugin_exa-mcp-server_exa__web_search_exa" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/levi/data/.claude/settings.local.json.tmp.19385.1760445159447
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 231 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/data/.claude/settings.local.json.tmp.19385.1760445159447 to /Users/levi/data/.claude/settings.local.json
+[DEBUG] File /Users/levi/data/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["mcp__plugin_exa-mcp-server_exa__web_search_exa"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Calling MCP tool: web_search_exa
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3451s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Tool 'web_search_exa' completed successfully in 5s
+[DEBUG] Executing hooks for PostToolUse:mcp__plugin_exa-mcp-server_exa__web_search_exa
+[DEBUG] Getting matching hook commands for PostToolUse with query: mcp__plugin_exa-mcp-server_exa__web_search_exa
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__plugin_exa-mcp-server_exa__web_search_exa" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760445182838
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39879 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760445182838 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760445182850
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 39879 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760445182850 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760445182858
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 40005 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760445182858 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message ddfda84b-e353-42d0-873e-3998b5f43225
+[DEBUG] FileHistory: Added snapshot for ddfda84b-e353-42d0-873e-3998b5f43225, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: mcp__plugin_exa-mcp-server_exa__web_search_exa
+[DEBUG] Executing hooks for PreToolUse:mcp__plugin_exa-mcp-server_exa__web_search_exa
+[DEBUG] Getting matching hook commands for PreToolUse with query: mcp__plugin_exa-mcp-server_exa__web_search_exa
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__plugin_exa-mcp-server_exa__web_search_exa" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Calling MCP tool: web_search_exa
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Returning tokens
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Token length: 1127
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Has refresh token: true
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Expires in: 3389s
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Tool 'web_search_exa' completed successfully in 5s
+[DEBUG] Executing hooks for PostToolUse:mcp__plugin_exa-mcp-server_exa__web_search_exa
+[DEBUG] Getting matching hook commands for PostToolUse with query: mcp__plugin_exa-mcp-server_exa__web_search_exa
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__plugin_exa-mcp-server_exa__web_search_exa" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760445243432
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 40005 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760445243432 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760445243445
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 40005 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760445243445 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760445243452
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 40165 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760445243452 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 5f84accd-767a-4c3d-8013-e02b412e2a15
+[DEBUG] FileHistory: Added snapshot for 5f84accd-767a-4c3d-8013-e02b412e2a15, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760445297967
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 40165 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760445297967 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760445297978
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 40165 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760445297978 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760445297984
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 40334 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760445297984 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1760444922027-a14zzv.sh
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport closed/disconnected, attempting automatic reconnection
+[DEBUG] FileHistory: Making snapshot for message 155bee86-8981-4ba0-829d-13a9dcca27c1
+[DEBUG] FileHistory: Added snapshot for 155bee86-8981-4ba0-829d-13a9dcca27c1, tracking 0 files
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Initializing HTTP transport to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Node version: v22.20.0, Platform: darwin
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": MTLS options: default
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport options: {"url":"https://mcp.exa.ai/mcp","headers":{"User-Agent":"claude-code/2.0.14"},"hasAuthProvider":true,"timeoutMs":60000}
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": HTTP transport created successfully
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Client created, setting up request handler
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Testing basic HTTP connectivity to https://mcp.exa.ai/mcp
+[DEBUG] MCP server "plugin:exa-mcp-server:exa": Parsed URL: host=mcp.exa.ai, port=default, protocol=https:
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760445332952
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 40334 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760445332952 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760445332960
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 40417 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760445332960 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.19385.1760445332969
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 40830 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.19385.1760445332969 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically

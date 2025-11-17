@@ -1,0 +1,118 @@
+# Claude Code Project Guide
+
+## Project Overview
+This document helps Claude Code understand and work effectively with this project.
+
+## Project Structure
+```
+.
+├── src/           # Source code
+├── tests/         # Test files
+├── docs/          # Documentation
+└── scripts/       # Build and utility scripts
+```
+
+## Development Workflow
+
+### Getting Started
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Run tests
+npm test
+
+# Build for production
+npm run build
+```
+
+### Code Style
+- Use TypeScript for type safety
+- Follow existing naming conventions
+- Write tests for new features
+- Keep functions small and focused
+
+### Testing
+- Unit tests go in `tests/unit/`
+- Integration tests go in `tests/integration/`
+- Run tests before committing
+- Aim for >80% code coverage
+
+## Common Tasks
+
+### Adding a New Feature
+1. Create feature branch
+2. Implement feature with tests
+3. Update documentation
+4. Submit PR for review
+
+### Fixing Bugs
+1. Write failing test that reproduces bug
+2. Fix the bug
+3. Verify test passes
+4. Check for similar issues
+
+### Refactoring
+1. Ensure tests are comprehensive
+2. Make incremental changes
+3. Run tests after each change
+4. Update documentation as needed
+
+## Architecture
+
+### Key Components
+- **Component A**: Handles X functionality
+- **Component B**: Manages Y operations
+- **Component C**: Coordinates Z processes
+
+### Design Patterns
+- Repository pattern for data access
+- Factory pattern for object creation
+- Observer pattern for event handling
+
+## Important Files
+- `package.json` - Dependencies and scripts
+- `tsconfig.json` - TypeScript configuration
+- `.env.example` - Environment variables template
+
+## Dependencies
+- **Framework**: React/Vue/etc
+- **Testing**: Jest/Vitest/etc
+- **Build**: Webpack/Vite/etc
+
+## Best Practices
+- Write self-documenting code
+- Add comments for complex logic
+- Keep dependencies updated
+- Use meaningful commit messages
+- Review changes before committing
+
+## Gotchas & Quirks
+- List any project-specific quirks here
+- Known issues or limitations
+- Workarounds for common problems
+
+## Resources
+- [Project Documentation](./docs)
+- [API Reference](./docs/api)
+- [Contributing Guide](./CONTRIBUTING.md)
+
+## Contact
+- Maintainer: [Name]
+- Issues: [Issue Tracker URL]
+- Discussions: [Discussion Forum URL]
+
+### AI Agentic Workflows
+
+## Graham method
+The '/graham' command will:
+
+1. Ask for a name to evaluate
+2. Confirm the identity of the person
+3. Run the analysis in the ~/data/.claude/commands/graham.md
+4. Save the file in the PERSON'S NAME-DD-MM-YY.md in the current directory
+
+

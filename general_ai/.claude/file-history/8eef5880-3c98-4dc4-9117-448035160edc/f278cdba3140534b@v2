@@ -1,0 +1,52 @@
+{
+  "LOG": true,
+  "LOG_LEVEL": "info",
+  "API_TIMEOUT_MS": 600000,
+  "NON_INTERACTIVE_MODE": false,
+
+  "Providers": [
+    {
+      "name": "openrouter",
+      "api_base_url": "https://openrouter.ai/api/v1/chat/completions",
+      "api_key": "$OPENROUTER_API_KEY",
+      "models": [
+        "anthropic/claude-sonnet-4",
+        "anthropic/claude-3.5-sonnet",
+        "google/gemini-2.5-pro-preview",
+        "google/gemini-2.5-flash-preview",
+        "openai/gpt-4o",
+        "openai/gpt-4o-mini",
+        "openai/o1-preview",
+        "deepseek/deepseek-chat",
+        "deepseek/deepseek-reasoner",
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen-2.5-coder-32b-instruct"
+      ],
+      "transformer": {
+        "use": ["openrouter"]
+      }
+    },
+    {
+      "name": "perplexity",
+      "api_base_url": "https://api.perplexity.ai/chat/completions",
+      "api_key": "$PERPLEXITY_API_KEY",
+      "models": [
+        "sonar-pro",
+        "sonar",
+        "sonar-reasoning"
+      ],
+      "transformer": {
+        "use": ["sampling", "cleancache"]
+      }
+    }
+  ],
+
+  "Router": {
+    "default": "openrouter,anthropic/claude-sonnet-4",
+    "background": "openrouter,google/gemini-2.5-flash-preview",
+    "think": "openrouter,openai/o1-preview",
+    "longContext": "openrouter,google/gemini-2.5-pro-preview",
+    "longContextThreshold": 60000,
+    "webSearch": "perplexity,sonar-pro"
+  }
+}

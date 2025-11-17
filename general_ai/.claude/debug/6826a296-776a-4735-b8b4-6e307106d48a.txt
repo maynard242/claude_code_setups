@@ -1,0 +1,122 @@
+[DEBUG] Watching for changes in setting files /Users/levi/.claude/settings.json, /Users/levi/.claude/settings.json...
+[DEBUG] Loading plugin exa-mcp-server from source: "./"
+[DEBUG] Plugin exa-mcp-server has no entry.skills defined
+[DEBUG] Found 1 plugins (1 enabled, 0 disabled)
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: false, type: boolean
+[DEBUG] ENABLE_SKILLS check failed, returning empty
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/levi/.zshrc
+[DEBUG] Snapshots directory: /Users/levi/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1760844780077-wo3bcy.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/6826a296-776a-4735-b8b4-6e307106d48a-agent-6826a296-776a-4735-b8b4-6e307106d48a.json.tmp.31588.1760844780078
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/levi/.claude/todos/6826a296-776a-4735-b8b4-6e307106d48a-agent-6826a296-776a-4735-b8b4-6e307106d48a.json.tmp.31588.1760844780078 to /Users/levi/.claude/todos/6826a296-776a-4735-b8b4-6e307106d48a-agent-6826a296-776a-4735-b8b4-6e307106d48a.json
+[DEBUG] File /Users/levi/.claude/todos/6826a296-776a-4735-b8b4-6e307106d48a-agent-6826a296-776a-4735-b8b4-6e307106d48a.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.31588.1760844780105
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44145 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.31588.1760844780105 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Registered 0 hooks from 1 plugins
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.31588.1760844780228
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44145 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.31588.1760844780228 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.31588.1760844780248
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44145 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.31588.1760844780248 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Shell snapshot created successfully (52354 bytes)
+[DEBUG] rg error (signal=undefined, code=ERR_CHILD_PROCESS_STDIO_MAXBUFFER, stderr: rg: /Users/levi/.zcompdump-levi-macbook-pro25-5.9.lock: No such file or directory (os error 2)
+rg: /Users/levi/.Trash: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Caches/com.apple.ap.adprivacyd: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Caches/com.apple.homed: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Trial: Operation not permitted (os error 1)
+rg: /Users/levi/Library/IdentityServices: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Mail: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Autosave Information: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Daemon Containers: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Assistant/SiriVocabulary: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/CallHistoryTransactions: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/CallHistoryDB: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/com.apple.avfoundation/Frecents: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Shortcuts: Operation not permitted (os error 1)
+rg: /Users/levi/Library/IntelligencePlatform: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Biome: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Safari: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Accounts: Operation not permitted (os error 1)
+rg: /Users/levi/Library/com.apple.aiml.instrumentation: Operation not permitted (os error 1)
+rg: /Users/levi/Library/DuetExpertCenter: Operation not permitted (os error 1)
+rg: /Users/levi/Library/AppleMediaServices: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/DifferentialPrivacy: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/FaceTime: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Caches/FamilyCircle: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/AddressBook: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/FileProvider: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/com.apple.TCC: Operation not permitted (os error 1)
+rg: /Users/levi/Library/DoNotDisturb: Operation not permitted (os error 1)
+rg: /Users/levi/Library/StatusKit: Operation not permitted (os error 1)
+rg: /Users/levi/Library/CoreFollowUp: Operation not permitted (os error 1)
+rg: /Users/levi/Library/com.apple.bluetooth.services.cloud/CachedRecords/SoundProfileAsset: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Cookies: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Metadata/CoreSpotlight: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Caches/com.apple.containermanagerd: Operation not permitted (os error 1)
+rg: /Users/levi/Library/PersonalizationPortrait: Operation not permitted (os error 1)
+rg: /Users/levi/Library/ContainerManager: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Sharing: Operation not permitted (os error 1)
+rg: /Users/levi/Library/HomeKit: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Messages: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Caches/com.apple.Safari: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Caches/CloudKit: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Caches/com.apple.HomeKit: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/Knowledge: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/com.apple.sharedfilelist: Operation not permitted (os error 1)
+rg: /Users/levi/Library/Application Support/CloudDocs: Operation not permitted (os error 1)
+), 159939 results
+[ERROR] RangeError: RangeError [ERR_CHILD_PROCESS_STDIO_MAXBUFFER]: stdout maxBuffer length exceeded
+    at Socket.onChildStdout (node:child_process:484:14)
+    at Socket.emit (node:events:519:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+[ERROR] AxiosError: AxiosError: Request failed with status code 401
+    at MO (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:24:1136)
+    at IncomingMessage.<anonymous> (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:29:9845)
+    at IncomingMessage.emit (node:events:531:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at K31.request (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async $IB (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:1497:26166)
+[DEBUG] Failed to fetch Grove notice config: AxiosError: Request failed with status code 401
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.31588.1760844780523
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44145 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.31588.1760844780523 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.31588.1760844781077
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 44145 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.31588.1760844781077 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1760844780077-wo3bcy.sh

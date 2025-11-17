@@ -1,0 +1,31 @@
+[DEBUG] Watching for changes in setting files /Users/levi/.claude/settings.json, /Users/levi/data/.claude/settings.local.json...
+[ERROR] Error: Error: console.error: Error: Raw mode is not supported on the current process.stdin, which Ink uses as input stream by default.
+Read about how to prevent this error on https://github.com/vadimdemedes/ink/#israwmodesupported
+    at handleSetRawMode (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:191:9372)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:194:337
+    at BJ (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:21536)
+    at SH (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:41119)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:39310
+    at A60 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:69:5026)
+    at Immediate.n40 [as _onImmediate] (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:69:5445)
+    at process.processImmediate (node:internal/timers:485:21)
+
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:193:7052
+    at Q.write (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:69:3014)
+    at Console.value (node:internal/console/constructor:298:16)
+    at Console.error (node:internal/console/constructor:412:26)
+    at Ls (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:176)
+    at Ms.X1.componentDidCatch.b.callback (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:697)
+    at Vs (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:18065)
+    at h$ (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:28648)
+    at fG (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:28210)
+    at QJ (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:27712)
+[DEBUG] Loading plugin exa-mcp-server from source: "./"
+[DEBUG] Plugin exa-mcp-server has no entry.skills defined
+[DEBUG] Found 1 plugins (1 enabled, 0 disabled)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.63129.1760580920919
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41573 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.63129.1760580920919 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically

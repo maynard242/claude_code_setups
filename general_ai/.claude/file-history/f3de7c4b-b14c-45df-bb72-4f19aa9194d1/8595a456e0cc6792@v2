@@ -1,0 +1,43 @@
+# Banking Transaction PDF to CSV Processor
+
+Convert banking transaction PDFs to CSV format for easy analysis and record-keeping.
+
+## Quick Start
+
+1. Place your banking transaction PDF files in the `input/` directory
+2. Run the processing script (to be implemented)
+3. Find your CSV files in the `output/` directory
+
+## Directory Structure
+
+```
+finance/
+├── input/          # Place PDF files here
+├── output/         # CSV files generated here
+├── scripts/        # Processing scripts
+├── CLAUDE.md       # Project context for Claude
+├── README.md       # This file
+└── .gitignore      # Ignores PDFs and CSVs (sensitive data)
+```
+
+## Important Notes
+
+- **Security**: PDF and CSV files are gitignored by default as they may contain sensitive banking information
+- Keep your source PDFs in the `input/` directory
+- Processed CSV files will be saved to `output/` directory
+
+## Next Steps
+
+- Implement PDF processing script
+- Add support for your specific bank's PDF format
+- Configure transaction parsing rules
+- Set up data validation
+
+## Processing Approaches
+
+This project can use:
+1. **Python libraries** (pypdf2, pdfplumber, tabula-py)
+2. **Claude Code PDF skills** for intelligent extraction
+3. **Hybrid approach** combining both
+
+Choose based on your PDF format complexity and data structure needs.

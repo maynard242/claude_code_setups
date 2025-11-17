@@ -1,0 +1,44 @@
+# PDF files (may contain sensitive banking info)
+*.pdf
+input/*.pdf
+
+# CSV output files (may contain sensitive data)
+*.csv
+output/*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+*.egg-info/
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp

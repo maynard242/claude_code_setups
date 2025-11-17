@@ -1,0 +1,57 @@
+[DEBUG] Watching for changes in setting files /Users/levi/.claude/settings.json...
+[DEBUG] Loading plugin exa-mcp-server from source: "./"
+[DEBUG] Found 1 plugins (1 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/levi/.zshrc
+[DEBUG] Snapshots directory: /Users/levi/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1760580790803-bre4jf.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/levi/.claude/todos/415b98f0-25e1-425b-afdd-981da38763e4-agent-415b98f0-25e1-425b-afdd-981da38763e4.json.tmp.62453.1760580790804
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/levi/.claude/todos/415b98f0-25e1-425b-afdd-981da38763e4-agent-415b98f0-25e1-425b-afdd-981da38763e4.json.tmp.62453.1760580790804 to /Users/levi/.claude/todos/415b98f0-25e1-425b-afdd-981da38763e4-agent-415b98f0-25e1-425b-afdd-981da38763e4.json
+[DEBUG] File /Users/levi/.claude/todos/415b98f0-25e1-425b-afdd-981da38763e4-agent-415b98f0-25e1-425b-afdd-981da38763e4.json written atomically
+[DEBUG] Registered 0 hooks from 1 plugins
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/levi/.claude/skills, project=/Users/levi/Library/Application Support/Claude/.claude/skills
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.62453.1760580790928
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41780 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.62453.1760580790928 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.62453.1760580790935
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41780 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.62453.1760580790935 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Shell snapshot created successfully (51600 bytes)
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.62453.1760580791181
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41780 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.62453.1760580791181 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[ERROR] AxiosError: AxiosError: Request failed with status code 401
+    at iM (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:24:1136)
+    at IncomingMessage.<anonymous> (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:29:9845)
+    at IncomingMessage.emit (node:events:531:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at A81.request (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async rLA (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:280:34283)
+[DEBUG] Failed to fetch Grove notice config: AxiosError: Request failed with status code 401
+[DEBUG] Writing to temp file: /Users/levi/.claude.json.tmp.62453.1760580791532
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 41780 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/levi/.claude.json.tmp.62453.1760580791532 to /Users/levi/.claude.json
+[DEBUG] File /Users/levi/.claude.json written atomically
+[DEBUG] Cleaned up session snapshot: /Users/levi/.claude/shell-snapshots/snapshot-zsh-1760580790803-bre4jf.sh
