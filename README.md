@@ -1,1 +1,481 @@
-# claude_code_setups
+# Claude Code Specialized Setups
+
+A collection of production-ready Claude Code configurations optimized for different professional workflows. Each setup includes specialized agents, custom commands, and pre-configured permissions for maximum productivity.
+
+## 🎯 Overview
+
+This repository contains four specialized Claude Code setups for different use cases:
+
+| Setup | Use Case | Key Features |
+|-------|----------|--------------|
+| **general_ai** | General-purpose assistant | Multi-source research, document creation, talent evaluation |
+| **code_ai** | Python/ML/AI development | PyTorch, type safety, testing, MLOps, experiment tracking |
+| **deep_research** | Academic & market research | Evidence-based analysis, competitive intelligence, SWOT |
+| **ppt_builder** | Presentation creation | PowerPoint design, slide templates, visual storytelling |
+
+## 📋 Quick Start
+
+### Choose Your Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/maynard242/claude_code_setups.git
+cd claude_code_setups
+
+# Copy your desired setup to Claude's config directory
+cp -r general_ai/.claude ~/
+
+# Or symlink for easier updates
+ln -s "$(pwd)/general_ai/.claude" ~/.claude
+```
+
+### Switch Between Setups
+
+```bash
+# To switch setups, backup your current config and copy a new one
+mv ~/.claude ~/.claude.backup
+cp -r code_ai/.claude ~/
+
+# Or if using symlinks
+rm ~/.claude
+ln -s "$(pwd)/code_ai/.claude" ~/.claude
+```
+
+## 🔧 Detailed Setup Guides
+
+### 1. General AI Assistant (`general_ai/`)
+
+**Perfect for:** Research, writing, document creation, general productivity
+
+**Key Capabilities:**
+- 🔍 **Advanced Web Research**: Multi-source verification with Exa + Firecrawl
+- 📄 **Document Skills**: PDF, DOCX, XLSX, PPTX creation and editing
+- 🧠 **Talent Evaluation**: `/graham` command using structured frameworks
+- 📊 **Deep Research**: `/deep-research` for comprehensive investigations
+- 🎨 **Creative Work**: Art generation, themes, design
+
+**Quick Usage:**
+```bash
+# Setup
+cp -r general_ai/.claude ~/
+
+# Test it
+claude
+> "What are the latest AI breakthroughs in 2025?"
+> /graham "Sam Altman"
+> /deep-research "quantum computing applications"
+```
+
+**Auto-Approved Tools:**
+- WebSearch, WebFetch
+- Development: git, gh, npm, pip, docker
+- MCP: Exa, Firecrawl, Day One, n8n
+
+[📖 Full Documentation](general_ai/README.md)
+
+---
+
+### 2. Code AI - Python/ML Engineer (`code_ai/`)
+
+**Perfect for:** Python development, machine learning, data science, AI research
+
+**Key Capabilities:**
+- 🐍 **Python Expert**: Type safety (mypy), testing (pytest), modern patterns
+- 🧠 **ML Engineer**: PyTorch, training loops, distributed training, MLOps
+- 📊 **Data Science**: Pandas, NumPy, scikit-learn, visualization
+- ⚡ **Experiment Tracking**: Weights & Biases, MLflow, TensorBoard
+- 🚀 **Deployment**: TorchScript, ONNX, quantization
+
+**Quick Usage:**
+```bash
+# Setup
+cp -r code_ai/.claude ~/
+
+# Install Python tools
+pip install torch pytorch-lightning transformers pandas pytest black ruff mypy wandb
+
+# Test it
+claude
+> "Review this code for type safety and best practices"
+> "Create a PyTorch Lightning training loop with wandb logging"
+> "Set up a data pipeline with albumentations augmentation"
+```
+
+**Auto-Approved Tools:**
+- Python: python, pip, conda, poetry, uv
+- Testing: pytest, black, ruff, mypy, pylint
+- ML: jupyter, tensorboard, wandb, mlflow
+- GPU: nvidia-smi, nvcc
+
+**Status Line:** Shows Python version + git status
+
+[📖 Full Documentation](code_ai/README.md)
+
+---
+
+### 3. Deep Research Specialist (`deep_research/`)
+
+**Perfect for:** Academic research, market analysis, competitive intelligence, due diligence
+
+**Key Capabilities:**
+- 📚 **Academic Research**: Literature reviews, paper analysis, citation management
+- 📈 **Market Research**: Industry trends, TAM/SAM/SOM, market sizing
+- 🔍 **Competitive Intelligence**: SWOT analysis, competitive positioning
+- 🏢 **Company Analysis**: Financial filings, strategic assessment
+- ✅ **Evidence-Based Reporting**: Multi-source verification, credibility tiers
+
+**Quick Usage:**
+```bash
+# Setup
+cp -r deep_research/.claude ~/
+
+# Configure MCP servers (optional but recommended)
+# Add Exa and Firecrawl API keys to claude_desktop_config.json
+
+# Test it
+claude
+> "Research the competitive landscape for AI infrastructure startups"
+> "Conduct a SWOT analysis of Anthropic"
+> "Analyze market trends in autonomous vehicles"
+```
+
+**Research Methodologies:**
+- Systematic literature reviews
+- Multi-source verification (minimum 2-3 sources)
+- Source credibility tiers (Tier 1-4 classification)
+- Structured reporting templates
+
+**Auto-Approved Tools:**
+- WebSearch, WebFetch
+- MCP: Exa (neural search), Firecrawl (scraping)
+- Utilities: curl, wget, jq
+
+[📖 Full Documentation](deep_research/README.md)
+
+---
+
+### 4. PowerPoint Builder (`ppt_builder/`)
+
+**Perfect for:** Pitch decks, business reports, training materials, presentations
+
+**Key Capabilities:**
+- 📊 **Presentation Design**: Professional layouts, visual hierarchy, typography
+- 🎨 **Storytelling**: Narrative structure, hook-context-resolution framework
+- 📈 **Data Visualization**: Charts, graphs, comparison tables
+- 🎯 **Templates**: Pitch decks, business reports, technical presentations
+- ✨ **Design Principles**: 6×6 rule, white space, consistent styling
+
+**Quick Usage:**
+```bash
+# Setup
+cp -r ppt_builder/.claude ~/
+
+# Test it
+claude
+> "Create a 10-slide pitch deck for a SaaS startup"
+> "Build a quarterly business review presentation"
+> "Design training slides for Python onboarding"
+```
+
+**Presentation Types:**
+- **Pitch Decks**: Problem, solution, market, traction, team, ask
+- **Business Reports**: Performance, metrics, analysis, recommendations
+- **Technical**: Architecture, implementation, trade-offs
+- **Educational**: Training, workshops, how-to guides
+
+**Auto-Approved Tools:**
+- Document skills (PPTX creation)
+- WebSearch for research
+- Basic dev tools: git, python, node, npm
+
+[📖 Full Documentation](ppt_builder/README.md)
+
+---
+
+## 🚀 Advanced Configuration
+
+### MCP Server Setup (Recommended)
+
+For enhanced research capabilities, configure MCP servers:
+
+```bash
+# Edit Claude Desktop config
+nano ~/Library/Application\ Support/Claude/claude_desktop_config.json
+```
+
+Add MCP servers:
+
+```json
+{
+  "mcpServers": {
+    "exa": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-exa"],
+      "env": {
+        "EXA_API_KEY": "your-exa-api-key"
+      }
+    },
+    "firecrawl": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-firecrawl"],
+      "env": {
+        "FIRECRAWL_API_KEY": "your-firecrawl-api-key"
+      }
+    }
+  }
+}
+```
+
+**Get API Keys:**
+- **Exa**: https://exa.ai - Neural search and semantic discovery
+- **Firecrawl**: https://firecrawl.dev - Advanced web scraping
+
+### Customizing Setups
+
+Each setup can be customized by editing:
+
+```
+setup_name/.claude/
+├── settings.json          # Permissions and configuration
+├── agents/               # Specialized sub-agents
+│   └── agent-name.md     # Agent definitions
+├── commands/             # Slash commands
+│   └── command-name.md   # Command prompts
+└── skills/               # Auto-activating skills
+    └── skill-name.md     # Skill definitions
+```
+
+### Adding New Agents
+
+Create a new agent file:
+
+```bash
+nano ~/.claude/agents/my-agent.md
+```
+
+Add frontmatter and instructions:
+
+```markdown
+---
+name: my-agent
+description: Brief description of when to use this agent
+model: sonnet  # or haiku, opus
+color: blue    # visual distinction
+---
+
+You are an expert in [domain]...
+[Agent instructions]
+```
+
+### Adding New Commands
+
+Create a new command file:
+
+```bash
+nano ~/.claude/commands/my-command.md
+```
+
+Add frontmatter and prompt:
+
+```markdown
+---
+description: Brief description of what this command does
+---
+
+[Command instructions and expected output format]
+```
+
+Use with `/my-command` in Claude Code.
+
+## 📊 Comparison Matrix
+
+| Feature | general_ai | code_ai | deep_research | ppt_builder |
+|---------|-----------|---------|---------------|-------------|
+| **Web Research** | ✅ Advanced | ⚠️ Basic | ✅ Expert | ⚠️ Basic |
+| **Code Development** | ⚠️ Basic | ✅ Expert | ❌ None | ❌ None |
+| **Document Creation** | ✅ All formats | ⚠️ Basic | ⚠️ Reports only | ✅ PPTX only |
+| **Data Analysis** | ⚠️ Basic | ✅ Expert | ⚠️ Research focus | ❌ None |
+| **ML/AI Development** | ❌ None | ✅ Expert | ❌ None | ❌ None |
+| **Research Depth** | ⚠️ Good | ⚠️ Basic | ✅ Expert | ❌ None |
+| **Presentation Design** | ⚠️ Basic | ❌ None | ❌ None | ✅ Expert |
+| **Thinking Mode** | ✅ Always on | ✅ Always on | ✅ Always on | ✅ Always on |
+| **MCP Integration** | ✅ Full | ❌ None | ✅ Full | ❌ None |
+| **Status Line** | Git status | Python + Git | Research mode | Presentation mode |
+
+Legend: ✅ Expert | ⚠️ Capable | ❌ Not focused
+
+## 🎓 Best Practices
+
+### For General AI
+- Use `/deep-research` for comprehensive multi-source investigations
+- Use `/graham` for talent evaluation with structured frameworks
+- Enable MCP servers (Exa, Firecrawl) for best research results
+- Leverage document skills for creating professional outputs
+
+### For Code AI
+- Always request type hints and tests
+- Use experiment tracking (wandb/mlflow) for ML projects
+- Request code reviews before major changes
+- Leverage PyTorch Lightning for production training
+- Use `uv` or `poetry` for dependency management
+
+### For Deep Research
+- Request source credibility assessments
+- Ask for multi-source verification on critical claims
+- Use structured report templates for consistency
+- Specify research depth needed (quick vs. comprehensive)
+- Request confidence levels for findings
+
+### For PPT Builder
+- Specify presentation type (pitch deck, report, training)
+- Provide target audience information
+- Request specific slide count
+- Ask for narrative structure before slide creation
+- Iterate on design and content separately
+
+## 🔧 Troubleshooting
+
+### Setup Not Loading
+```bash
+# Verify file location
+ls -la ~/.claude/
+
+# Check settings.json syntax
+cat ~/.claude/settings.json | jq .
+
+# Restart Claude Code
+```
+
+### MCP Servers Not Working
+```bash
+# Verify MCP config
+cat ~/Library/Application\ Support/Claude/claude_desktop_config.json
+
+# Test npx command
+npx -y @modelcontextprotocol/server-exa --version
+
+# Check API keys are set
+echo $EXA_API_KEY
+```
+
+### Permissions Issues
+```bash
+# Check settings.json permissions configuration
+cat ~/.claude/settings.json | jq .permissions
+
+# Add missing tool to allow list
+# Edit ~/.claude/settings.json
+```
+
+### Python Version Not Showing (code_ai)
+```bash
+# Verify Python is in PATH
+which python3
+python3 --version
+
+# Restart Claude Code to refresh status line
+```
+
+## 📚 Resources
+
+### Documentation
+- [Claude Code Official Docs](https://docs.claude.com/en/docs/claude-code)
+- [MCP Documentation](https://modelcontextprotocol.io)
+- [Anthropic Agent Skills](https://github.com/anthropics/anthropic-agent-skills)
+
+### Tools & APIs
+- [Exa API](https://exa.ai) - Neural search
+- [Firecrawl](https://firecrawl.dev) - Web scraping
+- [PyTorch](https://pytorch.org) - Deep learning framework
+- [Weights & Biases](https://wandb.ai) - Experiment tracking
+
+### Community
+- [Claude Code GitHub](https://github.com/anthropics/claude-code)
+- [MCP Servers](https://github.com/modelcontextprotocol/servers)
+
+## 🤝 Contributing
+
+Improvements and new setups welcome!
+
+1. Fork the repository
+2. Create your setup in a new directory
+3. Add comprehensive README
+4. Test thoroughly
+5. Submit pull request
+
+### Creating New Setups
+
+When creating a new specialized setup:
+
+1. **Define clear use case** - What specific workflow does this optimize?
+2. **Configure permissions** - Allow only necessary tools
+3. **Create specialized agents** - Domain experts for complex tasks
+4. **Add useful commands** - Common workflows as slash commands
+5. **Write comprehensive README** - Installation, usage, examples
+6. **Test thoroughly** - Verify all features work as expected
+
+## 📄 License
+
+MIT License - See [LICENSE](LICENSE) file for details.
+
+## 🆘 Support
+
+For issues or questions:
+1. Check the [Troubleshooting](#troubleshooting) section
+2. Review individual setup READMEs
+3. Consult [Claude Code documentation](https://docs.claude.com/en/docs/claude-code)
+4. Open an issue on GitHub
+
+---
+
+## 📋 Quick Reference
+
+### Setup Installation Commands
+
+```bash
+# General AI
+cp -r general_ai/.claude ~/
+
+# Code AI (Python/ML)
+cp -r code_ai/.claude ~/
+
+# Deep Research
+cp -r deep_research/.claude ~/
+
+# PowerPoint Builder
+cp -r ppt_builder/.claude ~/
+```
+
+### Essential Files
+
+```
+~/.claude/
+├── settings.json          # Core configuration
+├── agents/               # Specialized agents
+├── commands/             # Slash commands
+└── skills/               # Auto-activating skills
+```
+
+### Common Commands by Setup
+
+**general_ai:**
+- `/graham [person]` - Talent evaluation
+- `/deep-research [topic]` - Comprehensive research
+
+**code_ai:**
+- (Use agents automatically for code tasks)
+
+**deep_research:**
+- (Researcher agent auto-activates for research tasks)
+
+**ppt_builder:**
+- (Presentation-builder agent auto-activates for slides)
+
+---
+
+**Version**: 1.0
+**Last Updated**: 2025-11-18
+**Tested On**: macOS (Claude Code Desktop + CLI)
+**Maintained By**: [maynard242](https://github.com/maynard242)
+
+**Happy building with Claude Code!** 🚀
