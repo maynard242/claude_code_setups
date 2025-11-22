@@ -17,8 +17,24 @@ NC='\033[0m' # No Color
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CLAUDE_DIR="$HOME/.claude"
 
-# Available setups
+# Available setups with descriptions
+declare -A SETUP_DESCRIPTIONS=(
+    ["general_ai"]="General-purpose assistant (research, docs, creativity)"
+    ["code_ai"]="Python/ML/AI development (PyTorch, testing, MLOps)"
+    ["deep_research"]="Research specialist (academic, market analysis)"
+    ["ppt_builder"]="PowerPoint builder (presentations, pitch decks)"
+)
 SETUPS=("general_ai" "code_ai" "deep_research" "ppt_builder")
+
+# Function to validate setup name (security)
+validate_setup_name() {
+    local name=$1
+    if [[ ! "$name" =~ ^[a-z_]+$ ]]; then
+        print_error "Invalid setup name: $name"
+        print_info "Setup names must contain only lowercase letters and underscores"
+        exit 1
+    fi
+}
 
 # Function to print colored output
 print_info() {
@@ -46,15 +62,87 @@ show_header() {
     echo ""
 }
 
-# Function to display available setups
+# Function to display available setups (dynamically generated)
 show_setups() {
     echo "Available setups:"
     echo ""
-    echo "  1) general_ai      - General-purpose assistant (research, docs, creativity)"
-    echo "  2) code_ai         - Python/ML/AI development (PyTorch, testing, MLOps)"
-    echo "  3) deep_research   - Research specialist (academic, market analysis)"
-    echo "  4) ppt_builder     - PowerPoint builder (presentations, pitch decks)"
+    local i=1
+    for setup in "${SETUPS[@]}"; do
+        printf "  %d) %-16s - %s\n" "$i" "$setup" "${SETUP_DESCRIPTIONS[$setup]}"
+        ((i++))
+    done
     echo ""
+}
+
+# Function to list available backups
+list_backups() {
+    local backups=()
+    for backup in "$HOME"/.claude.backup.*; do
+        if [ -d "$backup" ]; then
+            backups+=("$backup")
+        fi
+    done
+
+    if [ ${#backups[@]} -eq 0 ]; then
+        print_warning "No backups found"
+        return 1
+    fi
+
+    echo "Available backups:"
+    echo ""
+    local i=1
+    for backup in "${backups[@]}"; do
+        local timestamp=$(echo "$backup" | sed 's/.*\.backup\.//')
+        local formatted_date=$(echo "$timestamp" | sed 's/_/ /' | sed 's/\([0-9]\{4\}\)\([0-9]\{2\}\)\([0-9]\{2\}\)/\1-\2-\3/')
+        printf "  %d) %s\n" "$i" "$formatted_date"
+        ((i++))
+    done
+    echo ""
+    return 0
+}
+
+# Function to restore from backup
+restore_backup() {
+    local backups=()
+    for backup in "$HOME"/.claude.backup.*; do
+        if [ -d "$backup" ]; then
+            backups+=("$backup")
+        fi
+    done
+
+    if [ ${#backups[@]} -eq 0 ]; then
+        print_warning "No backups found"
+        exit 1
+    fi
+
+    list_backups
+
+    echo -n "Select backup to restore (1-${#backups[@]}) or (q)uit: "
+    read -r choice
+
+    if [[ "$choice" == "q" || "$choice" == "Q" ]]; then
+        echo "Cancelled"
+        exit 0
+    fi
+
+    if ! [[ "$choice" =~ ^[0-9]+$ ]] || [ "$choice" -lt 1 ] || [ "$choice" -gt ${#backups[@]} ]; then
+        print_error "Invalid choice"
+        exit 1
+    fi
+
+    local selected_backup="${backups[$((choice-1))]}"
+
+    print_info "Restoring from: $selected_backup"
+
+    # Remove current setup if exists
+    if [ -d "$CLAUDE_DIR" ] || [ -L "$CLAUDE_DIR" ]; then
+        rm -rf "$CLAUDE_DIR"
+    fi
+
+    # Restore backup
+    cp -r "$selected_backup" "$CLAUDE_DIR"
+
+    print_success "Backup restored successfully"
 }
 
 # Function to backup current setup
@@ -72,6 +160,10 @@ backup_current() {
 # Function to switch to a setup
 switch_to_setup() {
     local setup=$1
+
+    # Validate input
+    validate_setup_name "$setup"
+
     local setup_path="$SCRIPT_DIR/$setup/.claude"
 
     if [ ! -d "$setup_path" ]; then
@@ -122,6 +214,10 @@ switch_to_setup() {
 # Function to create symlink
 create_symlink() {
     local setup=$1
+
+    # Validate input
+    validate_setup_name "$setup"
+
     local setup_path="$SCRIPT_DIR/$setup/.claude"
 
     if [ ! -d "$setup_path" ]; then
@@ -157,18 +253,24 @@ show_current() {
         print_info "Current setup (copied):"
         echo "  $CLAUDE_DIR"
 
-        # Try to detect which setup based on status line
+        # Try to detect which setup
         if [ -f "$CLAUDE_DIR/settings.json" ]; then
-            if grep -q "research mode" "$CLAUDE_DIR/settings.json"; then
-                echo "  Detected: deep_research"
-            elif grep -q "presentation mode" "$CLAUDE_DIR/settings.json"; then
-                echo "  Detected: ppt_builder"
-            elif grep -q "py_ver" "$CLAUDE_DIR/settings.json"; then
-                echo "  Detected: code_ai"
-            elif grep -q "general" "$CLAUDE_DIR/settings.json"; then
-                echo "  Detected: general_ai (likely)"
+            # First try to detect using setupId (preferred)
+            local setup_id=$(grep -o '"setupId"[[:space:]]*:[[:space:]]*"[^"]*"' "$CLAUDE_DIR/settings.json" | sed 's/.*"setupId"[[:space:]]*:[[:space:]]*"\([^"]*\)"/\1/')
+            if [ -n "$setup_id" ]; then
+                echo "  Detected: $setup_id"
             else
-                echo "  Detected: custom or general_ai"
+                # Fallback to status line detection
+                if grep -q "research mode" "$CLAUDE_DIR/settings.json"; then
+                    echo "  Detected: deep_research (inferred)"
+                elif grep -q "presentation mode" "$CLAUDE_DIR/settings.json"; then
+                    echo "  Detected: ppt_builder (inferred)"
+                elif grep -q "py_ver" "$CLAUDE_DIR/settings.json"; then
+                    echo "  Detected: code_ai (inferred)"
+                else
+                    echo "  Detected: general_ai or custom (inferred)"
+                fi
+                print_info "Tip: Add setupId to settings.json for reliable detection"
             fi
         fi
     fi
@@ -188,6 +290,8 @@ main() {
             echo "  -l, --link      Create symlink instead of copy"
             echo "  -c, --current   Show current setup"
             echo "  -b, --backup    Backup current setup without switching"
+            echo "  -r, --restore   Restore from a previous backup"
+            echo "  -L, --list      List available backups"
             echo ""
             show_setups
             echo "Examples:"
@@ -195,6 +299,7 @@ main() {
             echo "  $0 code_ai            # Switch to code_ai"
             echo "  $0 --link general_ai  # Symlink to general_ai"
             echo "  $0 --current          # Show current setup"
+            echo "  $0 --restore          # Restore from backup"
             ;;
         -c|--current)
             show_current
@@ -206,6 +311,12 @@ main() {
                 print_warning "No setup to backup"
             fi
             ;;
+        -r|--restore)
+            restore_backup
+            ;;
+        -L|--list)
+            list_backups
+            ;;
         -l|--link)
             if [ -z "${2:-}" ]; then
                 print_error "Please specify a setup to link"
@@ -216,17 +327,21 @@ main() {
         "")
             # Interactive mode
             show_setups
-            echo -n "Select setup (1-4) or (q)uit: "
+            local num_setups=${#SETUPS[@]}
+            echo -n "Select setup (1-$num_setups) or (q)uit: "
             read -r choice
 
-            case $choice in
-                1) switch_to_setup "general_ai" ;;
-                2) switch_to_setup "code_ai" ;;
-                3) switch_to_setup "deep_research" ;;
-                4) switch_to_setup "ppt_builder" ;;
-                q|Q) echo "Cancelled"; exit 0 ;;
-                *) print_error "Invalid choice"; exit 1 ;;
-            esac
+            if [[ "$choice" == "q" || "$choice" == "Q" ]]; then
+                echo "Cancelled"
+                exit 0
+            fi
+
+            if ! [[ "$choice" =~ ^[0-9]+$ ]] || [ "$choice" -lt 1 ] || [ "$choice" -gt "$num_setups" ]; then
+                print_error "Invalid choice"
+                exit 1
+            fi
+
+            switch_to_setup "${SETUPS[$((choice-1))]}"
             ;;
         *)
             # Direct setup name provided
