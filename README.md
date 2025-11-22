@@ -4,7 +4,7 @@ A collection of production-ready Claude Code configurations optimized for differ
 
 ## 🎯 Overview
 
-This repository contains four specialized Claude Code setups for different use cases:
+This repository contains seven specialized Claude Code setups for different use cases:
 
 | Setup | Use Case | Key Features |
 |-------|----------|--------------|
@@ -12,6 +12,9 @@ This repository contains four specialized Claude Code setups for different use c
 | **code_ai** | Python/ML/AI development | PyTorch, type safety, testing, MLOps, experiment tracking |
 | **deep_research** | Academic & market research | Evidence-based analysis, competitive intelligence, SWOT |
 | **ppt_builder** | Presentation creation | PowerPoint design, slide templates, visual storytelling |
+| **osint_ai** | OSINT/Investigative research | Background checks, fact-checking, evidence documentation |
+| **science_ai** | Scientific/Academic writing | Research papers, grants, statistical reporting, LaTeX |
+| **finance_ai** | Financial/Investment research | Stock analysis, valuation models, SEC filings |
 
 ## 📋 Quick Start
 
@@ -214,6 +217,111 @@ claude
 
 ---
 
+### 5. OSINT / Investigative Research (`osint_ai/`)
+
+**Perfect for:** Background investigations, fact-checking, due diligence, public records analysis
+
+**Key Capabilities:**
+- 🔎 **Background Research**: Person/company investigation, employment verification
+- 🌐 **Digital Footprint**: Social media analysis, domain investigation
+- 📋 **Corporate Intelligence**: Business registrations, litigation history
+- ✅ **Fact-Checking**: Claim verification, source authentication
+- 📅 **Timeline Construction**: Chronological event mapping
+
+**Specialized Agent:**
+- **investigator**: OSINT specialist with systematic evidence gathering, confidence scoring, and red flag identification
+
+**Quick Usage:**
+```bash
+# Setup
+cp -r osint_ai/.claude ~/
+
+# Test it
+claude
+> "Investigate the background of company XYZ Corp"
+> "Verify the claims in this article"
+> "Build a timeline of events for [subject]"
+```
+
+**Auto-Approved Tools:**
+- WebSearch, WebFetch
+- DNS: whois, dig, nslookup
+- MCP: Exa, Firecrawl
+
+[📖 Full Documentation](osint_ai/README.md)
+
+---
+
+### 6. Scientific / Academic Writing (`science_ai/`)
+
+**Perfect for:** Research papers, literature reviews, grant proposals, statistical reporting
+
+**Key Capabilities:**
+- 📝 **Research Papers**: IMRaD structure, methodology, results sections
+- 📚 **Literature Reviews**: Systematic reviews, synthesis, gap analysis
+- 💰 **Grant Proposals**: Specific aims, significance, approach
+- 📊 **Statistical Reporting**: Proper p-values, effect sizes, confidence intervals
+- 📨 **Peer Review**: Reviewer responses, manuscript revision
+
+**Specialized Agent:**
+- **academic-writer**: Scientific writing specialist with citation practices, statistical rigor, and academic conventions
+
+**Quick Usage:**
+```bash
+# Setup
+cp -r science_ai/.claude ~/
+
+# Test it
+claude
+> "Help me write the methods section for my experiment"
+> "Review this statistical reporting for APA compliance"
+> "Draft a literature review on [topic]"
+```
+
+**Auto-Approved Tools:**
+- WebSearch, WebFetch
+- LaTeX: pdflatex, bibtex, pandoc
+- MCP: Exa, Firecrawl
+
+[📖 Full Documentation](science_ai/README.md)
+
+---
+
+### 7. Financial / Investment Research (`finance_ai/`)
+
+**Perfect for:** Stock analysis, valuation modeling, earnings analysis, portfolio research
+
+**Key Capabilities:**
+- 📈 **Financial Analysis**: Income statement, balance sheet, cash flow
+- 💵 **Valuation**: DCF, comparables, precedent transactions
+- 🏢 **Industry Analysis**: Competitive dynamics, market sizing
+- 📋 **Investment Thesis**: Bull/bear cases, catalysts, risk assessment
+- 🔢 **Quantitative Screening**: Ratios, growth metrics, quality factors
+
+**Specialized Agent:**
+- **financial-analyst**: Investment research specialist with valuation frameworks and financial metrics expertise
+
+**Quick Usage:**
+```bash
+# Setup
+cp -r finance_ai/.claude ~/
+
+# Test it
+claude
+> "Analyze Apple's latest 10-K filing"
+> "Build a DCF model for [company]"
+> "Compare valuation multiples for [industry]"
+```
+
+**Auto-Approved Tools:**
+- WebSearch, WebFetch
+- Python for analysis
+- MCP: Exa, Firecrawl
+
+[📖 Full Documentation](finance_ai/README.md)
+
+---
+
 ## 🚀 Advanced Configuration
 
 ### MCP Server Setup (Recommended)
@@ -311,18 +419,18 @@ Use with `/my-command` in Claude Code.
 
 ## 📊 Comparison Matrix
 
-| Feature | general_ai | code_ai | deep_research | ppt_builder |
-|---------|-----------|---------|---------------|-------------|
-| **Web Research** | ✅ Advanced | ⚠️ Basic | ✅ Expert | ⚠️ Basic |
-| **Code Development** | ⚠️ Basic | ✅ Expert | ❌ None | ❌ None |
-| **Document Creation** | ✅ All formats | ⚠️ Basic | ⚠️ Reports only | ✅ PPTX only |
-| **Data Analysis** | ⚠️ Basic | ✅ Expert | ⚠️ Research focus | ❌ None |
-| **ML/AI Development** | ❌ None | ✅ Expert | ❌ None | ❌ None |
-| **Research Depth** | ⚠️ Good | ⚠️ Basic | ✅ Expert | ❌ None |
-| **Presentation Design** | ⚠️ Basic | ❌ None | ❌ None | ✅ Expert |
-| **Thinking Mode** | ✅ Always on | ✅ Always on | ✅ Always on | ✅ Always on |
-| **MCP Integration** | ✅ Full | ❌ None | ✅ Full | ❌ None |
-| **Status Line** | Git status | Python + Git | Research mode | Presentation mode |
+| Feature | general_ai | code_ai | deep_research | ppt_builder | osint_ai | science_ai | finance_ai |
+|---------|-----------|---------|---------------|-------------|----------|------------|------------|
+| **Web Research** | ✅ Advanced | ⚠️ Basic | ✅ Expert | ⚠️ Basic | ✅ Expert | ⚠️ Basic | ✅ Advanced |
+| **Code Development** | ⚠️ Basic | ✅ Expert | ❌ None | ❌ None | ❌ None | ⚠️ Basic | ⚠️ Basic |
+| **Document Creation** | ✅ All formats | ⚠️ Basic | ⚠️ Reports | ✅ PPTX | ⚠️ Reports | ✅ LaTeX/Papers | ⚠️ Reports |
+| **Data Analysis** | ⚠️ Basic | ✅ Expert | ⚠️ Research | ❌ None | ⚠️ Basic | ✅ Statistical | ✅ Financial |
+| **ML/AI Development** | ❌ None | ✅ Expert | ❌ None | ❌ None | ❌ None | ❌ None | ❌ None |
+| **Investigation** | ⚠️ Basic | ❌ None | ⚠️ Basic | ❌ None | ✅ Expert | ❌ None | ⚠️ Due diligence |
+| **Academic Writing** | ⚠️ Basic | ❌ None | ⚠️ Capable | ❌ None | ❌ None | ✅ Expert | ❌ None |
+| **Financial Analysis** | ❌ None | ❌ None | ⚠️ Basic | ❌ None | ⚠️ Corporate | ❌ None | ✅ Expert |
+| **Thinking Mode** | ✅ On | ✅ On | ✅ On | ✅ On | ✅ On | ✅ On | ✅ On |
+| **MCP Integration** | ✅ Full | ❌ None | ✅ Full | ❌ None | ✅ Full | ✅ Full | ✅ Full |
 
 Legend: ✅ Expert | ⚠️ Capable | ❌ Not focused
 
@@ -354,6 +462,27 @@ Legend: ✅ Expert | ⚠️ Capable | ❌ Not focused
 - Request specific slide count
 - Ask for narrative structure before slide creation
 - Iterate on design and content separately
+
+### For OSINT Research
+- Define investigation scope and objectives clearly
+- Request confidence levels for all findings
+- Ask for source documentation with timestamps
+- Request red flag identification
+- Specify legal/ethical boundaries
+
+### For Science/Academic
+- Specify target journal or style guide (APA, AMA, etc.)
+- Request proper statistical reporting (effect sizes, CIs)
+- Ask for citation verification
+- Request methodology critique
+- Specify section being written (methods, results, etc.)
+
+### For Finance Research
+- Specify analysis type (equity research, valuation, screening)
+- Request multiple valuation methods
+- Ask for bull/bear case scenarios
+- Request risk assessment
+- Specify time horizon and investment style
 
 ## 🔧 Troubleshooting
 
@@ -466,6 +595,15 @@ cp -r deep_research/.claude ~/
 
 # PowerPoint Builder
 cp -r ppt_builder/.claude ~/
+
+# OSINT / Investigative
+cp -r osint_ai/.claude ~/
+
+# Science / Academic
+cp -r science_ai/.claude ~/
+
+# Finance / Investment
+cp -r finance_ai/.claude ~/
 ```
 
 ### Essential Files
@@ -495,7 +633,7 @@ cp -r ppt_builder/.claude ~/
 
 ---
 
-**Version**: 1.1
+**Version**: 2.0
 **Last Updated**: 2025-11-22
 **Tested On**: macOS, Linux (Claude Code Desktop + CLI)
 **Maintained By**: [maynard242](https://github.com/maynard242)

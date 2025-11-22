@@ -23,7 +23,7 @@ fi
 CLAUDE_DIR="$HOME/.claude"
 
 # Available setups
-SETUPS="general_ai code_ai deep_research ppt_builder"
+SETUPS="general_ai code_ai deep_research ppt_builder osint_ai science_ai finance_ai"
 
 # Function to get setup description
 get_description() {
@@ -32,6 +32,9 @@ get_description() {
         "code_ai")      echo "Python/ML/AI development (PyTorch, testing, MLOps)" ;;
         "deep_research") echo "Research specialist (academic, market analysis)" ;;
         "ppt_builder")  echo "PowerPoint builder (presentations, pitch decks)" ;;
+        "osint_ai")     echo "OSINT/Investigative research (background, fact-checking)" ;;
+        "science_ai")   echo "Scientific/Academic writing (papers, grants, stats)" ;;
+        "finance_ai")   echo "Financial/Investment research (stocks, valuation)" ;;
         *)              echo "Unknown setup" ;;
     esac
 }
@@ -261,6 +264,21 @@ switch_to_setup() {
             echo "  • PowerPoint presentation design"
             echo "  • Agent: presentation-builder"
             echo "  • Templates: pitch decks, reports, training"
+            ;;
+        "osint_ai")
+            echo "  • Background investigations"
+            echo "  • Fact-checking & verification"
+            echo "  • Agent: investigator (OSINT specialist)"
+            ;;
+        "science_ai")
+            echo "  • Research paper writing (IMRaD)"
+            echo "  • Grant proposals & literature reviews"
+            echo "  • Agent: academic-writer"
+            ;;
+        "finance_ai")
+            echo "  • Stock & equity research"
+            echo "  • Valuation modeling (DCF, comps)"
+            echo "  • Agent: financial-analyst"
             ;;
     esac
 
