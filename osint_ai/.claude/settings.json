@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "Bash(git:*)",
+      "Bash(gh:*)",
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "Bash(jq:*)",
+      "Bash(python:*)",
+      "Bash(whois:*)",
+      "Bash(dig:*)",
+      "Bash(nslookup:*)",
+      "mcp__plugin_exa-mcp-server_exa__web_search_exa",
+      "mcp__plugin_exa-mcp-server_exa__get_code_context_exa",
+      "mcp__firecrawl__firecrawl_scrape",
+      "mcp__firecrawl__firecrawl_search",
+      "mcp__firecrawl__firecrawl_map",
+      "mcp__firecrawl__firecrawl_crawl",
+      "mcp__firecrawl__firecrawl_extract"
+    ],
+    "ask": [
+      "Bash(rm:*)",
+      "Bash(sudo:*)"
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "input=$(cat); cwd=$(echo \"$input\" | jq -r '.workspace.current_dir'); dir=$(basename \"$cwd\"); printf '\\033[1;31m🔎\\033[0m \\033[36m%s\\033[0m \\033[90m[investigation mode]\\033[0m' \"$dir\""
+  },
+  "alwaysThinkingEnabled": true
+}
