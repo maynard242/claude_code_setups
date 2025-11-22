@@ -1,0 +1,18 @@
+# Claude Code runtime artifacts
+*/.claude/debug/
+*/.claude/file-history/
+*/.claude/history.jsonl
+
+# Backup files created by switch-setup.sh
+.claude.backup.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
