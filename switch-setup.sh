@@ -23,7 +23,7 @@ fi
 CLAUDE_DIR="$HOME/.claude"
 
 # Available setups
-SETUPS="general_ai code_ai deep_research ppt_builder osint_ai science_ai finance_ai"
+SETUPS="general_ai code_ai deep_research ppt_builder osint_ai science_ai finance_ai bookkeeping_ai"
 
 # Function to get setup description
 get_description() {
@@ -35,6 +35,7 @@ get_description() {
         "osint_ai")     echo "OSINT/Investigative research (background, fact-checking)" ;;
         "science_ai")   echo "Scientific/Academic writing (papers, grants, stats)" ;;
         "finance_ai")   echo "Financial/Investment research (stocks, valuation)" ;;
+        "bookkeeping_ai") echo "Bookkeeping/Personal finance (statements, expenses)" ;;
         *)              echo "Unknown setup" ;;
     esac
 }
@@ -279,6 +280,11 @@ switch_to_setup() {
             echo "  • Stock & equity research"
             echo "  • Valuation modeling (DCF, comps)"
             echo "  • Agent: financial-analyst"
+            ;;
+        "bookkeeping_ai")
+            echo "  • Bank/credit card statement processing"
+            echo "  • Transaction categorization"
+            echo "  • Agent: statement-processor"
             ;;
     esac
 
