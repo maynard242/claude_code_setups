@@ -15,13 +15,26 @@ This repository contains four specialized Claude Code setups for different use c
 
 ## 📋 Quick Start
 
-### Choose Your Setup
+### Using the Setup Switcher (Recommended)
 
 ```bash
 # Clone the repository
 git clone https://github.com/maynard242/claude_code_setups.git
 cd claude_code_setups
 
+# Interactive mode - choose from menu
+./switch-setup.sh
+
+# Or specify directly
+./switch-setup.sh general_ai
+
+# Use symlink for automatic updates
+./switch-setup.sh --link general_ai
+```
+
+### Manual Installation
+
+```bash
 # Copy your desired setup to Claude's config directory
 cp -r general_ai/.claude ~/
 
@@ -29,17 +42,20 @@ cp -r general_ai/.claude ~/
 ln -s "$(pwd)/general_ai/.claude" ~/.claude
 ```
 
-### Switch Between Setups
+### Setup Switcher Commands
 
 ```bash
-# To switch setups, backup your current config and copy a new one
-mv ~/.claude ~/.claude.backup
-cp -r code_ai/.claude ~/
-
-# Or if using symlinks
-rm ~/.claude
-ln -s "$(pwd)/code_ai/.claude" ~/.claude
+./switch-setup.sh              # Interactive menu
+./switch-setup.sh code_ai      # Switch to specific setup
+./switch-setup.sh --link NAME  # Symlink instead of copy
+./switch-setup.sh --current    # Show current setup
+./switch-setup.sh --backup     # Backup without switching
+./switch-setup.sh --restore    # Restore from backup
+./switch-setup.sh --list       # List available backups
+./switch-setup.sh --help       # Show all options
 ```
+
+The setup switcher automatically creates timestamped backups before switching, validates input for security, and can detect which setup is currently active.
 
 ## 🔧 Detailed Setup Guides
 
@@ -53,6 +69,9 @@ ln -s "$(pwd)/code_ai/.claude" ~/.claude
 - 🧠 **Talent Evaluation**: `/graham` command using structured frameworks
 - 📊 **Deep Research**: `/deep-research` for comprehensive investigations
 - 🎨 **Creative Work**: Art generation, themes, design
+
+**Specialized Agent:**
+- **web-researcher**: Intelligent search orchestrator with tool selection decision tree, multi-tool patterns, and cost optimization strategies
 
 **Quick Usage:**
 ```bash
@@ -123,6 +142,9 @@ claude
 - 🔍 **Competitive Intelligence**: SWOT analysis, competitive positioning
 - 🏢 **Company Analysis**: Financial filings, strategic assessment
 - ✅ **Evidence-Based Reporting**: Multi-source verification, credibility tiers
+
+**Specialized Agent:**
+- **researcher**: Comprehensive research analyst with tool selection matrix, verification standards table, and source credibility tiers (Tier 1-4)
 
 **Quick Usage:**
 ```bash
@@ -473,9 +495,9 @@ cp -r ppt_builder/.claude ~/
 
 ---
 
-**Version**: 1.0
-**Last Updated**: 2025-11-18
-**Tested On**: macOS (Claude Code Desktop + CLI)
+**Version**: 1.1
+**Last Updated**: 2025-11-22
+**Tested On**: macOS, Linux (Claude Code Desktop + CLI)
 **Maintained By**: [maynard242](https://github.com/maynard242)
 
 **Happy building with Claude Code!** 🚀
