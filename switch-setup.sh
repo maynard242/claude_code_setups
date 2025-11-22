@@ -1,7 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # Claude Code Setup Switcher
 # Easily switch between different Claude Code configurations
+# Compatible with bash and zsh
 #
 
 set -e
@@ -13,27 +14,26 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-# Script directory
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# Script directory (compatible with bash and zsh)
+if [ -n "$BASH_SOURCE" ]; then
+    SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+else
+    SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+fi
 CLAUDE_DIR="$HOME/.claude"
 
-# Available setups with descriptions
-declare -A SETUP_DESCRIPTIONS=(
-    ["general_ai"]="General-purpose assistant (research, docs, creativity)"
-    ["code_ai"]="Python/ML/AI development (PyTorch, testing, MLOps)"
-    ["deep_research"]="Research specialist (academic, market analysis)"
-    ["ppt_builder"]="PowerPoint builder (presentations, pitch decks)"
-)
-SETUPS=("general_ai" "code_ai" "deep_research" "ppt_builder")
+# Available setups
+SETUPS="general_ai code_ai deep_research ppt_builder"
 
-# Function to validate setup name (security)
-validate_setup_name() {
-    local name=$1
-    if [[ ! "$name" =~ ^[a-z_]+$ ]]; then
-        print_error "Invalid setup name: $name"
-        print_info "Setup names must contain only lowercase letters and underscores"
-        exit 1
-    fi
+# Function to get setup description
+get_description() {
+    case "$1" in
+        "general_ai")   echo "General-purpose assistant (research, docs, creativity)" ;;
+        "code_ai")      echo "Python/ML/AI development (PyTorch, testing, MLOps)" ;;
+        "deep_research") echo "Research specialist (academic, market analysis)" ;;
+        "ppt_builder")  echo "PowerPoint builder (presentations, pitch decks)" ;;
+        *)              echo "Unknown setup" ;;
+    esac
 }
 
 # Function to print colored output
@@ -53,6 +53,16 @@ print_error() {
     echo -e "${RED}✗${NC} $1"
 }
 
+# Function to validate setup name (security)
+validate_setup_name() {
+    local name=$1
+    if ! echo "$name" | grep -qE '^[a-z_]+$'; then
+        print_error "Invalid setup name: $name"
+        print_info "Setup names must contain only lowercase letters and underscores"
+        exit 1
+    fi
+}
+
 # Function to display header
 show_header() {
     echo ""
@@ -62,75 +72,122 @@ show_header() {
     echo ""
 }
 
-# Function to display available setups (dynamically generated)
+# Function to display available setups
 show_setups() {
     echo "Available setups:"
     echo ""
     local i=1
-    for setup in "${SETUPS[@]}"; do
-        printf "  %d) %-16s - %s\n" "$i" "$setup" "${SETUP_DESCRIPTIONS[$setup]}"
-        ((i++))
+    for setup in $SETUPS; do
+        printf "  %d) %-16s - %s\n" "$i" "$setup" "$(get_description "$setup")"
+        i=$((i + 1))
     done
     echo ""
 }
 
+# Function to get setup by index (1-based)
+get_setup_by_index() {
+    local index=$1
+    local i=1
+    for setup in $SETUPS; do
+        if [ "$i" -eq "$index" ]; then
+            echo "$setup"
+            return
+        fi
+        i=$((i + 1))
+    done
+}
+
+# Function to count setups
+count_setups() {
+    local count=0
+    for _ in $SETUPS; do
+        count=$((count + 1))
+    done
+    echo "$count"
+}
+
+# Function to check if setup exists
+setup_exists() {
+    local name=$1
+    for setup in $SETUPS; do
+        if [ "$setup" = "$name" ]; then
+            return 0
+        fi
+    done
+    return 1
+}
+
 # Function to list available backups
 list_backups() {
-    local backups=()
+    local count=0
+    local i=1
+
+    echo "Available backups:"
+    echo ""
+
     for backup in "$HOME"/.claude.backup.*; do
         if [ -d "$backup" ]; then
-            backups+=("$backup")
+            local timestamp=$(echo "$backup" | sed 's/.*\.backup\.//')
+            local formatted_date=$(echo "$timestamp" | sed 's/_/ /' | sed 's/\([0-9]\{4\}\)\([0-9]\{2\}\)\([0-9]\{2\}\)/\1-\2-\3/')
+            printf "  %d) %s\n" "$i" "$formatted_date"
+            i=$((i + 1))
+            count=$((count + 1))
         fi
     done
 
-    if [ ${#backups[@]} -eq 0 ]; then
+    if [ "$count" -eq 0 ]; then
         print_warning "No backups found"
         return 1
     fi
 
-    echo "Available backups:"
-    echo ""
-    local i=1
-    for backup in "${backups[@]}"; do
-        local timestamp=$(echo "$backup" | sed 's/.*\.backup\.//')
-        local formatted_date=$(echo "$timestamp" | sed 's/_/ /' | sed 's/\([0-9]\{4\}\)\([0-9]\{2\}\)\([0-9]\{2\}\)/\1-\2-\3/')
-        printf "  %d) %s\n" "$i" "$formatted_date"
-        ((i++))
-    done
     echo ""
     return 0
 }
 
 # Function to restore from backup
 restore_backup() {
-    local backups=()
+    local backups=""
+    local count=0
+
     for backup in "$HOME"/.claude.backup.*; do
         if [ -d "$backup" ]; then
-            backups+=("$backup")
+            backups="$backups $backup"
+            count=$((count + 1))
         fi
     done
 
-    if [ ${#backups[@]} -eq 0 ]; then
+    if [ "$count" -eq 0 ]; then
         print_warning "No backups found"
         exit 1
     fi
 
     list_backups
 
-    echo -n "Select backup to restore (1-${#backups[@]}) or (q)uit: "
+    echo -n "Select backup to restore (1-$count) or (q)uit: "
     read -r choice
 
-    if [[ "$choice" == "q" || "$choice" == "Q" ]]; then
+    if [ "$choice" = "q" ] || [ "$choice" = "Q" ]; then
         echo "Cancelled"
         exit 0
     fi
 
-    if ! [[ "$choice" =~ ^[0-9]+$ ]] || [ "$choice" -lt 1 ] || [ "$choice" -gt ${#backups[@]} ]; then
+    if ! echo "$choice" | grep -qE '^[0-9]+$' || [ "$choice" -lt 1 ] || [ "$choice" -gt "$count" ]; then
         print_error "Invalid choice"
         exit 1
     fi
 
-    local selected_backup="${backups[$((choice-1))]}"
+    # Get the selected backup
+    local i=1
+    local selected_backup=""
+    for backup in "$HOME"/.claude.backup.*; do
+        if [ -d "$backup" ]; then
+            if [ "$i" -eq "$choice" ]; then
+                selected_backup="$backup"
+                break
+            fi
+            i=$((i + 1))
+        fi
+    done
 
     print_info "Restoring from: $selected_backup"
 
@@ -256,7 +313,7 @@ show_current() {
         # Try to detect which setup
         if [ -f "$CLAUDE_DIR/settings.json" ]; then
             # First try to detect using setupId (preferred)
-            local setup_id=$(grep -o '"setupId"[[:space:]]*:[[:space:]]*"[^"]*"' "$CLAUDE_DIR/settings.json" | sed 's/.*"setupId"[[:space:]]*:[[:space:]]*"\([^"]*\)"/\1/')
+            local setup_id=$(grep -o '"setupId"[[:space:]]*:[[:space:]]*"[^"]*"' "$CLAUDE_DIR/settings.json" 2>/dev/null | sed 's/.*"setupId"[[:space:]]*:[[:space:]]*"\([^"]*\)"/\1/')
             if [ -n "$setup_id" ]; then
                 echo "  Detected: $setup_id"
             else
@@ -327,25 +384,25 @@ main() {
         "")
             # Interactive mode
             show_setups
-            local num_setups=${#SETUPS[@]}
+            local num_setups=$(count_setups)
             echo -n "Select setup (1-$num_setups) or (q)uit: "
             read -r choice
 
-            if [[ "$choice" == "q" || "$choice" == "Q" ]]; then
+            if [ "$choice" = "q" ] || [ "$choice" = "Q" ]; then
                 echo "Cancelled"
                 exit 0
             fi
 
-            if ! [[ "$choice" =~ ^[0-9]+$ ]] || [ "$choice" -lt 1 ] || [ "$choice" -gt "$num_setups" ]; then
+            if ! echo "$choice" | grep -qE '^[0-9]+$' || [ "$choice" -lt 1 ] || [ "$choice" -gt "$num_setups" ]; then
                 print_error "Invalid choice"
                 exit 1
             fi
 
-            switch_to_setup "${SETUPS[$((choice-1))]}"
+            switch_to_setup "$(get_setup_by_index "$choice")"
             ;;
         *)
             # Direct setup name provided
-            if [[ " ${SETUPS[@]} " =~ " ${1} " ]]; then
+            if setup_exists "$1"; then
                 switch_to_setup "$1"
             else
                 print_error "Unknown setup: $1"
