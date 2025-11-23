@@ -4,7 +4,7 @@ A collection of production-ready Claude Code configurations optimized for differ
 
 ## 🎯 Overview
 
-This repository contains seven specialized Claude Code setups for different use cases:
+This repository contains eight specialized Claude Code setups for different use cases:
 
 | Setup | Use Case | Key Features |
 |-------|----------|--------------|
@@ -15,6 +15,7 @@ This repository contains seven specialized Claude Code setups for different use 
 | **osint_ai** | OSINT/Investigative research | Background checks, fact-checking, evidence documentation |
 | **science_ai** | Scientific/Academic writing | Research papers, grants, statistical reporting, LaTeX |
 | **finance_ai** | Financial/Investment research | Stock analysis, valuation models, SEC filings |
+| **bookkeeping_ai** | Bookkeeping/Personal finance | Statement processing, transaction categorization, expenses |
 
 ## 📋 Quick Start
 
