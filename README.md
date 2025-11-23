@@ -323,6 +323,43 @@ claude
 
 ---
 
+### 8. Bookkeeping / Personal Finance (`bookkeeping_ai/`)
+
+**Perfect for:** Bank statement processing, expense tracking, transaction categorization, personal finance management
+
+**Key Capabilities:**
+- 📄 **Statement Processing**: Extract transactions from PDF bank/credit card statements
+- 🏷️ **Auto-Categorization**: 40+ expense and income categories
+- 🧹 **Merchant Cleanup**: Standardize and clean transaction descriptions
+- ✅ **Validation**: Verify counts, amounts, and date ranges
+- 📊 **CSV Export**: Clean output for Excel, QuickBooks, YNAB
+
+**Specialized Agent:**
+- **statement-processor**: Bookkeeping specialist for PDF extraction, categorization, and validation
+
+**Slash Command:**
+- `/process-statement`: Process a PDF statement into categorized CSV
+
+**Quick Usage:**
+```bash
+# Setup
+cp -r bookkeeping_ai/.claude ~/
+
+# Test it
+claude
+> /process-statement
+# Enter: input/your-statement.pdf
+```
+
+**Auto-Approved Tools:**
+- File operations: mkdir, cp, mv, ls
+- Python for processing
+- Git for version control
+
+[📖 Full Documentation](bookkeeping_ai/README.md)
+
+---
+
 ## 🚀 Advanced Configuration
 
 ### MCP Server Setup (Recommended)
@@ -420,18 +457,18 @@ Use with `/my-command` in Claude Code.
 
 ## 📊 Comparison Matrix
 
-| Feature | general_ai | code_ai | deep_research | ppt_builder | osint_ai | science_ai | finance_ai |
-|---------|-----------|---------|---------------|-------------|----------|------------|------------|
-| **Web Research** | ✅ Advanced | ⚠️ Basic | ✅ Expert | ⚠️ Basic | ✅ Expert | ⚠️ Basic | ✅ Advanced |
-| **Code Development** | ⚠️ Basic | ✅ Expert | ❌ None | ❌ None | ❌ None | ⚠️ Basic | ⚠️ Basic |
-| **Document Creation** | ✅ All formats | ⚠️ Basic | ⚠️ Reports | ✅ PPTX | ⚠️ Reports | ✅ LaTeX/Papers | ⚠️ Reports |
-| **Data Analysis** | ⚠️ Basic | ✅ Expert | ⚠️ Research | ❌ None | ⚠️ Basic | ✅ Statistical | ✅ Financial |
-| **ML/AI Development** | ❌ None | ✅ Expert | ❌ None | ❌ None | ❌ None | ❌ None | ❌ None |
-| **Investigation** | ⚠️ Basic | ❌ None | ⚠️ Basic | ❌ None | ✅ Expert | ❌ None | ⚠️ Due diligence |
-| **Academic Writing** | ⚠️ Basic | ❌ None | ⚠️ Capable | ❌ None | ❌ None | ✅ Expert | ❌ None |
-| **Financial Analysis** | ❌ None | ❌ None | ⚠️ Basic | ❌ None | ⚠️ Corporate | ❌ None | ✅ Expert |
-| **Thinking Mode** | ✅ On | ✅ On | ✅ On | ✅ On | ✅ On | ✅ On | ✅ On |
-| **MCP Integration** | ✅ Full | ❌ None | ✅ Full | ❌ None | ✅ Full | ✅ Full | ✅ Full |
+| Feature | general_ai | code_ai | deep_research | ppt_builder | osint_ai | science_ai | finance_ai | bookkeeping_ai |
+|---------|-----------|---------|---------------|-------------|----------|------------|------------|----------------|
+| **Web Research** | ✅ Advanced | ⚠️ Basic | ✅ Expert | ⚠️ Basic | ✅ Expert | ⚠️ Basic | ✅ Advanced | ❌ None |
+| **Code Development** | ⚠️ Basic | ✅ Expert | ❌ None | ❌ None | ❌ None | ⚠️ Basic | ⚠️ Basic | ❌ None |
+| **Document Creation** | ✅ All formats | ⚠️ Basic | ⚠️ Reports | ✅ PPTX | ⚠️ Reports | ✅ LaTeX/Papers | ⚠️ Reports | ✅ CSV |
+| **Data Analysis** | ⚠️ Basic | ✅ Expert | ⚠️ Research | ❌ None | ⚠️ Basic | ✅ Statistical | ✅ Financial | ✅ Transactions |
+| **ML/AI Development** | ❌ None | ✅ Expert | ❌ None | ❌ None | ❌ None | ❌ None | ❌ None | ❌ None |
+| **Investigation** | ⚠️ Basic | ❌ None | ⚠️ Basic | ❌ None | ✅ Expert | ❌ None | ⚠️ Due diligence | ❌ None |
+| **Academic Writing** | ⚠️ Basic | ❌ None | ⚠️ Capable | ❌ None | ❌ None | ✅ Expert | ❌ None | ❌ None |
+| **Financial Analysis** | ❌ None | ❌ None | ⚠️ Basic | ❌ None | ⚠️ Corporate | ❌ None | ✅ Expert | ⚠️ Personal |
+| **Thinking Mode** | ✅ On | ✅ On | ✅ On | ✅ On | ✅ On | ✅ On | ✅ On | ✅ On |
+| **MCP Integration** | ✅ Full | ❌ None | ✅ Full | ❌ None | ✅ Full | ✅ Full | ✅ Full | ❌ None |
 
 Legend: ✅ Expert | ⚠️ Capable | ❌ Not focused
 
@@ -484,6 +521,13 @@ Legend: ✅ Expert | ⚠️ Capable | ❌ Not focused
 - Ask for bull/bear case scenarios
 - Request risk assessment
 - Specify time horizon and investment style
+
+### For Bookkeeping
+- Place PDF statements in input/ directory
+- Use `/process-statement` command
+- Review validation results before using CSV
+- Check transaction categorization accuracy
+- Keep original PDFs as backup
 
 ## 🔧 Troubleshooting
 
@@ -605,6 +649,9 @@ cp -r science_ai/.claude ~/
 
 # Finance / Investment
 cp -r finance_ai/.claude ~/
+
+# Bookkeeping / Personal Finance
+cp -r bookkeeping_ai/.claude ~/
 ```
 
 ### Essential Files
@@ -632,10 +679,22 @@ cp -r finance_ai/.claude ~/
 **ppt_builder:**
 - (Presentation-builder agent auto-activates for slides)
 
+**osint_ai:**
+- (Investigator agent auto-activates for investigations)
+
+**science_ai:**
+- (Academic-writer agent auto-activates for papers)
+
+**finance_ai:**
+- (Financial-analyst agent auto-activates for analysis)
+
+**bookkeeping_ai:**
+- `/process-statement` - Process PDF statement to CSV
+
 ---
 
-**Version**: 2.0
-**Last Updated**: 2025-11-22
+**Version**: 2.1
+**Last Updated**: 2025-11-23
 **Tested On**: macOS, Linux (Claude Code Desktop + CLI)
 **Maintained By**: [maynard242](https://github.com/maynard242)
 
