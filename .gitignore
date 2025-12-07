@@ -1,0 +1,31 @@
+# Claude Code runtime artifacts
+*/.claude/debug/
+*/.claude/file-history/
+*/.claude/history.jsonl
+
+# CRITICAL: Credentials and tokens
+**/.credentials.json
+**/settings.local.json
+**/.env
+**/.env.local
+
+# Claude session files (contain conversation history)
+**/.clause/
+
+# Backup files created by switch-setup.sh
+.claude.backup.*
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Node modules (for MCP plugins)
+**/node_modules/
