@@ -1,0 +1,24 @@
+{
+  "setupId": "osint_ai",
+  "alwaysThinkingEnabled": true,
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "Bash(git:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)"
+    ],
+    "ask": [
+      "Bash(rm:*)",
+      "Bash(sudo:*)"
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "echo -n '🔍 OSINT mode ➜ '; basename \"$PWD\"; if git rev-parse --git-dir > /dev/null 2>&1; then echo -n ' git:('; git branch --show-current 2>/dev/null || echo -n 'detached'; echo -n ')'; [ -n \"$(git status --porcelain 2>/dev/null)\" ] && echo -n ' ✗'; fi"
+  },
+  "enabledPlugins": {
+    "exa-mcp-server@exa-mcp-server": true
+  }
+}

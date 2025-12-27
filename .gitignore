@@ -14,7 +14,7 @@
 
 # Backup files created by switch-setup.sh
 .claude.backup.*
-.claude/
+/.claude/
 
 # OS files
 .DS_Store
