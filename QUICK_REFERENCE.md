@@ -6,6 +6,7 @@ Fast reference for Claude Code setups, commands, agents, and permissions.
 
 | Setup | Best For | Key Permissions | Agents | Commands | MCP Servers |
 |---|---|---|---|---|---|
+| **unified** | All-in-one (RECOMMENDED) | All permissions below | All 9 agents | All 3 commands | Exa, Firecrawl, Day One |
 | **general_ai** | Research, documents, general tasks | Web, git, npm, python | web-researcher | /graham, /deep-research | Exa, Firecrawl, Day One |
 | **code_ai** | Python/ML development | Python tools, git | python-expert, ml-engineer | - | Optional: Exa |
 | **deep_research** | Academic/market research | Web, git, read-only | researcher | - | Exa, Firecrawl |

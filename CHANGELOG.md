@@ -5,12 +5,22 @@ All notable changes to the Claude Code Setups repository.
 ## [2026-01-14] - v2.2 Documentation & Improvements
 
 ### Added
+- **unified setup** - New all-in-one configuration (9th setup)
+  - Combines all 9 specialized agents in one setup
+  - Includes all 3 slash commands (/graham, /deep-research, /process-statement)
+  - Comprehensive permissions for all workflows
+  - Agents automatically invoked based on task (no manual configuration)
+  - Recommended as default setup for most users
+  - Now appears first in setup switcher menu
+  - Complete README documentation at unified/README.md
+
 - **GETTING_STARTED.md** - Complete onboarding guide for new users
   - Prerequisites and installation walkthrough
-  - Setup selection guide
+  - Setup selection guide (updated to recommend unified)
   - First steps and usage examples
   - Troubleshooting common issues
   - Next steps for customization
+  - Clarifies agents work automatically without manual setup
 
 - **QUICK_REFERENCE.md** - Comprehensive cheat sheet
   - Setup comparison table with features

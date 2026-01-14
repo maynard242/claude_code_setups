@@ -1,0 +1,44 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "Bash(git:*)",
+      "Bash(npm:*)",
+      "Bash(node:*)",
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(pip:*)",
+      "Bash(pip3:*)",
+      "Bash(pytest:*)",
+      "Bash(mypy:*)",
+      "Bash(ruff:*)",
+      "Bash(black:*)",
+      "Bash(poetry:*)",
+      "Bash(uv:*)",
+      "Bash(pdflatex:*)",
+      "Bash(bibtex:*)",
+      "Bash(pandoc:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)"
+    ],
+    "ask": [
+      "Bash(rm:*)",
+      "Bash(sudo:*)",
+      "Bash(kill:*)",
+      "Bash(chmod:*)"
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "echo -n '➜ '; basename \"$PWD\"; if git rev-parse --git-dir > /dev/null 2>&1; then echo -n ' git:('; git branch --show-current 2>/dev/null || echo -n 'detached'; echo -n ')'; [ -n \"$(git status --porcelain 2>/dev/null)\" ] && echo -n ' ✗' || echo -n ''; fi"
+  },
+  "alwaysThinkingEnabled": true,
+  "setupId": "unified",
+  "model": "sonnet"
+}

@@ -13,10 +13,11 @@ A collection of production-ready Claude Code configurations optimized for differ
 
 ## 🎯 Overview
 
-This repository contains eight specialized Claude Code setups for different use cases:
+This repository contains nine Claude Code setups - eight specialized configurations for specific workflows, plus one unified setup with all capabilities:
 
 | Setup | Use Case | Key Features |
 |-------|----------|--------------|
+| **unified** | All-in-one (RECOMMENDED) | All 9 agents + all 3 commands, automatic agent selection |
 | **general_ai** | General-purpose assistant | Multi-source research, document creation, talent evaluation |
 | **code_ai** | Python/ML/AI development | PyTorch, type safety, testing, MLOps, experiment tracking |
 | **deep_research** | Academic & market research | Evidence-based analysis, competitive intelligence, SWOT |

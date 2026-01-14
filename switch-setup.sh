@@ -23,11 +23,12 @@ fi
 CLAUDE_DIR="$HOME/.claude"
 
 # Available setups
-SETUPS="general_ai code_ai deep_research ppt_builder osint_ai science_ai finance_ai bookkeeping_ai"
+SETUPS="unified general_ai code_ai deep_research ppt_builder osint_ai science_ai finance_ai bookkeeping_ai"
 
 # Function to get setup description
 get_description() {
     case "$1" in
+        "unified")      echo "All-in-one setup (RECOMMENDED: all 9 agents + all 3 commands)" ;;
         "general_ai")   echo "General-purpose assistant (research, docs, creativity)" ;;
         "code_ai")      echo "Python/ML/AI development (PyTorch, testing, MLOps)" ;;
         "deep_research") echo "Research specialist (academic, market analysis)" ;;

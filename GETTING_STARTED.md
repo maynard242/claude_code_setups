@@ -4,8 +4,9 @@ Welcome! This guide will walk you through setting up and using the specialized C
 
 ## What Are These Setups?
 
-This repository contains 8 specialized Claude Code configurations, each optimized for different professional workflows:
+This repository contains 9 Claude Code configurations - one comprehensive unified setup, plus 8 specialized configurations for specific workflows:
 
+- **unified** - **All-in-one setup (RECOMMENDED)** - All 9 agents + all 3 commands, automatic agent selection
 - **general_ai** - Multi-source research and document creation
 - **code_ai** - Python/ML development with type safety
 - **deep_research** - Academic and market research
@@ -17,9 +18,11 @@ This repository contains 8 specialized Claude Code configurations, each optimize
 
 Each setup includes:
 - Pre-configured permissions for relevant tools
-- Specialized AI agents for domain-specific tasks
+- Specialized AI agents that work automatically (no manual configuration needed)
 - Custom slash commands for common workflows
 - Optimized status line displays
+
+**Key Point**: Agents are automatically invoked by Claude Code based on your task. You never need to manually select or configure them - just ask naturally and the right agent activates.
 
 ## Prerequisites
 
@@ -73,6 +76,9 @@ Not sure which setup to start with? Here's a quick guide:
 
 | If you want to... | Use this setup |
 |---|---|
+| **Maximum flexibility across all domains (RECOMMENDED)** | **unified** |
+| Work across multiple areas (research, code, writing) | **unified** |
+| Have all capabilities without switching | **unified** |
 | Do general research and document writing | **general_ai** |
 | Write Python or ML code | **code_ai** |
 | Conduct deep research with evidence analysis | **deep_research** |
@@ -82,7 +88,7 @@ Not sure which setup to start with? Here's a quick guide:
 | Analyze financial data and investments | **finance_ai** |
 | Process bank statements | **bookkeeping_ai** |
 
-**For most users, start with `general_ai`** - it's the most versatile setup.
+**For most users, start with `unified`** - it has all capabilities and agents work automatically based on your task. No need to switch setups or manually configure anything.
 
 ### Step 4: Install Your First Setup
 
@@ -90,8 +96,8 @@ Not sure which setup to start with? Here's a quick guide:
 # Interactive installation (recommended for first-time users)
 ./switch-setup.sh
 
-# Or install directly
-./switch-setup.sh general_ai
+# Or install directly (unified recommended for most users)
+./switch-setup.sh unified
 ```
 
 The script will:
@@ -99,7 +105,7 @@ The script will:
 2. Copy the selected setup to `~/.claude/`
 3. Confirm the installation
 
-**Note**: The installation creates a copy (not a symlink) by default. If you want the setup to auto-update when you pull changes from the repo, use `./switch-setup.sh --link general_ai`.
+**Note**: The installation creates a copy (not a symlink) by default. If you want the setup to auto-update when you pull changes from the repo, use `./switch-setup.sh --link unified`.
 
 ### Step 5: Verify Installation
 
