@@ -31,6 +31,13 @@ Expert Python/ML engineer setup with:
 - GPU: nvidia-smi, nvcc
 - Dev: git, docker
 
+### Optional: MCP Servers
+While this setup works great without external tools, you can optionally configure MCP servers for enhanced capabilities:
+- **Exa** - Neural code search across GitHub, technical documentation, and programming resources
+- **Useful for**: Finding code examples, searching technical docs, discovering libraries
+
+See [MCP_SETUP.md](../MCP_SETUP.md) for configuration instructions. Note that MCP servers are optional and not required for Python/ML development.
+
 ## 🚀 Quick Setup
 
 ```bash

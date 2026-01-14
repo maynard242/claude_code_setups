@@ -2,6 +2,71 @@
 
 All notable changes to the Claude Code Setups repository.
 
+## [2026-01-14] - v2.2 Documentation & Improvements
+
+### Added
+- **GETTING_STARTED.md** - Complete onboarding guide for new users
+  - Prerequisites and installation walkthrough
+  - Setup selection guide
+  - First steps and usage examples
+  - Troubleshooting common issues
+  - Next steps for customization
+
+- **QUICK_REFERENCE.md** - Comprehensive cheat sheet
+  - Setup comparison table with features
+  - Command reference for setup management
+  - Agent and slash command quick reference
+  - Permission levels explained
+  - Status line indicators
+  - Common workflows and tips
+
+- **MCP_SETUP.md** - Complete MCP server configuration guide
+  - What are MCP servers and which setups use them
+  - Step-by-step configuration instructions
+  - API key acquisition and management
+  - Security best practices
+  - Troubleshooting and cost optimization
+  - Verification checklist
+
+- **ARCHITECTURE.md** - Deep architectural documentation
+  - System architecture diagrams (ASCII art)
+  - Setup structure deep dive
+  - Configuration file format specifications
+  - Component interaction flows
+  - Data flow diagrams
+  - Security model explanation
+  - Design philosophy and extension points
+
+### Changed
+- **README.md** - Added Documentation section at top
+  - Links to all new documentation files
+  - Improved navigation and discoverability
+  - Better user onboarding experience
+
+- **CLAUDE.md** - MCP configuration clarifications
+  - Removed deprecated n8n MCP server references
+  - Clarified MCP configuration is external (Claude Desktop only)
+  - Updated MCP server location documentation
+  - More accurate configuration guidance
+
+- **code_ai/README.md** - Added MCP mention
+  - Documented optional Exa MCP server for code search
+  - Link to MCP_SETUP.md for configuration
+  - Clarified MCP servers are optional enhancements
+
+### Fixed
+- **Active ~/.claude/ setup** - Added missing web-researcher agent
+  - Copied web-researcher.md from general_ai to unified setup
+  - Ensures complete agent coverage in active configuration
+
+### Documentation Improvements
+- Complete user onboarding path from installation to customization
+- Quick reference for experienced users
+- Clear architectural documentation for developers
+- Comprehensive MCP server setup guide
+- Resolved MCP configuration inconsistencies
+- Enhanced troubleshooting guidance
+
 ## [2025-12-07] - Security & MCP Cleanup
 
 ### Added

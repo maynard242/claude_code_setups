@@ -2,6 +2,15 @@
 
 A collection of production-ready Claude Code configurations optimized for different professional workflows. Each setup includes specialized agents, custom commands, and pre-configured permissions for maximum productivity.
 
+## 📚 Documentation
+
+- **[Getting Started Guide](GETTING_STARTED.md)** - Complete setup and installation walkthrough for new users
+- **[Quick Reference](QUICK_REFERENCE.md)** - Cheat sheet with commands, agents, and permissions
+- **[MCP Setup Guide](MCP_SETUP.md)** - Configure Model Context Protocol servers (Exa, Firecrawl)
+- **[Architecture Overview](ARCHITECTURE.md)** - Deep dive into how setups work internally
+- **[Developer Guide](CLAUDE.md)** - Create custom setups, agents, and commands
+- **[Changelog](CHANGELOG.md)** - Version history and updates
+
 ## 🎯 Overview
 
 This repository contains eight specialized Claude Code setups for different use cases:

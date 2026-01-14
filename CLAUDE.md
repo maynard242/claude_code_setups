@@ -172,9 +172,8 @@ Several setups integrate with MCP servers for enhanced functionality:
 - **Exa** (exa-mcp-server): Neural search and code context
 - **Firecrawl**: Web scraping and content extraction
 - **Day One**: Journaling integration
-- **n8n**: Workflow automation
 
-MCP servers are configured in `~/.claude/settings.json` or Claude Desktop's `claude_desktop_config.json`.
+MCP servers are configured externally in Claude Desktop's `claude_desktop_config.json` file located at `~/Library/Application Support/Claude/claude_desktop_config.json`.
 
 ## Key Design Patterns
 
