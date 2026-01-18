@@ -374,6 +374,7 @@ main() {
             echo "  -b, --backup    Backup current setup without switching"
             echo "  -r, --restore   Restore from a previous backup"
             echo "  -L, --list      List available backups"
+            echo "  -i, --init-project  Copy CLAUDE.md template to current directory"
             echo ""
             show_setups
             echo "Quick Switch Examples:"
@@ -410,6 +411,19 @@ main() {
             ;;
         -L|--list)
             list_backups
+            ;;
+        -i|--init-project)
+            local template_path="$SCRIPT_DIR/templates/CLAUDE.md"
+            if [ ! -f "$template_path" ]; then
+                print_error "Template not found: $template_path"
+                exit 1
+            fi
+            if [ -f "CLAUDE.md" ]; then
+                print_warning "CLAUDE.md already exists in current directory"
+                exit 1
+            fi
+            cp "$template_path" "CLAUDE.md"
+            print_success "Created CLAUDE.md in current directory"
             ;;
         -l|--link)
             if [ -z "${2:-}" ]; then
