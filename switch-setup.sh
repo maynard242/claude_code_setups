@@ -23,20 +23,12 @@ fi
 CLAUDE_DIR="$HOME/.claude"
 
 # Available setups
-SETUPS="unified general_ai code_ai deep_research ppt_builder osint_ai science_ai finance_ai bookkeeping_ai"
+SETUPS="streamlined"
 
 # Function to get setup description
 get_description() {
     case "$1" in
-        "unified")      echo "All-in-one setup (RECOMMENDED: all 9 agents + all 3 commands)" ;;
-        "general_ai")   echo "General-purpose assistant (research, docs, creativity)" ;;
-        "code_ai")      echo "Python/ML/AI development (PyTorch, testing, MLOps)" ;;
-        "deep_research") echo "Research specialist (academic, market analysis)" ;;
-        "ppt_builder")  echo "PowerPoint builder (presentations, pitch decks)" ;;
-        "osint_ai")     echo "OSINT/Investigative research (background, fact-checking)" ;;
-        "science_ai")   echo "Scientific/Academic writing (papers, grants, stats)" ;;
-        "finance_ai")   echo "Financial/Investment research (stocks, valuation)" ;;
-        "bookkeeping_ai") echo "Bookkeeping/Personal finance (statements, expenses)" ;;
+        "streamlined")  echo "Universal setup with 6 agents, 3 commands, Firecrawl + Perplexity MCP" ;;
         *)              echo "Unknown setup" ;;
     esac
 }
@@ -247,45 +239,16 @@ switch_to_setup() {
     print_info "Setup details:"
 
     case $setup in
-        "general_ai")
-            echo "  • Multi-source web research"
-            echo "  • Document creation (PDF, DOCX, XLSX, PPTX)"
-            echo "  • Commands: /graham, /deep-research"
-            ;;
-        "code_ai")
-            echo "  • Python 3.10+ development"
-            echo "  • PyTorch & ML engineering"
-            echo "  • Agents: python-expert, ml-engineer"
-            ;;
-        "deep_research")
-            echo "  • Academic & market research"
-            echo "  • Competitive intelligence"
-            echo "  • Agent: researcher (evidence-based analysis)"
-            ;;
-        "ppt_builder")
-            echo "  • PowerPoint presentation design"
-            echo "  • Agent: presentation-builder"
-            echo "  • Templates: pitch decks, reports, training"
-            ;;
-        "osint_ai")
-            echo "  • Background investigations"
-            echo "  • Fact-checking & verification"
-            echo "  • Agent: investigator (OSINT specialist)"
-            ;;
-        "science_ai")
-            echo "  • Research paper writing (IMRaD)"
-            echo "  • Grant proposals & literature reviews"
-            echo "  • Agent: academic-writer"
-            ;;
-        "finance_ai")
-            echo "  • Stock & equity research"
-            echo "  • Valuation modeling (DCF, comps)"
-            echo "  • Agent: financial-analyst"
-            ;;
-        "bookkeeping_ai")
-            echo "  • Bank/credit card statement processing"
-            echo "  • Transaction categorization"
-            echo "  • Agent: statement-processor"
+        "streamlined")
+            echo "  • 6 Consolidated Agents (all use Opus model):"
+            echo "    - researcher: Web, academic, market research + OSINT"
+            echo "    - developer: Python + ML/PyTorch development"
+            echo "    - financial-analyst: Valuation and investment research"
+            echo "    - academic-writer: Research papers, grants, LaTeX"
+            echo "    - presentation-builder: PowerPoint design"
+            echo "    - statement-processor: Bank statement processing"
+            echo "  • 3 Slash Commands: /graham, /deep-research, /process-statement"
+            echo "  • MCP Servers: Firecrawl + Perplexity (requires API keys)"
             ;;
     esac
 
@@ -378,21 +341,17 @@ main() {
             echo ""
             show_setups
             echo "Quick Switch Examples:"
-            echo "  $0 general_ai         # General-purpose assistant"
-            echo "  $0 code_ai            # Python/ML development"
-            echo "  $0 deep_research      # Research specialist"
-            echo "  $0 finance_ai         # Investment research"
-            echo "  $0 bookkeeping_ai     # Personal finance/statements"
+            echo "  $0 streamlined        # Universal setup with all capabilities"
             echo ""
             echo "Other Examples:"
             echo "  $0                    # Interactive menu"
-            echo "  $0 --link general_ai  # Symlink (auto-updates)"
+            echo "  $0 --link streamlined # Symlink (auto-updates)"
             echo "  $0 --current          # Show active setup"
             echo "  $0 --restore          # Restore from backup"
             echo ""
             echo "Direct Installation (without this script):"
-            echo "  cp -r general_ai/.claude ~/        # Copy setup"
-            echo "  ln -s \"\$(pwd)/code_ai/.claude\" ~/  # Symlink setup"
+            echo "  cp -r streamlined/.claude ~/        # Copy setup"
+            echo "  ln -s \"\$(pwd)/streamlined/.claude\" ~/  # Symlink setup"
             echo ""
             echo "After switching, restart Claude Code to apply changes."
             ;;
