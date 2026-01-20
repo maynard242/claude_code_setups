@@ -1,0 +1,74 @@
+{
+  "setupId": "streamlined",
+  "alwaysThinkingEnabled": true,
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "mcp__firecrawl",
+      "mcp__perplexity",
+      "mcp__openrouter",
+      "Bash(git:*)",
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(node:*)",
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(pip:*)",
+      "Bash(pip3:*)",
+      "Bash(pytest:*)",
+      "Bash(mypy:*)",
+      "Bash(ruff:*)",
+      "Bash(black:*)",
+      "Bash(poetry:*)",
+      "Bash(uv:*)",
+      "Bash(pdflatex:*)",
+      "Bash(bibtex:*)",
+      "Bash(pandoc:*)",
+      "Bash(pdftotext:*)",
+      "Bash(pdftk:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)",
+      "Bash(curl:*)",
+      "Bash(jq:*)",
+      "Bash(wc:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)"
+    ],
+    "ask": [
+      "Bash(rm:*)",
+      "Bash(sudo:*)",
+      "Bash(kill:*)",
+      "Bash(chmod:*)"
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "echo -n '>>> '; basename \"$PWD\"; if git rev-parse --git-dir > /dev/null 2>&1; then echo -n ' git:('; git branch --show-current 2>/dev/null || echo -n 'detached'; echo -n ')'; [ -n \"$(git status --porcelain 2>/dev/null)\" ] && echo -n ' *'; fi"
+  },
+  "mcpServers": {
+    "firecrawl": {
+      "command": "npx",
+      "args": ["-y", "firecrawl-mcp"]
+    },
+    "perplexity": {
+      "command": "npx",
+      "args": ["-y", "@perplexity-ai/mcp-server"],
+      "env": {
+        "PERPLEXITY_API_KEY": "${PERPLEXITY_API_KEY}"
+      }
+    },
+    "openrouter": {
+      "command": "npx",
+      "args": ["-y", "@physics91/openrouter-mcp", "start"],
+      "env": {
+        "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+      }
+    }
+  }
+}
