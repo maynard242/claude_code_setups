@@ -8,6 +8,8 @@
       "mcp__firecrawl",
       "mcp__perplexity",
       "mcp__openrouter",
+      "mcp__brave_search",
+      "mcp__exa",
       "Bash(git:*)",
       "Bash(npm:*)",
       "Bash(npx:*)",
@@ -68,6 +70,20 @@
       "args": ["-y", "@physics91/openrouter-mcp", "start"],
       "env": {
         "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+      }
+    },
+    "brave_search": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-brave-search"],
+      "env": {
+        "BRAVE_API_KEY": "${BRAVE_API_KEY}"
+      }
+    },
+    "exa": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-exa"],
+      "env": {
+        "EXA_API_KEY": "${EXA_API_KEY}"
       }
     }
   }

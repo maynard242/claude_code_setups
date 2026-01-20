@@ -5,288 +5,305 @@ description: Multi-source web research and tool coordination skill. Automaticall
 
 # Tool Orchestration Skill
 
-You have access to multiple research tools. This skill provides guidance on selecting and coordinating them effectively.
+You have access to multiple research tools. This skill provides guidance on selecting and coordinating them effectively using a **Claude-First** approach.
 
-## Available Research Tools
+## Core Principle: Claude-First Research
 
-### Free Tools (Use First)
+**ALWAYS start with Claude's native knowledge.** Claude has extensive training data through May 2025 covering:
+- Established facts, definitions, scientific principles
+- Historical events and context
+- Programming languages, frameworks, algorithms, design patterns
+- Technical concepts and how-things-work explanations
+- Academic knowledge across disciplines
 
-| Tool | Function | Best For |
-|------|----------|----------|
-| **WebSearch** | Search engine queries | URL discovery, finding sources, broad searches |
-| **WebFetch** | Fetch single URL content | Simple HTML pages, academic papers, basic news sites |
+**Skip external tools entirely when:**
+- Query is about well-established, static knowledge
+- Information unlikely to have changed since training
+- Claude can provide a confident, detailed answer
+- No verification or recency confirmation needed
 
-### Paid/Premium Tools (Use Selectively)
+## Query Classification (Do This First)
 
-| Tool | Function | Best For |
-|------|----------|----------|
-| **Perplexity** (`mcp__perplexity`) | AI-synthesized search | Quick answers, current events, synthesized overviews |
-| **Firecrawl** (`mcp__firecrawl`) | Advanced web scraping | JS-heavy sites, structured extraction, site crawling |
-| **OpenRouter** (`mcp__openrouter`) | Multi-model access | Cross-model validation, specialized analysis |
-
-## Quick Reference: Tool Selection
+Before selecting tools, classify the query:
 
 ```
-What do I need?                    → Tool to use
-─────────────────────────────────────────────────
-Quick factual answer               → Perplexity
-Find URLs/sources                  → WebSearch (free)
-Simple page content                → WebFetch (free)
-Complex/JS page content            → Firecrawl scrape
-Structured data extraction         → Firecrawl extract
-Site structure/all pages           → Firecrawl map
-Current events (<24h)              → Perplexity + WebSearch [parallel]
-Verify critical claim              → Multiple tools [parallel]
-Cross-model consensus              → OpenRouter
+1. KNOWLEDGE TYPE
+   ├─ Factual: "What is X?" → Often Claude-only
+   ├─ Analytical: "Why does X happen?" → Often Claude-only
+   ├─ Current: "What's happening with X?" → Needs external
+   └─ Historical: "What happened with X?" → Claude + light verify
+
+2. RECENCY REQUIREMENT
+   ├─ Static: Unlikely to change → Claude-only
+   ├─ Stable: Changes slowly → Claude + verify
+   ├─ Recent: Changed in last 6 months → External required
+   └─ Live: Changes daily/hourly → External required
+
+3. STAKES LEVEL
+   ├─ Low: Casual inquiry → Minimal verification
+   ├─ Medium: Professional use → Standard verification
+   └─ High: Critical decision → Full multi-source verification
 ```
 
-## Tool-Specific Guidance
+## Tool Hierarchy (Use in Order)
 
-### WebSearch
+### Tier 0: Claude's Native Knowledge (FREE, INSTANT)
+**Always try first.** Use for:
+- Definitions, concepts, explanations
+- How things work
+- Historical facts (pre-2025)
+- Programming and technical knowledge
+- Scientific principles, math, logic
+- Comparative analysis using existing knowledge
 
-**When to use:**
-- Don't know which URLs contain the information
-- Need to discover sources and authoritative sites
-- Want broad coverage of a topic
-- Cost-conscious searches (free, unlimited)
+**Self-check:** "Can I answer this confidently from training data?"
 
-**Tips:**
-- Use specific, targeted queries
-- Include year for recency: "topic 2025"
-- Use site: operator for specific domains
-- Results provide URLs - follow up with WebFetch/Firecrawl
-
-### WebFetch
-
-**When to use:**
-- Have a specific URL to retrieve
-- Page is standard HTML (not JS-heavy)
-- Cost-conscious content retrieval (free)
+### Tier 1: WebSearch (FREE, FAST)
+| When to Use | Example |
+|-------------|---------|
+| Verify Claude's knowledge is current | "Is React still using virtual DOM?" |
+| Find URLs for deeper investigation | "Find SEC filings for Tesla" |
+| Discover sources and landscape | "Who are key players in X industry?" |
+| Current events and news | "Latest developments in AI regulation" |
 
 **Tips:**
-- Try this first before Firecrawl
+- Use specific queries with year: "topic 2025"
+- Use `site:` operator for specific domains
+- Results are URLs - follow up with WebFetch/Firecrawl
+
+### Tier 2: WebFetch (FREE, FAST)
+| When to Use | Example |
+|-------------|---------|
+| Retrieve simple HTML pages | Wikipedia, documentation |
+| Academic papers and PDFs | ArXiv, research papers |
+| Government and institutional sites | SEC, FDA, official docs |
+| Static documentation | API docs, specs |
+
+**Tips:**
+- Always try before Firecrawl
 - Works well for Wikipedia, academic sites, government pages
 - May fail on paywalls, JS-rendered content
 
-**Fallback:** If WebFetch fails, use Firecrawl scrape
+**Fallback:** If WebFetch fails → Firecrawl scrape
 
-### Perplexity (mcp__perplexity)
+### Tier 3: Perplexity (MEDIUM COST, FAST)
+| Tool | Best For |
+|------|----------|
+| `perplexity_ask` | Quick synthesized answers, conversational |
+| `perplexity_search` | Web search with ranked results |
+| `perplexity_research` | Deep multi-source synthesis (sonar-deep-research) |
+| `perplexity_reason` | Complex reasoning tasks (sonar-reasoning-pro) |
 
 **When to use:**
-- Need AI-synthesized answer quickly
-- Current events and news
-- Quick factual lookups
-- Want sources cited automatically
+- Need AI-synthesized overview quickly
+- Current events and breaking news
+- Quick factual lookups with citations
+- Cross-reference Claude's knowledge
 
 **Tips:**
-- Use for overview before deep dives
-- Good for "what is X" type queries
+- Good for "what is the current state of X"
 - Cross-verify important claims with other tools
+- Use `perplexity_research` for comprehensive topics
 
-### Firecrawl (mcp__firecrawl)
+### Tier 4: Brave Search (LOW-MEDIUM COST, FAST)
+**If configured via MCP:**
+- Independent search index (not Google/Bing derivative)
+- Good for diverse perspectives
+- Strong for news and current events
+- Privacy-focused results
 
-**Available operations:**
+**When to use:**
+- Want results independent from mainstream engines
+- News and current events
+- Diverse source discovery
 
+### Tier 5: Firecrawl (HIGH COST, SLOW)
 | Operation | Use When |
 |-----------|----------|
-| `firecrawl_scrape` | Single page, especially JS-heavy |
-| `firecrawl_map` | Discover all URLs on a site |
-| `firecrawl_crawl` | Extract multiple pages from site |
-| `firecrawl_extract` | Structured data with JSON schema |
-| `firecrawl_search` | Search with scraping (powerful) |
+| `firecrawl_scrape` | JS-heavy single pages, dynamic content |
+| `firecrawl_map` | Discover all URLs on a site before crawling |
+| `firecrawl_crawl` | Extract multiple pages (use limits!) |
+| `firecrawl_extract` | Structured data with JSON schema (tables, specs) |
+| `firecrawl_search` | Search with scraping (powerful but expensive) |
 
-**Tips:**
-- Use `waitFor` option for slow-loading pages
-- Set `limit` on crawls to control costs
-- `extract` is powerful for tables, specs, prices
-- `map` first to understand site structure, then selective `scrape`
+**Cost optimization:**
+- ALWAYS try WebFetch first
+- Use `waitFor: 3000` for slow-loading pages
+- Set `limit` on crawls (5-10 pages max)
+- `map` first to understand site, then selective `scrape`
 
-**Cost awareness:** Higher cost per page than other tools. Use selectively.
+### Tier 6: OpenRouter (VARIABLE COST, HIGH CONFIDENCE)
+| Tool | Use Case |
+|------|----------|
+| `cross_model_validation` | Verify critical claims across models |
+| `ensemble_reasoning` | Complex problems needing consensus |
+| `collective_chat_completion` | Multi-model synthesis |
+| `chat_with_model` | Specialized model for specific task |
 
-### OpenRouter (mcp__openrouter)
+**Use ONLY for:**
+- High-stakes claims requiring verification
+- Critical business/legal/medical decisions
+- When tool disagreement needs resolution
+- Adds +15% confidence when 3+ models agree
 
-**When to use:**
-- High-stakes claims needing cross-model validation
-- Specialized analysis (code, math, creative)
-- Want consensus from multiple AI models
+## Quick Reference Decision Tree
 
-**Available tools:**
-- `chat_with_model` - Query specific model
-- `collective_chat_completion` - Multi-model consensus
-- `cross_model_validation` - Validate content across models
-- `ensemble_reasoning` - Complex problem solving
-
-**Tips:**
-- Use for verification, not primary research
-- Consensus from 3+ models increases confidence
-- Different models have different strengths
+```
+START: What do I need?
+│
+├─► Well-established fact/concept?
+│   └─► Claude only → DONE
+│
+├─► Technical/programming question?
+│   └─► Claude first → If edge case, WebSearch/Exa
+│
+├─► Historical event (pre-2025)?
+│   └─► Claude → WebSearch to verify (optional)
+│
+├─► Current events (<6 months)?
+│   └─► WebSearch + Perplexity [PARALLEL]
+│
+├─► Live data (prices, stocks, weather)?
+│   └─► Perplexity (real-time data access)
+│
+├─► Need to find URLs/sources?
+│   └─► WebSearch (free, fast)
+│
+├─► Need page content from URL?
+│   ├─► Simple HTML → WebFetch (free)
+│   └─► JS-heavy/complex → Firecrawl (if WebFetch fails)
+│
+├─► Need structured data extraction?
+│   └─► Firecrawl extract with JSON schema
+│
+├─► Comprehensive research (deep)?
+│   └─► Full Pipeline: Claude → WebSearch → Perplexity →
+│       selective WebFetch/Firecrawl → synthesis
+│
+└─► High-stakes verification?
+    └─► Full Pipeline + OpenRouter cross-validation
+```
 
 ## Execution Patterns
 
-### Pattern 1: Simple Factual Query
+### Pattern 1: Claude-Only (Most Efficient)
 ```
-User: "What is the population of Tokyo?"
-→ Perplexity only (quick, synthesized answer)
-```
-
-### Pattern 2: Source Discovery
-```
-User: "Find research on climate change impacts"
-→ WebSearch (find URLs)
-→ WebFetch (retrieve promising sources)
+User: "Explain how HTTP/2 multiplexing works"
+→ Claude provides detailed technical explanation
+→ No external tools needed
+→ DONE
 ```
 
-### Pattern 3: Deep Content Extraction
+### Pattern 2: Claude + Light Verification
 ```
-User: "Get full content from this complex site"
-→ WebFetch (try first - free)
-→ If fails: Firecrawl scrape (handles JS)
-```
-
-### Pattern 4: Comprehensive Research [PARALLEL]
-```
-User: "Research the current state of quantum computing"
-Stage 1 [parallel]:
-  → Perplexity (overview)
-  → WebSearch (find sources)
-Stage 2 [sequential]:
-  → WebFetch/Firecrawl (extract key sources)
-Stage 3 [parallel]:
-  → Perplexity (verify claims)
-  → WebSearch (alternative views)
-Stage 4:
-  → Synthesize findings
+User: "Is GraphQL still popular for APIs?"
+→ Claude: Provides knowledge about GraphQL adoption
+→ WebSearch: "GraphQL adoption trends 2025" (verify recency)
+→ Synthesize
 ```
 
-### Pattern 5: High-Stakes Verification [PARALLEL]
+### Pattern 3: Current Events [PARALLEL]
 ```
-User: "Verify this critical claim for a report"
-→ Perplexity (initial check)
-→ WebSearch + WebFetch (find primary sources)
-→ Firecrawl extract (if structured data needed)
-→ OpenRouter cross-model validation (if available)
-→ Note tool agreement in confidence score
+User: "What are the latest AI regulations?"
+[PARALLEL]:
+  → Perplexity: "AI regulations 2025 latest developments"
+  → WebSearch: "AI regulation news January 2025"
+→ Synthesize findings
+```
+
+### Pattern 4: Deep Research [STAGED]
+```
+User: "Comprehensive analysis of quantum computing market"
+Stage 1 [PARALLEL] - Discovery:
+  → Claude: Baseline knowledge synthesis
+  → Perplexity: "quantum computing market overview 2025"
+  → WebSearch: "quantum computing companies market leaders"
+Stage 2 [SELECTIVE] - Deep Extraction:
+  → WebFetch: Top 3-5 authoritative URLs
+  → Firecrawl: Only if WebFetch fails
+Stage 3 [PARALLEL] - Verification:
+  → Perplexity: Verify key claims
+  → WebSearch: Alternative perspectives
+Stage 4 - Synthesis:
+  → Claude native reasoning to integrate findings
+```
+
+### Pattern 5: High-Stakes Verification
+```
+User: "Is [Company X] financially stable for major partnership?"
+→ Full deep research pipeline
+→ PLUS: OpenRouter cross-model validation on critical claims
+→ Note: 3+ models agreeing adds +15% confidence
 ```
 
 ## Cost Optimization Strategy
 
-**"Start free, escalate paid":**
+**"Claude first, start free, escalate paid"**
 
-1. **Level 1 (Free):** WebSearch + WebFetch
-   - URL discovery, simple page retrieval
-   - Always start here
+| Level | Tools | When to Use |
+|-------|-------|-------------|
+| **0 (Free)** | Claude native | Static knowledge, explanations |
+| **1 (Free)** | WebSearch | URL discovery, verification |
+| **2 (Free)** | WebFetch | Simple page content |
+| **3 (Medium)** | Perplexity | Synthesis, current events |
+| **4 (Medium)** | Brave/Exa | Diverse/semantic search |
+| **5 (High)** | Firecrawl | Complex extraction |
+| **6 (Variable)** | OpenRouter | Critical verification |
 
-2. **Level 2 (Medium cost):** Perplexity
-   - When free tools don't provide synthesis
-   - For current events and quick answers
-
-3. **Level 3 (Higher cost):** Firecrawl
-   - Only when WebFetch fails
-   - For structured extraction, JS sites
-
-4. **Level 4 (Use sparingly):** OpenRouter
-   - High-stakes verification only
-   - Cross-model consensus needs
-
-## Parallel Execution Guidelines
-
-**Execute in parallel when:**
-- Queries are independent (don't depend on each other's results)
-- Want to maximize efficiency
-- Need multi-source verification
-
-**Execute sequentially when:**
-- Later query depends on earlier results
-- Need to decide next step based on findings
-- Avoiding redundant API calls
-
-**Example parallel execution:**
-```
-[PARALLEL] Stage 1:
-  - Perplexity: "topic overview"
-  - WebSearch: "topic authoritative sources"
-  - WebSearch: "topic recent news"
-
-[SEQUENTIAL] Stage 2:
-  (Depends on Stage 1 URLs)
-  - WebFetch: URL1
-  - WebFetch: URL2
-  - Firecrawl: URL3 (if WebFetch fails)
-```
-
-## Failure Handling
-
-### WebFetch Fails
-1. Check if URL is valid and accessible
-2. Try Firecrawl scrape with `waitFor: 3000`
-3. If paywall, note limitation, find alternative
-4. Check if Perplexity has summarized the content
-
-### Firecrawl Rate Limited
-1. Reduce batch size
-2. Add delays between requests
-3. Fall back to WebFetch for simpler pages
-4. Note limitation in findings
-
-### Perplexity Uncertain/Outdated
-1. Cross-verify with WebSearch + WebFetch
-2. Find primary sources directly
-3. Note recency concerns in confidence score
-
-### No Results Found
-1. Broaden search terms
-2. Try alternative phrasings
-3. Check different tools
-4. Document as "Information Gap"
+**Cost-saving rules:**
+1. If Claude knows it → stop
+2. If WebSearch finds it → stop
+3. If WebFetch retrieves it → stop
+4. Only escalate when lower tiers fail or are insufficient
 
 ## Confidence Scoring with Tool Agreement
 
-Base your confidence scores on tool agreement:
-
 | Scenario | Confidence Modifier |
 |----------|-------------------|
-| Perplexity + Firecrawl extracted content agree | +15% |
+| Claude confident + external confirms | +10% |
+| Perplexity + Firecrawl extracted agree | +15% |
 | Multiple WebSearch URLs corroborate | +10% |
 | OpenRouter 3+ models agree | +15% |
+| Claude + Perplexity disagree | Investigate further |
 | Tools return contradictory info | -20% |
 | Single tool, single source | -10% |
 | Primary source accessed directly | +10% |
 
 ## Common Pitfalls to Avoid
 
-### 1. Over-Engineering Simple Queries
-**Wrong:** Complex site crawl for "What year was Python created?"
-**Right:** Perplexity quick answer
+### 1. Skipping Claude for External Tools
+**Wrong:** Jump to Perplexity for "What is machine learning?"
+**Right:** Claude provides comprehensive answer, no tools needed
 
-### 2. Ignoring Free Tools
-**Wrong:** Jump straight to Firecrawl for simple HTML page
-**Right:** Try WebFetch first (free), escalate only if needed
+### 2. Over-Engineering Simple Queries
+**Wrong:** Full pipeline for "Python list comprehension syntax"
+**Right:** Claude answers directly
 
-### 3. Single-Source Answers for Important Claims
-**Wrong:** One Perplexity response for critical business decision
-**Right:** Multi-tool verification with confidence scoring
+### 3. Ignoring Free Tools
+**Wrong:** Firecrawl for simple Wikipedia page
+**Right:** WebFetch first (free), Firecrawl only if it fails
 
-### 4. Not Noting Tool Limitations
-**Wrong:** Present paywalled content as if fully retrieved
-**Right:** Note extraction limitations, seek alternatives
+### 4. Single-Source for Critical Claims
+**Wrong:** One Perplexity response for investment decision
+**Right:** Multi-tool verification + OpenRouter validation
 
-### 5. Sequential When Parallel Would Work
+### 5. Sequential When Parallel Works
 **Wrong:** Wait for each search before starting next
 **Right:** Run independent searches in parallel
 
 ## Meta-Cognitive Prompts
 
-Before starting any research:
-- "Is this a quick lookup or comprehensive research?"
-- "Which free tools can I try first?"
-- "What tool combination will be most efficient?"
+**Before starting:**
+- "Can Claude answer this confidently from training data?"
+- "Does this need current information or is historical/static?"
+- "What's the minimum tool set needed?"
 
-During research:
+**During research:**
 - "Should I escalate to a paid tool, or can free suffice?"
 - "Are my parallel calls truly independent?"
 - "Am I over-engineering for a simple query?"
 
-Before presenting results:
-- "Did I note which tools retrieved each finding?"
+**Before presenting:**
+- "Did I attribute findings to correct sources?"
 - "Is my confidence score justified by tool agreement?"
-- "Did I handle any tool failures gracefully?"
+- "Did I start with Claude and escalate appropriately?"
