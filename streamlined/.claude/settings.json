@@ -51,9 +51,17 @@
     "command": "echo -n '>>> '; basename \"$PWD\"; if git rev-parse --git-dir > /dev/null 2>&1; then echo -n ' git:('; git branch --show-current 2>/dev/null || echo -n 'detached'; echo -n ')'; [ -n \"$(git status --porcelain 2>/dev/null)\" ] && echo -n ' *'; fi"
   },
   "mcpServers": {
+    "crawl4ai": {
+      "type": "sse",
+      "url": "${CRAWL4AI_URL}",
+      "headers": {
+        "Authorization": "Bearer ${CRAWL4AI_TOKEN}"
+      }
+    },
     "perplexity": {
+      "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@anthropic/mcp-server-perplexity"],
+      "args": ["-y", "@perplexity-ai/mcp-server"],
       "env": {
         "PERPLEXITY_API_KEY": "${PERPLEXITY_API_KEY}"
       }

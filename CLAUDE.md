@@ -1,263 +1,182 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Developer guide for Claude Code when working with this repository.
 
 ## Repository Overview
 
-This repository contains a collection of specialized Claude Code configurations optimized for different professional workflows. Each setup includes pre-configured permissions, specialized agents, custom slash commands, and MCP server integrations designed for specific use cases.
+This repository contains a Claude Code configuration with specialized agents, custom commands, and MCP server integrations.
 
 **Repository:** https://github.com/maynard242/claude_code_setups
 
-## Architecture
-
-### Setup Structure
-
-Each specialized setup follows a consistent directory structure:
+## Structure
 
 ```
-<setup_name>/
-├── .claude/
-│   ├── settings.json        # Permissions, status line, MCP integrations
-│   ├── agents/              # Specialized sub-agents (optional)
-│   │   └── *.md            # Agent definitions with frontmatter
-│   ├── commands/            # Slash commands (optional)
-│   │   └── *.md            # Command prompts with frontmatter
-│   ├── skills/              # Auto-activating skills (optional)
-│   │   └── *.md            # Skill definitions
-│   └── plugins/             # MCP server plugins (optional)
-└── README.md                # Setup-specific documentation
+claude_code_setups/
+├── streamlined/              # Active setup
+│   └── .claude/
+│       ├── settings.json     # Permissions, MCP config
+│       ├── agents/           # 6 specialized agents
+│       ├── commands/         # 3 slash commands
+│       └── skills/           # Auto-activating skills
+├── archive/                  # Legacy setups (reference only)
+├── templates/                # Template files
+├── switch-setup.sh           # Setup installer
+├── README.md                 # Main documentation
+├── GETTING_STARTED.md        # Installation guide
+├── QUICK_REFERENCE.md        # Cheat sheet
+├── MCP_SETUP.md              # MCP server configuration
+├── ARCHITECTURE.md           # System architecture
+└── CHANGELOG.md              # Version history
 ```
 
-### Available Setups
+## Setup Components
 
-1. **general_ai/** - Multi-source research, document creation, talent evaluation
-2. **code_ai/** - Python/ML development with PyTorch and type safety
-3. **deep_research/** - Academic and market research with evidence-based analysis
-4. **ppt_builder/** - PowerPoint presentation design and storytelling
-5. **osint_ai/** - OSINT/investigative research and background checks
-6. **science_ai/** - Scientific/academic writing with LaTeX support
-7. **finance_ai/** - Financial analysis and investment research
-8. **bookkeeping_ai/** - Bank statement processing and categorization
+### settings.json
 
-### Setup Switcher
-
-The `switch-setup.sh` script automates setup installation and management:
-
-**Interactive mode:**
-```bash
-./switch-setup.sh
+```json
+{
+  "setupId": "streamlined",
+  "alwaysThinkingEnabled": true,
+  "permissions": {
+    "allow": ["WebSearch", "Bash(git:*)"],
+    "ask": ["Bash(rm:*)", "Bash(sudo:*)"]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash_command_here"
+  },
+  "mcpServers": {
+    "server_name": { ... }
+  }
+}
 ```
 
-**Direct installation:**
-```bash
-./switch-setup.sh <setup_name>
-```
+### Agent Files
 
-**Symlink (auto-updates):**
-```bash
-./switch-setup.sh --link <setup_name>
-```
-
-**Management commands:**
-```bash
-./switch-setup.sh --current   # Show active setup
-./switch-setup.sh --backup    # Create timestamped backup
-./switch-setup.sh --restore   # Restore from backup
-./switch-setup.sh --list      # List available backups
-```
-
-The script validates input for security, creates automatic timestamped backups before switching, and supports both copy and symlink modes.
-
-## Common Development Tasks
-
-### Testing Setup Configurations
-
-After creating or modifying a setup:
-
-1. Validate `settings.json` syntax:
-```bash
-cat <setup_name>/.claude/settings.json | jq .
-```
-
-2. Check permissions structure:
-```bash
-cat <setup_name>/.claude/settings.json | jq .permissions
-```
-
-3. Test setup installation:
-```bash
-./switch-setup.sh --backup  # Backup current setup first
-./switch-setup.sh <setup_name>
-```
-
-### Creating New Agents
-
-Agent files use frontmatter for metadata:
+Location: `streamlined/.claude/agents/<agent-name>.md`
 
 ```markdown
 ---
 name: agent-name
-description: Brief description for when to invoke this agent
+description: When to invoke this agent
 model: sonnet  # or haiku, opus
-color: blue    # Visual distinction in UI
+color: blue
 ---
 
-Agent instructions and expertise...
+Agent instructions...
 ```
 
-Place in `<setup_name>/.claude/agents/<agent-name>.md`
+### Command Files
 
-### Creating New Slash Commands
-
-Command files use frontmatter for metadata:
+Location: `streamlined/.claude/commands/<command-name>.md`
 
 ```markdown
 ---
-description: Brief description of command functionality
+description: What this command does
 ---
 
-Command instructions and expected output format...
+Command instructions...
 ```
 
-Place in `<setup_name>/.claude/commands/<command-name>.md`
+Invoke with `/command-name` in Claude Code.
 
-Access with `/command-name` in Claude Code.
+## Current Agents
 
-### Settings.json Configuration
+| Agent | Purpose |
+|-------|---------|
+| researcher | Research, OSINT, fact-checking with Claude-first methodology |
+| developer | Python/ML development with type safety |
+| financial-analyst | Financial analysis and valuation |
+| academic-writer | Scientific writing and papers |
+| presentation-builder | PowerPoint design |
+| statement-processor | Bank statement processing |
 
-Key configuration sections:
+## Current Commands
 
-**Permissions:**
-```json
-{
-  "permissions": {
-    "allow": ["WebSearch", "Bash(git:*)"],
-    "ask": ["Bash(rm:*)", "Bash(sudo:*)"]
-  }
-}
-```
+| Command | Purpose |
+|---------|---------|
+| /graham | Talent evaluation framework |
+| /deep-research | Comprehensive research protocol |
+| /process-statement | PDF statement to CSV |
 
-**Status Line (custom command):**
-```json
-{
-  "statusLine": {
-    "type": "command",
-    "command": "your_bash_command_here"
-  }
-}
-```
+## MCP Servers
 
-**MCP Integration:**
-```json
-{
-  "enabledPlugins": {
-    "exa-mcp-server@exa-mcp-server": true,
-    "document-skills@anthropic-agent-skills": true
-  }
-}
-```
+Configured in `~/.claude.json` (global) or `settings.json` (project-level):
 
-**Always Thinking Mode:**
-```json
-{
-  "alwaysThinkingEnabled": true
-}
-```
+| Server | Type | Purpose |
+|--------|------|---------|
+| Crawl4AI | SSE | Web scraping, screenshots, PDFs |
+| Perplexity | stdio | AI-powered search and research |
 
-## MCP Server Integration
+Environment variables:
+- `PERPLEXITY_API_KEY`
+- `CRAWL4AI_URL`
+- `CRAWL4AI_TOKEN`
 
-Several setups integrate with MCP servers for enhanced functionality:
+## Common Tasks
 
-**Supported MCP servers:**
-- **Exa** (exa-mcp-server): Neural search and code context
-- **Firecrawl**: Web scraping and content extraction
-- **Day One**: Journaling integration
+### Validate Configuration
 
-MCP servers are configured externally in Claude Desktop's `claude_desktop_config.json` file located at `~/Library/Application Support/Claude/claude_desktop_config.json`.
-
-## Key Design Patterns
-
-### Permission Strategy
-
-Each setup follows the principle of least privilege:
-- **allow**: Tools that don't require user confirmation (e.g., git, npm, WebSearch)
-- **ask**: Potentially destructive operations (e.g., rm, sudo, kill)
-
-### Agent Specialization
-
-Agents are designed for complex, multi-step domain-specific tasks:
-- **web-researcher** (general_ai): Multi-tool research orchestration
-- **python-expert** (code_ai): Type safety and modern Python patterns
-- **ml-engineer** (code_ai): PyTorch, training loops, MLOps
-- **researcher** (deep_research): Evidence-based analysis with source tiering
-- **investigator** (osint_ai): OSINT with confidence scoring
-- **academic-writer** (science_ai): Research papers and statistical reporting
-- **financial-analyst** (finance_ai): Valuation and investment analysis
-- **statement-processor** (bookkeeping_ai): Transaction extraction and categorization
-
-### Command Philosophy
-
-Slash commands encapsulate common, well-defined workflows:
-- `/graham` - Talent evaluation framework (general_ai)
-- `/deep-research` - Comprehensive research protocol (general_ai)
-- `/process-statement` - PDF statement to CSV conversion (bookkeeping_ai)
-
-## Notable Implementation Details
-
-### Bookkeeping AI Validation Flow
-
-The `/process-statement` command implements a rigorous validation workflow:
-1. Extract statement totals from PDF metadata
-2. Parse all transactions
-3. Verify transaction count matches statement
-4. Verify debit/credit totals match statement
-5. Verify net change = closing balance - opening balance
-6. Output single CSV without header line
-
-### Setup Detection
-
-The switch script detects current setup via:
-1. **Primary**: `setupId` field in settings.json (recommended)
-2. **Fallback**: Pattern matching in status line configuration
-3. **Symlink**: Direct readlink resolution
-
-### Status Line Patterns
-
-**Git-aware** (most setups):
 ```bash
-Shows: ➜ directory git:(branch) [dirty indicator]
+cat streamlined/.claude/settings.json | jq .
 ```
 
-**Python version** (code_ai):
+### Check Permissions
+
 ```bash
-Shows: Python 3.x.x + git info
+cat streamlined/.claude/settings.json | jq .permissions
 ```
 
-## Contributing New Setups
+### Test Installation
 
-When creating a new setup:
+```bash
+./switch-setup.sh --current
+```
 
-1. Create setup directory with `.claude/` structure
-2. Define clear use case and target audience
-3. Configure minimal necessary permissions
-4. Create specialized agents for domain expertise
-5. Add slash commands for common workflows
-6. Write comprehensive README with examples
-7. Test thoroughly before committing
-8. Add setup to SETUPS list in switch-setup.sh
+### Creating a New Agent
+
+1. Create file: `streamlined/.claude/agents/my-agent.md`
+2. Add frontmatter (name, description, model, color)
+3. Add agent instructions
+4. Test by asking Claude a relevant question
+
+### Creating a New Command
+
+1. Create file: `streamlined/.claude/commands/my-command.md`
+2. Add frontmatter (description)
+3. Add command instructions
+4. Test with `/my-command` in Claude Code
 
 ## File Locations
 
-**User's active setup:** `~/.claude/`
-
-**Repository setups:** `/Users/levi/data/Setups/claude_code_setups/<setup_name>/.claude/`
-
-**Backups:** `~/.claude.backup.YYYYMMDD_HHMMSS/`
-
-**Claude Desktop MCP config:** `~/Library/Application Support/Claude/claude_desktop_config.json`
+| Path | Purpose |
+|------|---------|
+| `~/.claude/` | User's active setup |
+| `~/.claude.json` | Global Claude config (MCP servers) |
+| `~/.claude.backup.*` | Timestamped backups |
+| `streamlined/.claude/` | Repository setup source |
 
 ## Version Control
 
-This repository uses git. The main branch is `main`.
+- Main branch: `main`
+- Never commit API keys or credentials
+- MCP credentials configured locally via environment variables
 
-**Important:** When working on setups, be careful not to commit sensitive information like API keys. MCP server credentials should be configured locally, not in the repository.
+## Switch Script
+
+```bash
+./switch-setup.sh              # Install (copy)
+./switch-setup.sh --link       # Install (symlink)
+./switch-setup.sh --current    # Show current
+./switch-setup.sh --restore    # Restore backup
+./switch-setup.sh --help       # Help
+```
+
+## Archive
+
+The `archive/` directory contains legacy setups:
+- general_ai, code_ai, deep_research
+- ppt_builder, osint_ai, science_ai
+- finance_ai, bookkeeping_ai, unified
+
+These are preserved for reference but not actively maintained. The streamlined setup combines the best features of all previous setups.

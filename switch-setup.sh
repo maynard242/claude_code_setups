@@ -79,9 +79,11 @@ apply_setup() {
     echo "  • 6 agents: researcher, developer, financial-analyst,"
     echo "              academic-writer, presentation-builder, statement-processor"
     echo "  • 3 commands: /graham, /deep-research, /process-statement"
+    echo "  • MCP: Crawl4AI (web scraping) + Perplexity (AI search)"
     echo "  • Tools: Claude → WebSearch → WebFetch → Perplexity → Crawl4AI"
     echo ""
-    print_warning "Requires: PERPLEXITY_API_KEY environment variable"
+    print_warning "Environment variables needed for MCP:"
+    echo "  • PERPLEXITY_API_KEY, CRAWL4AI_URL, CRAWL4AI_TOKEN"
     echo ""
     print_success "Done. Restart Claude Code to apply."
 }

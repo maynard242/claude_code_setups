@@ -1,287 +1,165 @@
-# Getting Started with Claude Code Setups
+# Getting Started
 
-Welcome! This guide will walk you through setting up and using the specialized Claude Code configurations in this repository.
-
-## What Are These Setups?
-
-This repository contains 9 Claude Code configurations - one comprehensive unified setup, plus 8 specialized configurations for specific workflows:
-
-- **unified** - **All-in-one setup (RECOMMENDED)** - All 9 agents + all 3 commands, automatic agent selection
-- **general_ai** - Multi-source research and document creation
-- **code_ai** - Python/ML development with type safety
-- **deep_research** - Academic and market research
-- **ppt_builder** - PowerPoint presentation design
-- **osint_ai** - OSINT/investigative research
-- **science_ai** - Scientific/academic writing with LaTeX
-- **finance_ai** - Financial analysis and investment research
-- **bookkeeping_ai** - Bank statement processing
-
-Each setup includes:
-- Pre-configured permissions for relevant tools
-- Specialized AI agents that work automatically (no manual configuration needed)
-- Custom slash commands for common workflows
-- Optimized status line displays
-
-**Key Point**: Agents are automatically invoked by Claude Code based on your task. You never need to manually select or configure them - just ask naturally and the right agent activates.
+Quick setup guide for the Claude Code configuration.
 
 ## Prerequisites
 
-Before you begin, ensure you have:
-
 1. **Claude Code CLI installed**
    ```bash
-   # Check if installed
    which claude
    ```
-   If not installed, visit [https://claude.com/claude-code](https://claude.com/claude-code) for installation instructions.
+   If not installed: [docs.anthropic.com/en/docs/claude-code](https://docs.anthropic.com/en/docs/claude-code)
 
-2. **Git installed** (for cloning the repository)
+2. **Git installed**
    ```bash
    git --version
    ```
 
-3. **Node.js installed** (optional, for MCP servers)
+3. **Node.js** (for Perplexity MCP server)
    ```bash
-   node --version
-   # Recommended: v18 or higher
+   node --version  # v18 or higher
    ```
-
-4. **Basic terminal familiarity**
-   - Running bash commands
-   - Navigating directories
-   - Managing files
 
 ## Installation
 
-### Step 1: Clone the Repository
+### Step 1: Clone Repository
 
 ```bash
-# Clone to your preferred location
 git clone https://github.com/maynard242/claude_code_setups.git ~/data/Setups/claude_code_setups
-
-# Navigate to the directory
 cd ~/data/Setups/claude_code_setups
 ```
 
-### Step 2: Make Scripts Executable
+### Step 2: Make Script Executable
 
 ```bash
-# Make the setup switcher executable
-chmod +x switch-setup.sh zshrc-helper.sh
+chmod +x switch-setup.sh
 ```
 
-### Step 3: Choose Your First Setup
-
-Not sure which setup to start with? Here's a quick guide:
-
-| If you want to... | Use this setup |
-|---|---|
-| **Maximum flexibility across all domains (RECOMMENDED)** | **unified** |
-| Work across multiple areas (research, code, writing) | **unified** |
-| Have all capabilities without switching | **unified** |
-| Do general research and document writing | **general_ai** |
-| Write Python or ML code | **code_ai** |
-| Conduct deep research with evidence analysis | **deep_research** |
-| Create PowerPoint presentations | **ppt_builder** |
-| Do investigative research/OSINT | **osint_ai** |
-| Write scientific papers with LaTeX | **science_ai** |
-| Analyze financial data and investments | **finance_ai** |
-| Process bank statements | **bookkeeping_ai** |
-
-**For most users, start with `unified`** - it has all capabilities and agents work automatically based on your task. No need to switch setups or manually configure anything.
-
-### Step 4: Install Your First Setup
+### Step 3: Install Setup
 
 ```bash
-# Interactive installation (recommended for first-time users)
+# Copy setup to ~/.claude
 ./switch-setup.sh
 
-# Or install directly (unified recommended for most users)
-./switch-setup.sh unified
+# Or symlink for auto-updates when you git pull
+./switch-setup.sh --link
 ```
 
-The script will:
-1. Create a backup of your current setup (if any) at `~/.claude.backup.YYYYMMDD_HHMMSS/`
-2. Copy the selected setup to `~/.claude/`
-3. Confirm the installation
+### Step 4: Configure MCP Servers (Optional)
 
-**Note**: The installation creates a copy (not a symlink) by default. If you want the setup to auto-update when you pull changes from the repo, use `./switch-setup.sh --link unified`.
+Add to `~/.zshrc` or `~/.bashrc`:
+
+```bash
+export PERPLEXITY_API_KEY="pplx-your-key"
+export CRAWL4AI_URL="http://your-server:11235/mcp/sse"
+export CRAWL4AI_TOKEN="your-token"
+```
+
+Reload shell:
+```bash
+source ~/.zshrc
+```
 
 ### Step 5: Verify Installation
 
 ```bash
-# Check which setup is active
 ./switch-setup.sh --current
-
-# Test Claude Code
 claude
 ```
 
-You should see your custom status line (e.g., `➜ directory git:(branch)` for general_ai).
+## What You Get
 
-## First Steps with Your Setup
+### 6 Agents (auto-activate based on task)
 
-### 1. Explore the Setup Features
+| Agent | Use Case |
+|-------|----------|
+| researcher | Research, OSINT, fact-checking |
+| developer | Python/ML development |
+| financial-analyst | Financial analysis |
+| academic-writer | Scientific writing |
+| presentation-builder | PowerPoint design |
+| statement-processor | Bank statement processing |
 
-Each setup has a README with detailed information:
+### 3 Commands
 
-```bash
-# View setup documentation
-cat general_ai/README.md
-```
+- `/graham` - Talent evaluation
+- `/deep-research` - Comprehensive research
+- `/process-statement` - PDF to CSV conversion
 
-### 2. Try Basic Commands
+### MCP Servers
 
-Start a Claude Code session:
+- **Crawl4AI** - Web scraping, screenshots, PDFs
+- **Perplexity** - AI-powered search and research
+
+## First Steps
+
+Start Claude Code in your project:
 
 ```bash
 cd ~/your-project
 claude
 ```
 
-In the Claude Code session:
+Try these:
 
 ```
-# For general_ai setup, try:
-/graham  # Talent evaluation framework
-/deep-research  # Comprehensive research protocol
-
-# For bookkeeping_ai setup, try:
-/process-statement  # Convert bank statement PDF to CSV
-```
-
-### 3. Test Specialized Agents
-
-Agents are automatically invoked for relevant tasks. Try asking:
-
-```
-# In general_ai:
+# Research (auto-activates researcher agent)
 "Research the latest developments in quantum computing"
 
-# In code_ai:
-"Write a Python function to calculate fibonacci numbers with type hints"
+# Code (auto-activates developer agent)
+"Write a Python function with type hints and tests"
 
-# In deep_research:
-"Conduct comprehensive research on the effectiveness of carbon taxes"
+# Commands
+/graham
+/deep-research "AI regulation"
 ```
 
-The appropriate specialized agent will automatically handle the task.
-
-### 4. Check Permissions
-
-Each setup has different permissions. Test what's allowed:
+## Setup Management
 
 ```bash
-# In Claude Code:
-git status  # Usually allowed
-npm install  # Allowed in general_ai, code_ai
-pip install  # Allowed in code_ai, science_ai
+./switch-setup.sh              # Install
+./switch-setup.sh --link       # Symlink
+./switch-setup.sh --current    # Check status
+./switch-setup.sh --restore    # Restore backup
 ```
-
-Commands that require confirmation (like `rm`, `sudo`) will prompt you first.
-
-## Switching Between Setups
-
-You can switch setups anytime:
-
-```bash
-# Interactive menu
-./switch-setup.sh
-
-# Direct switch
-./switch-setup.sh code_ai
-
-# Your previous setup is automatically backed up
-```
-
-## Optional: Configure MCP Servers
-
-MCP (Model Context Protocol) servers enhance Claude Code with external tools like neural search and web scraping.
-
-**Recommended setups with MCP:**
-- general_ai (Exa, Firecrawl, Day One)
-- deep_research (Exa, Firecrawl)
-- osint_ai (Exa, Firecrawl)
-- science_ai (Exa, Firecrawl)
-- finance_ai (Exa, Firecrawl)
-
-See [MCP_SETUP.md](MCP_SETUP.md) for detailed configuration instructions.
 
 ## Troubleshooting
 
-### Setup doesn't switch
+### Setup not loading
 
-**Problem**: After running switch-setup.sh, Claude Code still shows old setup.
+```bash
+ls -la ~/.claude/
+cat ~/.claude/settings.json | jq .
+```
 
-**Solution**:
-1. Verify the setup was copied: `ls -la ~/.claude/`
-2. Restart your terminal or Claude Code session
-3. Check for errors: `./switch-setup.sh --current`
+### Agents not found
 
-### Permissions errors
+```bash
+ls ~/.claude/agents/
+```
 
-**Problem**: Claude Code says a command is not permitted.
+### MCP not working
 
-**Solution**:
-1. Check the setup's permissions: `cat ~/.claude/settings.json | jq .permissions`
-2. If the command should be allowed, edit `~/.claude/settings.json`
-3. Or switch to a setup with broader permissions (e.g., general_ai)
+```bash
+echo $PERPLEXITY_API_KEY
+cat ~/.claude.json | jq .mcpServers
+```
 
-### Agent not found
+### Permissions denied
 
-**Problem**: Claude Code says an agent doesn't exist.
-
-**Solution**:
-1. Check if the agent file exists: `ls ~/.claude/agents/`
-2. Verify the agent is listed in the setup's README
-3. Re-install the setup: `./switch-setup.sh <setup_name>`
-
-### Status line not showing
-
-**Problem**: Status line is blank or shows errors.
-
-**Solution**:
-1. Check status line command: `cat ~/.claude/settings.json | jq .statusLine`
-2. Test the command manually: Run the command shown in the `command` field
-3. If using git-aware status line, ensure you're in a git repository
-
-### MCP servers not working
-
-**Problem**: MCP servers don't respond or show errors.
-
-**Solution**:
-1. Verify MCP config exists: `cat ~/Library/Application\ Support/Claude/claude_desktop_config.json`
-2. Check API keys are set correctly
-3. Ensure Node.js is installed: `node --version`
-4. See [MCP_SETUP.md](MCP_SETUP.md) for detailed troubleshooting
+```bash
+cat ~/.claude/settings.json | jq .permissions
+```
 
 ## Next Steps
 
-Once you're comfortable with your first setup:
-
-1. **Explore other setups** - Try setups for different workflows
-2. **Customize your setup** - Edit `~/.claude/settings.json` to adjust permissions
-3. **Create custom agents** - Add your own specialized agents (see CLAUDE.md)
-4. **Configure MCP servers** - Enable advanced features (see MCP_SETUP.md)
-5. **Share your experience** - Contribute improvements via GitHub issues/PRs
-
-## Additional Resources
-
-- [README.md](README.md) - Complete documentation for all setups
-- [QUICK_REFERENCE.md](QUICK_REFERENCE.md) - Cheat sheet for common commands
-- [ARCHITECTURE.md](ARCHITECTURE.md) - Deep dive into how setups work
-- [MCP_SETUP.md](MCP_SETUP.md) - MCP server configuration guide
-- [CLAUDE.md](CLAUDE.md) - Development guide for creating custom setups
-- [CHANGELOG.md](CHANGELOG.md) - Version history and updates
+- [Quick Reference](QUICK_REFERENCE.md) - Commands cheat sheet
+- [MCP Setup](MCP_SETUP.md) - Configure MCP servers
+- [Architecture](ARCHITECTURE.md) - How it works
+- [Developer Guide](CLAUDE.md) - Create custom agents
 
 ## Getting Help
 
-- **Repository Issues**: [GitHub Issues](https://github.com/maynard242/claude_code_setups/issues)
-- **Claude Code Help**: Run `/help` in Claude Code or visit [https://claude.com/code/docs](https://claude.com/code/docs)
-- **Setup Documentation**: Each setup has its own README with detailed examples
-
-## Welcome!
-
-You're all set! Start with simple tasks to get familiar with your setup, then gradually explore more advanced features. Each setup is designed to make you more productive in its specific domain.
-
-Happy coding with Claude!
+- Run `/help` in Claude Code
+- Check [README.md](README.md)
+- Open [GitHub issue](https://github.com/maynard242/claude_code_setups/issues)

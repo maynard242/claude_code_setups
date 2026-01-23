@@ -6,24 +6,17 @@ Complete guide to configuring Model Context Protocol (MCP) servers with Claude C
 
 MCP (Model Context Protocol) servers extend Claude Code with external tools and data sources. They run as separate processes and provide capabilities like:
 
-- **Neural search** (Exa) - Find relevant content across the web using semantic search
-- **Web scraping** (Firecrawl) - Extract clean content from websites
-- **Journaling** (Day One) - Integrate with Day One journal app
+- **Web crawling & scraping** (Crawl4AI) - Extract content from websites, generate PDFs/screenshots, execute JavaScript
+- **AI-powered search** (Perplexity) - Search the web, conduct research, and reason about topics
 
-**Key Point**: MCP servers are **optional enhancements**. All setups work perfectly fine without them, but they can significantly improve capabilities for research-heavy workflows.
+**Key Point**: MCP servers are **optional enhancements**. All setups work without them, but they significantly improve capabilities for research and web content workflows.
 
-## Which Setups Use MCP Servers?
+## Current MCP Server Stack
 
-| Setup | MCP Servers | Purpose |
-|---|---|---|
-| **general_ai** | Exa, Firecrawl, Day One | Multi-source research, web content, journaling |
-| **deep_research** | Exa, Firecrawl | Academic/market research, evidence gathering |
-| **osint_ai** | Exa, Firecrawl | OSINT investigations, background research |
-| **science_ai** | Exa, Firecrawl | Scientific literature search, web sources |
-| **finance_ai** | Exa, Firecrawl | Financial research, market data |
-| **code_ai** | (Optional: Exa) | Code search, technical documentation |
-| **ppt_builder** | - | No MCP servers needed |
-| **bookkeeping_ai** | - | No MCP servers needed |
+| Server | Type | Purpose |
+|--------|------|---------|
+| **Crawl4AI** | SSE | Web crawling, scraping, screenshots, PDF generation, JS execution |
+| **Perplexity** | stdio | AI-powered web search, deep research, reasoning |
 
 ## Prerequisites
 
@@ -35,263 +28,250 @@ Before configuring MCP servers:
    ```
    If not installed: [https://nodejs.org/](https://nodejs.org/)
 
-2. **API Keys** (for paid MCP servers)
-   - Exa API key from [https://exa.ai/](https://exa.ai/)
-   - Firecrawl API key from [https://firecrawl.dev/](https://firecrawl.dev/)
-   - Day One: No API key needed (uses local app)
+2. **API Keys/Credentials**
+   - Crawl4AI: Server URL and authentication token
+   - Perplexity: API key from [https://perplexity.ai/](https://www.perplexity.ai/)
 
-3. **Claude Desktop** (MCP servers are configured in Claude Desktop, not Claude Code CLI)
+## Configuration Locations
 
-## Configuration Location
+MCP servers can be configured in two places:
 
-MCP servers are configured in:
-
+### Global Configuration (recommended)
 ```
-~/Library/Application Support/Claude/claude_desktop_config.json
+~/.claude.json
 ```
+Settings here apply to all Claude Code sessions.
 
-**Important**: This file is for **Claude Desktop**, not the Claude Code CLI. Claude Code will inherit the MCP configuration from Claude Desktop.
+### Project-Level Configuration
+```
+~/.claude/settings.json
+```
+Or in a project's `.claude/settings.json` for project-specific servers.
 
 ## Step-by-Step Setup
 
-### Step 1: Create Configuration File
+### Step 1: Configure Environment Variables (Recommended)
 
-If the file doesn't exist, create it:
+Add credentials to your shell profile (`~/.zshrc` or `~/.bashrc`):
 
 ```bash
-# Create directory if needed
-mkdir -p ~/Library/Application\ Support/Claude/
+# Crawl4AI
+export CRAWL4AI_URL="http://your-server:11235/mcp/sse"
+export CRAWL4AI_TOKEN="your-auth-token"
 
-# Create config file
-touch ~/Library/Application\ Support/Claude/claude_desktop_config.json
+# Perplexity
+export PERPLEXITY_API_KEY="pplx-your-api-key"
+```
+
+Reload your shell:
+```bash
+source ~/.zshrc
 ```
 
 ### Step 2: Configure MCP Servers
 
-Edit the configuration file with your preferred editor:
+#### Option A: Global Configuration (~/.claude.json)
 
-```bash
-nano ~/Library/Application\ Support/Claude/claude_desktop_config.json
-```
-
-Use the appropriate configuration for your needs:
-
-#### Option A: Exa Only (Neural Search)
+Add the `mcpServers` section to your `~/.claude.json`:
 
 ```json
 {
   "mcpServers": {
-    "exa": {
+    "crawl4ai": {
+      "type": "sse",
+      "url": "http://your-server:11235/mcp/sse",
+      "headers": {
+        "Authorization": "Bearer your-auth-token"
+      }
+    },
+    "perplexity": {
+      "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-exa"],
+      "args": ["-y", "@perplexity-ai/mcp-server"],
       "env": {
-        "EXA_API_KEY": "your-exa-api-key-here"
+        "PERPLEXITY_API_KEY": "your-perplexity-api-key"
       }
     }
   }
 }
 ```
 
-#### Option B: Exa + Firecrawl (Full Research Stack)
+#### Option B: Project Settings (~/.claude/settings.json)
+
+Add to the `mcpServers` section with environment variable references:
 
 ```json
 {
   "mcpServers": {
-    "exa": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-exa"],
-      "env": {
-        "EXA_API_KEY": "your-exa-api-key-here"
+    "crawl4ai": {
+      "type": "sse",
+      "url": "${CRAWL4AI_URL}",
+      "headers": {
+        "Authorization": "Bearer ${CRAWL4AI_TOKEN}"
       }
     },
-    "firecrawl": {
+    "perplexity": {
+      "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-firecrawl"],
+      "args": ["-y", "@perplexity-ai/mcp-server"],
       "env": {
-        "FIRECRAWL_API_KEY": "your-firecrawl-api-key-here"
+        "PERPLEXITY_API_KEY": "${PERPLEXITY_API_KEY}"
       }
     }
   }
 }
 ```
 
-#### Option C: Full Setup (Including Day One)
-
-```json
-{
-  "mcpServers": {
-    "exa": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-exa"],
-      "env": {
-        "EXA_API_KEY": "your-exa-api-key-here"
-      }
-    },
-    "firecrawl": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-firecrawl"],
-      "env": {
-        "FIRECRAWL_API_KEY": "your-firecrawl-api-key-here"
-      }
-    },
-    "dayone": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-dayone"]
-    }
-  }
-}
-```
-
-### Step 3: Get API Keys
-
-#### Exa (Neural Search)
-
-1. Visit [https://exa.ai/](https://exa.ai/)
-2. Sign up for an account
-3. Navigate to API settings
-4. Generate an API key
-5. Copy the key and paste into `claude_desktop_config.json`
-
-**Pricing**: Free tier available, paid plans for higher usage
-
-#### Firecrawl (Web Scraping)
-
-1. Visit [https://firecrawl.dev/](https://firecrawl.dev/)
-2. Create an account
-3. Go to API keys section
-4. Generate a new API key
-5. Copy the key and paste into `claude_desktop_config.json`
-
-**Pricing**: Free tier available, paid plans for higher volume
-
-#### Day One (Journaling)
-
-No API key needed. Ensure Day One app is installed on your Mac:
-
-```bash
-# Check if Day One is installed
-ls /Applications/Day\ One.app
-```
-
-If not installed, download from [https://dayoneapp.com/](https://dayoneapp.com/)
-
-### Step 4: Validate Configuration
+### Step 3: Validate Configuration
 
 Check that your JSON is valid:
 
 ```bash
-cat ~/Library/Application\ Support/Claude/claude_desktop_config.json | jq .
+cat ~/.claude.json | jq .mcpServers
 ```
 
-If you see an error, fix any JSON syntax issues (missing commas, quotes, etc.).
+### Step 4: Restart Claude Code
 
-### Step 5: Restart Claude Desktop
-
-For the changes to take effect:
-
-1. Quit Claude Desktop completely (Cmd+Q)
-2. Restart Claude Desktop
-3. The MCP servers will start automatically
-
-### Step 6: Test MCP Servers
-
-Start a Claude Code session and try MCP-powered tasks:
+For the changes to take effect, start a new Claude Code session:
 
 ```bash
-cd ~/your-project
 claude
 ```
 
-**Test Exa (Neural Search):**
+## MCP Server Details
+
+### Crawl4AI
+
+A powerful web crawling and scraping server that provides:
+
+**Tools Available:**
+- `mcp__crawl4ai__md` - Fetch URL and convert to markdown
+- `mcp__crawl4ai__html` - Get preprocessed HTML for schema extraction
+- `mcp__crawl4ai__screenshot` - Capture full-page PNG screenshots
+- `mcp__crawl4ai__pdf` - Generate PDF documents from URLs
+- `mcp__crawl4ai__execute_js` - Execute JavaScript on pages
+- `mcp__crawl4ai__crawl` - Batch crawl multiple URLs
+- `mcp__crawl4ai__ask` - Query Crawl4AI documentation
+
+**Example Usage:**
 ```
-"Use Exa to find recent articles about quantum computing breakthroughs"
+"Fetch the main content from https://example.com and convert to markdown"
+"Take a screenshot of https://example.com"
+"Generate a PDF of this webpage"
 ```
 
-**Test Firecrawl (Web Scraping):**
+**Server Types:**
+- **SSE (Server-Sent Events)**: Connects to a remote Crawl4AI server
+- Requires: Server URL and authentication token
+
+### Perplexity
+
+AI-powered search and research capabilities:
+
+**Tools Available:**
+- `mcp__perplexity__perplexity_ask` - Conversational AI responses
+- `mcp__perplexity__perplexity_search` - Web search with ranked results
+- `mcp__perplexity__perplexity_research` - Deep research with citations
+- `mcp__perplexity__perplexity_reason` - Complex reasoning tasks
+
+**Example Usage:**
 ```
-"Use Firecrawl to extract the main content from https://example.com/article"
+"Search for recent news about AI developments"
+"Research the history of quantum computing with citations"
+"Reason through this complex problem step by step"
 ```
 
-**Test Day One (Journaling):**
-```
-"Create a Day One entry about today's research findings"
+**Server Type:**
+- **stdio**: Runs locally via npx
+- Requires: Perplexity API key
+
+## Setting Up Crawl4AI Server
+
+Crawl4AI requires a running server. Options:
+
+### Option 1: Self-Hosted (Docker)
+
+```bash
+docker run -d -p 11235:11235 unclecode/crawl4ai
 ```
 
-If working correctly, Claude Code will use the MCP servers automatically.
+### Option 2: Self-Hosted (Python)
+
+```bash
+pip install crawl4ai
+crawl4ai-server --port 11235
+```
+
+### Option 3: Remote Server
+
+Use a hosted Crawl4AI instance (requires URL and auth token from provider).
+
+## Getting Perplexity API Key
+
+1. Visit [https://www.perplexity.ai/](https://www.perplexity.ai/)
+2. Sign up or log in
+3. Navigate to API settings
+4. Generate an API key (starts with `pplx-`)
+5. Add to your configuration
 
 ## Security Best Practices
 
-### 1. Protect API Keys
+### 1. Protect Credentials
 
-**DO**:
-- Store API keys only in `claude_desktop_config.json`
-- Set restrictive file permissions: `chmod 600 ~/Library/Application\ Support/Claude/claude_desktop_config.json`
-- Use environment variables for shared systems
+**DO:**
+- Store credentials in environment variables
+- Use `${VAR}` syntax in config files for portability
+- Set restrictive file permissions: `chmod 600 ~/.claude.json`
 
-**DON'T**:
-- Commit API keys to git repositories
-- Share `claude_desktop_config.json` publicly
-- Store keys in plain text in other locations
+**DON'T:**
+- Commit credentials to git repositories
+- Share configuration files with embedded credentials
+- Store credentials in plain text in public locations
 
-### 2. Use Environment Variables (Advanced)
+### 2. Environment Variables Setup
 
-For better security, use environment variables:
-
-1. Add keys to your shell profile (`~/.zshrc` or `~/.bashrc`):
-   ```bash
-   export EXA_API_KEY="your-exa-api-key"
-   export FIRECRAWL_API_KEY="your-firecrawl-api-key"
-   ```
-
-2. Reference in config file:
-   ```json
-   {
-     "mcpServers": {
-       "exa": {
-         "command": "npx",
-         "args": ["-y", "@modelcontextprotocol/server-exa"],
-         "env": {
-           "EXA_API_KEY": "${EXA_API_KEY}"
-         }
-       }
-     }
-   }
-   ```
-
-3. Restart terminal and Claude Desktop
+```bash
+# Add to ~/.zshrc or ~/.bashrc
+export CRAWL4AI_URL="http://your-server:11235/mcp/sse"
+export CRAWL4AI_TOKEN="your-token"
+export PERPLEXITY_API_KEY="pplx-your-key"
+```
 
 ## Troubleshooting
 
 ### MCP servers not responding
 
-**Symptoms**: Claude Code doesn't use MCP servers, or errors about servers not found.
+**Symptoms**: Claude Code doesn't use MCP tools, or errors about servers not found.
 
 **Solutions**:
 1. Verify config file exists and is valid JSON:
    ```bash
-   cat ~/Library/Application\ Support/Claude/claude_desktop_config.json | jq .
+   cat ~/.claude.json | jq .mcpServers
    ```
 
-2. Check Node.js is installed:
+2. Check Node.js is installed (for Perplexity):
    ```bash
    node --version
    ```
 
-3. Restart Claude Desktop completely (Cmd+Q, then reopen)
+3. Test Crawl4AI server connectivity:
+   ```bash
+   curl -H "Authorization: Bearer YOUR_TOKEN" http://your-server:11235/health
+   ```
 
-4. Check Claude Desktop console for errors (Help → Developer → Toggle Developer Tools)
+4. Start a fresh Claude Code session
 
 ### API key errors
 
 **Symptoms**: "Invalid API key" or "Authentication failed" errors.
 
 **Solutions**:
-1. Verify API keys are correct (no extra spaces, complete key copied)
+1. Verify API keys are correct (no extra spaces)
 2. Check API key hasn't expired
 3. Verify account has sufficient credits/quota
-4. Test API key directly:
+4. Test Perplexity key:
    ```bash
-   curl -H "Authorization: Bearer YOUR_API_KEY" https://api.exa.ai/v1/search
+   curl -H "Authorization: Bearer pplx-YOUR_KEY" https://api.perplexity.ai/health
    ```
 
 ### npx command not found
@@ -304,109 +284,55 @@ For better security, use environment variables:
 3. Restart terminal
 4. Update npm: `npm install -g npm@latest`
 
-### Day One not accessible
+### Crawl4AI connection refused
 
-**Symptoms**: Can't create Day One entries or read journals.
-
-**Solutions**:
-1. Verify Day One app is installed
-2. Open Day One and ensure it's configured
-3. Check Day One permissions (System Preferences → Privacy)
-4. Restart Claude Desktop
-
-### Performance issues
-
-**Symptoms**: Claude Code is slow when using MCP servers.
+**Symptoms**: Cannot connect to Crawl4AI server.
 
 **Solutions**:
-1. Check internet connection (MCP servers make API calls)
-2. Monitor API rate limits (Exa, Firecrawl have usage caps)
-3. Consider upgrading to paid plans for better performance
-4. Disable unused MCP servers to reduce overhead
+1. Verify server is running and accessible
+2. Check firewall rules allow the connection
+3. Verify URL and port are correct
+4. Check authentication token is valid
 
-## Cost Optimization
+## Permissions Configuration
 
-### Exa Cost Tips
+To use MCP tools without confirmation prompts, add to your `settings.json`:
 
-1. **Use specific searches**: More targeted queries = fewer API calls
-2. **Cache results**: Don't repeat the same search
-3. **Monitor usage**: Check your Exa dashboard regularly
-4. **Free tier first**: Test with free tier before upgrading
+```json
+{
+  "permissions": {
+    "allow": [
+      "mcp__crawl4ai",
+      "mcp__perplexity"
+    ]
+  }
+}
+```
 
-### Firecrawl Cost Tips
+## When to Use Which Tool
 
-1. **Selective scraping**: Only scrape when you need clean content
-2. **Direct URLs**: Use WebFetch for simple pages, Firecrawl for complex ones
-3. **Batch requests**: Scrape multiple pages in one session if possible
-4. **Monitor quota**: Track usage in Firecrawl dashboard
-
-### General Optimization
-
-- **Disable for simple tasks**: Not every task needs MCP servers
-- **Switch setups**: Use code_ai (no MCP) for non-research work
-- **Local alternatives**: Use WebFetch when Firecrawl isn't needed
-- **Review logs**: Check what's actually using MCP (Claude Desktop console)
-
-## Advanced Configuration
-
-### Custom MCP Servers
-
-You can add custom MCP servers beyond the defaults. See [MCP documentation](https://modelcontextprotocol.io/) for:
-
-- Building custom MCP servers
-- Integrating proprietary data sources
-- Creating domain-specific tools
-
-### Per-Setup MCP Configuration
-
-**Note**: Currently, MCP configuration is global (affects all Claude Desktop sessions). You cannot have different MCP servers per Claude Code setup.
-
-**Workaround**: Manage API keys per-setup using environment variables and shell scripts.
-
-## Verification Checklist
-
-After setup, verify:
-
-- [ ] `claude_desktop_config.json` exists and is valid JSON
-- [ ] API keys are set correctly (no typos, complete keys)
-- [ ] Node.js is installed (`node --version`)
-- [ ] Claude Desktop has been restarted
-- [ ] Test searches work in Claude Code
-- [ ] No error messages in Claude Desktop console
-- [ ] API usage shows in provider dashboards
-
-## Additional Resources
-
-- **Exa Documentation**: [https://docs.exa.ai/](https://docs.exa.ai/)
-- **Firecrawl Documentation**: [https://docs.firecrawl.dev/](https://docs.firecrawl.dev/)
-- **MCP Specification**: [https://modelcontextprotocol.io/](https://modelcontextprotocol.io/)
-- **Claude Desktop Help**: [https://claude.com/docs](https://claude.com/docs)
-
-## When to Use Which MCP Server
-
-| Task | Recommended MCP | Why |
-|---|---|---|
-| Find academic papers | Exa | Semantic search across scholarly sources |
-| Scrape article content | Firecrawl | Clean extraction from complex sites |
-| Quick URL fetch | WebFetch | Built-in, no API cost |
-| Code search | Exa | Neural understanding of code context |
-| Market research | Exa + Firecrawl | Discovery + deep content extraction |
-| OSINT | Exa + Firecrawl | Find leads + extract data |
-| Journal reflection | Day One | Personal notes and insights |
+| Task | Recommended Tool | Why |
+|------|------------------|-----|
+| Fetch webpage content | `mcp__crawl4ai__md` | Clean markdown extraction |
+| Screenshot a page | `mcp__crawl4ai__screenshot` | Full-page PNG capture |
+| Generate PDF | `mcp__crawl4ai__pdf` | Archivable document |
+| Quick web search | `mcp__perplexity__perplexity_search` | Fast ranked results |
+| Deep research | `mcp__perplexity__perplexity_research` | Comprehensive with citations |
+| Complex reasoning | `mcp__perplexity__perplexity_reason` | Step-by-step analysis |
+| Interactive pages | `mcp__crawl4ai__execute_js` | JS execution needed |
+| Batch URL processing | `mcp__crawl4ai__crawl` | Multiple pages at once |
 
 ## Remember
 
 - **MCP servers are optional** - All setups work without them
-- **Global configuration** - MCP servers affect all Claude Desktop usage
-- **Cost awareness** - Monitor API usage to avoid unexpected charges
-- **Security first** - Never commit API keys to repositories
-- **Start small** - Begin with free tiers, upgrade as needed
+- **Credentials security** - Never commit API keys to repositories
+- **Environment variables** - Use `${VAR}` syntax for portable configs
+- **Server availability** - Crawl4AI requires a running server instance
 
 ## Getting Help
 
 - **Setup issues**: See [GETTING_STARTED.md](GETTING_STARTED.md)
 - **Claude Code issues**: Run `/help` in Claude Code
-- **MCP issues**: Check Claude Desktop console (Help → Developer Tools)
+- **Crawl4AI docs**: [https://github.com/unclecode/crawl4ai](https://github.com/unclecode/crawl4ai)
+- **Perplexity docs**: [https://docs.perplexity.ai/](https://docs.perplexity.ai/)
 - **Repository issues**: [GitHub Issues](https://github.com/maynard242/claude_code_setups/issues)
-
-Happy researching with MCP servers!
