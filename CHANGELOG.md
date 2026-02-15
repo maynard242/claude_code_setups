@@ -7,8 +7,6 @@ All notable changes to the Claude Code Setups repository.
 ### Changed
 
 - **Consolidated to single streamlined setup**
-  - All 8 specialized setups archived to `archive/` directory
-  - Streamlined setup is now the only active configuration
   - Combines best features from all previous setups
 
 - **Enhanced researcher agent**
@@ -39,13 +37,6 @@ All notable changes to the Claude Code Setups repository.
 - Interactive 8-setup menu from switch-setup.sh
 - References to Exa, Firecrawl, Day One MCP servers
 - Separate investigator and web-researcher agents (merged into researcher)
-
-### Archive
-
-Previous setups preserved in `archive/` for reference:
-- general_ai, code_ai, deep_research
-- ppt_builder, osint_ai, science_ai
-- finance_ai, bookkeeping_ai, unified
 
 ---
 

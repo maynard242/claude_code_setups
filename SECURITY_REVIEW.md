@@ -1,148 +1,97 @@
 # Security Review - Claude Code Setups
 
-**Date**: 2025-12-07
-**Reviewer**: Claude Code
+**Date**: 2026-02-15
+**Reviewer**: Claude Code (Opus 4.6)
 **Status**: Issues Found & Fixed
 
 ## Summary
 
-Reviewed all 8 specialized setups for security vulnerabilities in permissions, command configurations, and MCP integrations.
+Reviewed the streamlined setup for security vulnerabilities in permissions, configurations, credentials management, and public repository exposure.
 
-## Issues Identified
+## Issues Identified & Fixed
 
-### 🔴 High Priority
+### Fixed: `Bash(curl:*)` in Auto-Allow List
 
-#### 1. Missing Process Kill Permissions in "Ask" List
-**Affected Setups**:
-- deep_research
-- osint_ai
-- finance_ai
-- science_ai
-- ppt_builder
-- bookkeeping_ai
+**Issue**: `curl` was auto-allowed, enabling arbitrary HTTP requests without user confirmation. This could allow data exfiltration.
 
-**Issue**: These setups are missing `Bash(kill:*)` and `Bash(pkill:*)` in their "ask" permissions list, which means these potentially dangerous commands could be executed without user confirmation.
+**Fix**: Moved `Bash(curl:*)` to the "ask" list.
 
-**Risk**: High - Process termination commands should always require user approval to prevent accidental or malicious termination of critical processes.
+### Fixed: `Bash(cp:*)` and `Bash(mv:*)` in Auto-Allow List
 
-**Recommendation**: Add `"Bash(kill:*)"` and `"Bash(pkill:*)"` to the "ask" array in all affected settings.json files.
+**Issue**: File copy and move operations could silently overwrite important files.
 
-**Status**: ✅ FIXED
+**Fix**: Moved both to the "ask" list.
 
----
+### Fixed: Redundant Bash Permissions Removed
 
-#### 2. Discouraged Bash Commands in bookkeeping_ai
-**Affected Setups**:
-- bookkeeping_ai
+**Issue**: `Bash(cat:*)`, `Bash(ls:*)`, `Bash(grep:*)`, `Bash(find:*)`, `Bash(head:*)`, `Bash(tail:*)` were auto-allowed. Claude Code has dedicated tools (Read, Glob, Grep) that are safer and preferred.
 
-**Issue**: The bookkeeping_ai setup has `Bash(cat:*)` and `Bash(ls:*)` in the allow list.
+**Fix**: Removed these from the allow list entirely. Claude Code's dedicated tools handle these operations.
 
-**Risk**: Medium - While not dangerous, these commands are discouraged per Claude Code best practices. The Read tool should be used instead of cat, and Glob should be used instead of ls for file operations.
+### Fixed: Non-Functional Settings Keys Removed
 
-**Recommendation**:
-- Remove `Bash(cat:*)` and `Bash(ls:*)` from allow list
-- Document that Read and Glob tools should be used instead
+**Issue**: `setupId` and `alwaysThinkingEnabled` are not recognized Claude Code settings keys. They were no-ops cluttering the config.
 
-**Status**: ✅ FIXED
+**Fix**: Removed both.
 
----
+### Fixed: Stale Documentation
 
-### 🟡 Medium Priority
+**Issue**: ARCHITECTURE.md and SECURITY_REVIEW.md referenced old 8-setup architecture, Exa/Firecrawl MCP servers, and deprecated agent names.
 
-#### 3. Status Line Command Injection Risk
-**Affected Setups**:
-- general_ai
-- code_ai
+**Fix**: Rewrote to reflect current streamlined setup.
 
-**Issue**: Status line commands use `cat` to read input and `jq` to parse workspace data. While `jq` provides some sanitization, the commands construct shell strings from workspace input.
+## Current Security Posture
 
-**Example**:
-```bash
-input=$(cat); cwd=$(echo "$input" | jq -r '.workspace.current_dir'); ...
-```
+### Permissions
 
-**Risk**: Low-Medium - If workspace.current_dir contains malicious input, it could potentially be exploited. However, this data comes from Claude Code itself, not user input, reducing the risk.
+**Auto-allowed (safe, read-only, or development tools):**
+- WebSearch, WebFetch, MCP servers
+- git, npm, npx, node
+- python/pip (development)
+- LaTeX/PDF tools (document processing)
+- mkdir, jq, wc (safe utilities)
 
-**Mitigation**: The use of `jq -r` for parsing and proper quoting of variables provides good protection. The input source (Claude Code workspace metadata) is trusted.
+**Requires confirmation (destructive/sensitive):**
+- rm, sudo, kill, chmod (destructive/privileged)
+- curl (network requests)
+- cp, mv (file overwrites)
 
-**Recommendation**: Monitor for any unusual behavior. Current implementation is acceptable given the trusted input source.
+### Credentials Management
 
-**Status**: ✅ ACCEPTABLE (input is from trusted source)
+- MCP credentials use `${ENV_VAR}` syntax in settings.json (no hardcoded secrets)
+- Environment variables: `PERPLEXITY_API_KEY`, `CRAWL4AI_URL`, `CRAWL4AI_TOKEN`
+- `.gitignore` properly excludes: `.credentials.json`, `settings.local.json`, `.env`, `.clause/`, debug/history files
 
----
+### Repository Exposure (Public Repo)
 
-### 🟢 Low Priority
+**Properly excluded from git:**
+- OAuth tokens and credentials files
+- Session data (`.clause/` directories)
+- Debug logs and file history
+- Local settings overrides
 
-#### 4. Broad Wildcard Permissions
-**Affected Setups**: All setups
-
-**Issue**: Many setups use broad wildcard permissions like `Bash(git:*)`, `Bash(python:*)`, etc.
-
-**Risk**: Low - While wildcards are broad, they're scoped to specific commands. Git, Python, and npm are generally safe commands that benefit from auto-approval for productivity.
-
-**Recommendation**: Current approach is appropriate for development workflows. The "ask" list provides safety for truly dangerous operations.
-
-**Status**: ✅ ACCEPTABLE (design trade-off for productivity)
-
----
+**Recommendation**: Periodically verify with `git ls-files` that no sensitive files are tracked.
 
 ## Security Strengths
 
-### ✅ Good Security Practices Found
-
-1. **Principle of Least Privilege**: Each setup only allows tools relevant to its specific use case
-2. **Destructive Operations Gated**: All setups require confirmation for `rm` and `sudo`
-3. **MCP Tool Specificity**: MCP permissions are granted per-function, not per-server
-4. **No Hardcoded Credentials**: No API keys or secrets found in configuration files
-5. **Always Thinking Enabled**: All setups have `alwaysThinkingEnabled: true` for better decision-making
-6. **Proper Tool Scoping**: Permissions are scoped to specific commands with clear patterns
+1. **Destructive operations gated**: rm, sudo, kill, chmod require confirmation
+2. **Network requests gated**: curl requires confirmation
+3. **No hardcoded credentials**: All secrets via environment variables
+4. **Proper .gitignore**: Comprehensive exclusion of sensitive/runtime files
+5. **MCP credential isolation**: Server credentials never stored in tracked files
 
 ## Recommendations
 
-### Immediate Actions (Completed)
-- [x] Add `kill` and `pkill` to "ask" list in 6 affected setups
-- [x] Remove `cat` and `ls` from bookkeeping_ai allow list
-- [x] Validate all settings.json files for syntax correctness
+### For Users
+1. Set restrictive permissions on credential files: `chmod 600 ~/.claude.json`
+2. Never commit `.env` or credential files
+3. Rotate API keys periodically
+4. Delete `general_ai/` directory if present (contains stale runtime artifacts)
 
-### Best Practices for Future Setups
-1. **Always include in "ask" list**: `rm`, `sudo`, `kill`, `pkill`
-2. **Prefer specialized tools**: Use Read instead of cat, Glob instead of ls
-3. **Scope permissions tightly**: Only allow what's necessary for the specific use case
-4. **Document MCP requirements**: Clearly state which MCP servers are optional vs required
-5. **Review status line commands**: Ensure proper quoting and sanitization
+### For Future Development
+1. Always include `rm`, `sudo`, `kill`, `chmod`, `curl` in "ask" list
+2. Prefer Claude Code's dedicated tools over bash equivalents
+3. Run `git ls-files` before pushing to verify no secrets are tracked
+4. Keep MCP credentials in environment variables, never in config files
 
-### Monitoring Recommendations
-1. Periodically review permission lists as new features are added
-2. Monitor for any unusual bash command patterns in logs
-3. Keep MCP server dependencies updated for security patches
-4. Review third-party MCP servers for security before integration
-
-## Setup-by-Setup Security Status
-
-| Setup | Security Grade | Issues Found | Status |
-|-------|---------------|--------------|---------|
-| general_ai | A | 0 | ✅ Secure |
-| code_ai | A | 0 | ✅ Secure |
-| deep_research | B → A | Missing kill/pkill | ✅ Fixed |
-| osint_ai | B → A | Missing kill/pkill | ✅ Fixed |
-| finance_ai | B → A | Missing kill/pkill | ✅ Fixed |
-| science_ai | B → A | Missing kill/pkill | ✅ Fixed |
-| ppt_builder | B → A | Missing kill/pkill | ✅ Fixed |
-| bookkeeping_ai | B → A | Missing kill/pkill, cat/ls | ✅ Fixed |
-
-**Overall Security Grade**: A
-
-## Conclusion
-
-The Claude Code setups follow generally good security practices with appropriate separation of concerns and permission scoping. The identified issues were primarily minor configuration gaps rather than fundamental security flaws. All critical issues have been addressed.
-
-The use of the "ask" permission list provides a good safety net for potentially dangerous operations, and the principle of least privilege is well-applied across all setups.
-
-## Changelog
-
-### 2025-12-07
-- Completed initial security review
-- Fixed missing kill/pkill permissions in 6 setups
-- Removed discouraged cat/ls permissions from bookkeeping_ai
-- Validated all settings.json files
-- Created comprehensive security documentation
+## Security Grade: A

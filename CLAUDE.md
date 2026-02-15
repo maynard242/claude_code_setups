@@ -18,7 +18,6 @@ claude_code_setups/
 │       ├── agents/           # 6 specialized agents
 │       ├── commands/         # 3 slash commands
 │       └── skills/           # Auto-activating skills
-├── archive/                  # Legacy setups (reference only)
 ├── templates/                # Template files
 ├── switch-setup.sh           # Setup installer
 ├── README.md                 # Main documentation
@@ -35,11 +34,9 @@ claude_code_setups/
 
 ```json
 {
-  "setupId": "streamlined",
-  "alwaysThinkingEnabled": true,
   "permissions": {
     "allow": ["WebSearch", "Bash(git:*)"],
-    "ask": ["Bash(rm:*)", "Bash(sudo:*)"]
+    "ask": ["Bash(rm:*)", "Bash(sudo:*)", "Bash(curl:*)"]
   },
   "statusLine": {
     "type": "command",
@@ -172,11 +169,3 @@ cat streamlined/.claude/settings.json | jq .permissions
 ./switch-setup.sh --help       # Help
 ```
 
-## Archive
-
-The `archive/` directory contains legacy setups:
-- general_ai, code_ai, deep_research
-- ppt_builder, osint_ai, science_ai
-- finance_ai, bookkeeping_ai, unified
-
-These are preserved for reference but not actively maintained. The streamlined setup combines the best features of all previous setups.

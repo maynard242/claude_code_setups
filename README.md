@@ -88,14 +88,14 @@ export CRAWL4AI_TOKEN="your-token"
 ## Permissions
 
 **Auto-approved tools:**
-- WebSearch, WebFetch, MCP servers
+- WebSearch, WebFetch, MCP servers (Crawl4AI, Perplexity)
 - git, npm, npx, node
 - python, pip, pytest, mypy, ruff, black, poetry, uv
 - pdflatex, bibtex, pandoc, pdftotext, pdftk
-- ls, cat, grep, find, mkdir, cp, mv, curl, jq, wc, head, tail
+- mkdir, jq, wc
 
 **Requires confirmation:**
-- rm, sudo, kill, chmod
+- rm, sudo, kill, chmod, curl, cp, mv
 
 ## Example Usage
 
@@ -130,11 +130,10 @@ claude
 │   ├── academic-writer.md
 │   ├── presentation-builder.md
 │   └── statement-processor.md
-├── commands/               # Slash commands
-│   ├── graham.md
-│   ├── deep-research.md
-│   └── process-statement.md
-└── skills/                 # Auto-activating skills
+└── commands/               # Slash commands
+    ├── graham.md
+    ├── deep-research.md
+    └── process-statement.md
 ```
 
 ## Customization
@@ -168,10 +167,6 @@ Command instructions...
 
 Use with `/my-command` in Claude Code.
 
-## Archive
-
-Previous specialized setups (general_ai, code_ai, deep_research, etc.) are preserved in the `archive/` directory for reference. The current streamlined setup combines the best of all previous configurations.
-
 ## Troubleshooting
 
 ### Setup not loading
@@ -182,7 +177,7 @@ cat ~/.claude/settings.json | jq .
 
 ### MCP servers not working
 ```bash
-cat ~/.claude.json | jq .mcpServers
+cat ~/.claude/settings.json | jq .mcpServers
 echo $PERPLEXITY_API_KEY
 ```
 

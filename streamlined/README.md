@@ -6,7 +6,7 @@ A universal Claude Code configuration with 6 specialized agents, 3 slash command
 
 | Tier | Tool | Use When |
 |------|------|----------|
-| **0** | Claude | Static knowledge, explanations, pre-2025 facts |
+| **0** | Claude | Static knowledge, explanations, facts within training data |
 | **1** | WebSearch | Find URLs, verify recency, discover sources |
 | **2** | WebFetch | Simple HTML (Wikipedia, docs, government sites) |
 | **3** | Perplexity | AI-synthesized current events with citations |
@@ -40,10 +40,10 @@ A universal Claude Code configuration with 6 specialized agents, 3 slash command
 
 ```bash
 # Quick install
-./switch-setup.sh streamlined
+./switch-setup.sh
 
 # Or symlink (auto-updates)
-./switch-setup.sh --link streamlined
+./switch-setup.sh --link
 ```
 
 ## Configuration
@@ -92,6 +92,6 @@ streamlined/.claude/
 
 ## Permissions
 
-**Auto-allowed:** WebSearch, WebFetch, Crawl4AI, Perplexity, git, npm, python, pip, pytest, common file operations
+**Auto-allowed:** WebSearch, WebFetch, Crawl4AI, Perplexity, git, npm, python, pip, pytest, LaTeX/PDF tools, mkdir, jq, wc
 
-**Requires confirmation:** rm, sudo, kill, chmod
+**Requires confirmation:** rm, sudo, kill, chmod, curl, cp, mv

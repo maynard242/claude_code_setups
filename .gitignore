@@ -2,8 +2,12 @@
 */.claude/debug/
 */.claude/file-history/
 */.claude/history.jsonl
+*/.claude/cache/
+*/.claude/projects/
+*/.claude/statsig/
+*/.claude/telemetry/
 
-# CRITICAL: Credentials and tokens
+# Credentials and tokens
 **/.credentials.json
 **/settings.local.json
 **/.env
@@ -27,5 +31,5 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Node modules (for MCP plugins)
+# Node modules
 **/node_modules/

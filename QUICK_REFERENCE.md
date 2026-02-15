@@ -59,13 +59,13 @@ git, npm, npx, node
 python, python3, pip, pip3
 pytest, mypy, ruff, black, poetry, uv
 pdflatex, bibtex, pandoc, pdftotext, pdftk
-ls, cat, grep, find, mkdir, cp, mv, curl, jq, wc, head, tail
+mkdir, jq, wc
 ```
 
 ### Requires Confirmation
 
 ```
-rm, sudo, kill, chmod
+rm, sudo, kill, chmod, curl, cp, mv
 ```
 
 ## Environment Variables
@@ -113,7 +113,7 @@ cat ~/.claude/settings.json | jq .
 
 ### Check MCP config
 ```bash
-cat ~/.claude.json | jq .mcpServers
+cat ~/.claude/settings.json | jq .mcpServers
 ```
 
 ## Status Line
@@ -148,7 +148,7 @@ Shows: `>>> directory git:(branch) *`
 - [ ] Setup installed: `./switch-setup.sh --current`
 - [ ] Files exist: `ls ~/.claude/`
 - [ ] JSON valid: `cat ~/.claude/settings.json | jq .`
-- [ ] MCP configured: `cat ~/.claude.json | jq .mcpServers`
+- [ ] MCP configured: `cat ~/.claude/settings.json | jq .mcpServers`
 - [ ] Env vars set: `echo $PERPLEXITY_API_KEY`
 
 ## Quick Links

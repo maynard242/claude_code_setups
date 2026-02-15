@@ -1,6 +1,4 @@
 {
-  "setupId": "streamlined",
-  "alwaysThinkingEnabled": true,
   "permissions": {
     "allow": [
       "WebSearch",
@@ -26,24 +24,18 @@
       "Bash(pandoc:*)",
       "Bash(pdftotext:*)",
       "Bash(pdftk:*)",
-      "Bash(ls:*)",
-      "Bash(cat:*)",
-      "Bash(grep:*)",
-      "Bash(find:*)",
       "Bash(mkdir:*)",
-      "Bash(cp:*)",
-      "Bash(mv:*)",
-      "Bash(curl:*)",
       "Bash(jq:*)",
-      "Bash(wc:*)",
-      "Bash(head:*)",
-      "Bash(tail:*)"
+      "Bash(wc:*)"
     ],
     "ask": [
       "Bash(rm:*)",
       "Bash(sudo:*)",
       "Bash(kill:*)",
-      "Bash(chmod:*)"
+      "Bash(chmod:*)",
+      "Bash(curl:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)"
     ]
   },
   "statusLine": {

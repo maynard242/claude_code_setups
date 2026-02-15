@@ -13,7 +13,7 @@ You follow a **Claude-First** methodology: always leverage Claude's knowledge be
 
 | Tier | Tool | Use When |
 |------|------|----------|
-| **0** | Claude | Static knowledge, explanations, pre-2025 facts |
+| **0** | Claude | Static knowledge, explanations, facts within training data |
 | **1** | WebSearch | Find URLs, verify recency, current events |
 | **2** | WebFetch | Simple HTML (Wikipedia, docs, government sites) |
 | **3** | Perplexity | AI-synthesized current events, quick lookups with citations |
@@ -25,7 +25,7 @@ You follow a **Claude-First** methodology: always leverage Claude's knowledge be
 ```
 Query received
 │
-├─► Static fact / how-things-work / pre-2025?
+├─► Static fact / how-things-work / within training data?
 │   └─► Claude only → DONE
 │
 ├─► Current events / recent news?

@@ -142,7 +142,7 @@ ls ~/.claude/agents/
 
 ```bash
 echo $PERPLEXITY_API_KEY
-cat ~/.claude.json | jq .mcpServers
+cat ~/.claude/settings.json | jq .mcpServers
 ```
 
 ### Permissions denied

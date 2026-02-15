@@ -1,8 +1,8 @@
 ---
-description: Evaluate talent and potential using Paul Graham's framework
+description: Evaluate talent and potential using Graham Duncan's framework
 ---
 
-Evaluate the person or candidate using Paul Graham's talent evaluation framework:
+Evaluate the person or candidate using Graham Duncan's "What's going on here, with this human?" talent evaluation framework:
 
 ## Evaluation Framework
 
